@@ -20,6 +20,7 @@ import {
   PieChart,
   Lightbulb,
   ExternalLink,
+  GraduationCap,
 } from "lucide-react";
 import {
   ResponsiveContainer,
@@ -40,7 +41,7 @@ import { Badge } from "../ui/Badge";
 import { Button } from "../ui/Button";
 
 export const InteractiveLab: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<"skb" | "energy" | "cement">("energy");
+  const [activeTab, setActiveTab] = useState<"skb" | "energy" | "cement">("skb");
   const [proj2SubTab, setProj2SubTab] = useState<"trend" | "flow" | "insight">("trend");
 
   // MODEL 1 STATE: SKB STMKG CLASSIFICATION
@@ -131,50 +132,30 @@ export const InteractiveLab: React.FC = () => {
   };
   const energyInsight = calcEnergyCosts();
 
-  // MODEL 3 STATE: DEEP MLP CEMENT STRENGTH
-  const [clinker, setClinker] = useState<number>(75);
-  const [gypsum, setGypsum] = useState<number>(5);
-  const [silica, setSilica] = useState<number>(15);
-  const [waterRatio, setWaterRatio] = useState<number>(0.45);
-
-  const calculateCementStrength = () => {
-    const predictedMpa = (
-      clinker * 0.42 +
-      gypsum * 0.8 +
-      silica * 0.35 -
-      waterRatio * 45
-    ).toFixed(2);
-
-    const numericMpa = parseFloat(predictedMpa);
-    const qcPassed = numericMpa >= 42.5;
-    return { predictedMpa, qcPassed };
-  };
-  const cementResult = calculateCementStrength();
-
   return (
     <Container id="lab">
       <SectionHeading
-        badgeText="INTERACTIVE DATA LAB (DEPLOYS)"
-        title="Simulasi Interaktif Hasil Deploy 3 Proyek Real"
-        description="Eksplorasi langsung simulator interaktif Machine Learning, analisis alur terak pabrik semen, dan platform analitik industri."
+        badgeText="INTERACTIVE DATA LAB"
+        title="Simulasi Interaktif & Dashboard Project Real"
+        description="Eksplorasi simulator Machine Learning interaktif untuk Klasifikasi SKB STMKG dan Optimasi Klinker Industri."
       />
 
       <Card className="space-y-8 p-6 md:p-8">
         {/* Main Tab Selector (Project 1, Project 2, Project 3) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 border-b border-slate-700/60 pb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 border-b border-slate-700/60 pb-6">
           <button
             onClick={() => setActiveTab("skb")}
             className={`p-4 rounded-xl text-left transition-all border ${
               activeTab === "skb"
-                ? "bg-emerald-500/15 border-emerald-500 text-slate-50 shadow-lg shadow-emerald-500/10"
+                ? "bg-indigo-500/15 border-indigo-500 text-slate-50 shadow-lg shadow-indigo-500/10"
                 : "bg-slate-900 border-slate-700/60 text-slate-400 hover:text-slate-200"
             }`}
           >
-            <div className="flex items-center space-x-2 text-xs font-mono text-emerald-400 mb-1">
-              <Cpu className="w-3.5 h-3.5" />
-              <span>PROYEK 1 DEPLOY</span>
+            <div className="flex items-center space-x-2 text-xs font-mono text-indigo-400 mb-1">
+              <GraduationCap className="w-4 h-4" />
+              <span>PROYEK 1 — SKB STMKG 2024</span>
             </div>
-            <div className="font-bold font-heading text-sm text-slate-100">
+            <div className="font-bold font-heading text-base text-slate-100">
               Klasifikasi SKB STMKG 2024
             </div>
           </button>
@@ -188,54 +169,118 @@ export const InteractiveLab: React.FC = () => {
             }`}
           >
             <div className="flex items-center space-x-2 text-xs font-mono text-emerald-400 mb-1">
-              <Flame className="w-3.5 h-3.5" />
-              <span>PROYEK 2 DEPLOY</span>
+              <Flame className="w-4 h-4" />
+              <span>PROYEK 2 — KLINKER OPTIMIZATION</span>
             </div>
-            <div className="font-bold font-heading text-sm text-slate-100">
-              Optimasi Klinker & Biaya Energi PT Semen Gresik
-            </div>
-          </button>
-
-          <button
-            onClick={() => setActiveTab("cement")}
-            className={`p-4 rounded-xl text-left transition-all border ${
-              activeTab === "cement"
-                ? "bg-emerald-500/15 border-emerald-500 text-slate-50 shadow-lg shadow-emerald-500/10"
-                : "bg-slate-900 border-slate-700/60 text-slate-400 hover:text-slate-200"
-            }`}
-          >
-            <div className="flex items-center space-x-2 text-xs font-mono text-emerald-400 mb-1">
-              <Activity className="w-3.5 h-3.5" />
-              <span>PROYEK 3 DEPLOY</span>
-            </div>
-            <div className="font-bold font-heading text-sm text-slate-100">
-              Prediksi Kuat Tekan Semen (Deep MLP)
+            <div className="font-bold font-heading text-base text-slate-100">
+              Optimasi Klinker & Biaya Energi
             </div>
           </button>
         </div>
 
-        {/* PROYEK 2 DEPLOY CONTENT */}
+        {/* PROYEK 1 DEPLOY CONTENT (SKB STMKG 2024) */}
+        {activeTab === "skb" && (
+          <div className="space-y-6 animate-in fade-in duration-300">
+            {/* Direct Link Banner to Dedicated SKB STMKG Page */}
+            <div className="p-5 rounded-2xl bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 border border-indigo-500/50 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div className="space-y-1">
+                <div className="font-bold text-slate-50 font-heading text-lg flex items-center">
+                  <GraduationCap className="w-5 h-5 mr-2 text-indigo-400" />
+                  <span>🎓 Simulator Klasifikasi SKB STMKG 2024</span>
+                </div>
+                <div className="text-xs text-slate-300 font-sans leading-relaxed max-w-2xl">
+                  Simulasikan nilai SKB Anda berdasarkan pola data historis peserta menggunakan Machine Learning. Sederhana, akurat, dan dirancang khusus untuk calon taruna/taruni STMKG.
+                </div>
+              </div>
+
+              <Link
+                href="/lab/skb-stmkg"
+                className="px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-slate-50 font-bold font-heading text-xs transition-all shadow-lg shadow-indigo-600/20 flex items-center space-x-2 shrink-0"
+              >
+                <span>Buka Simulasi Lengkap (/lab/skb-stmkg)</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+
+            {/* Quick Interactive Preview Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center pt-2">
+              <div className="space-y-4 bg-slate-950 p-6 rounded-2xl border border-slate-800">
+                <div className="font-bold font-heading text-sm text-slate-100 border-b border-slate-800 pb-3">
+                  Ringkasan Fitur Simulasi
+                </div>
+
+                <div className="space-y-3 text-xs text-slate-300">
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                    <span>Statistik 2,480+ Data Historis Peserta STMKG</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                    <span>Input Nilai SKD & 5 Mata Pelajaran (Matematika, Fisika, B. Inggris, MetKlim, Geofisika)</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                    <span>Estimasi Probabilitas Kelulusan % & Progress Bar</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                    <span>Grafik Perbandingan Nilai Kamu vs Rerata Dataset</span>
+                  </div>
+                </div>
+
+                <Link
+                  href="/lab/skb-stmkg"
+                  className="w-full py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-slate-50 font-bold font-heading text-xs transition-all flex items-center justify-center space-x-2"
+                >
+                  <span>Mulai Simulasi Nilai SKB</span>
+                  <ExternalLink className="w-4 h-4" />
+                </Link>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4 text-center">
+                <div className="text-xs font-mono text-slate-400">DATA HISTORIS STMKG</div>
+                <div className="grid grid-cols-2 gap-3 text-left">
+                  <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800">
+                    <div className="text-[11px] text-slate-400">Total Peserta</div>
+                    <div className="text-xl font-bold font-heading text-slate-100">2,480</div>
+                  </div>
+                  <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800">
+                    <div className="text-[11px] text-slate-400">Rerata Nilai</div>
+                    <div className="text-xl font-bold font-heading text-slate-100">74.8 / 100</div>
+                  </div>
+                  <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800">
+                    <div className="text-[11px] text-slate-400">Persentase Lulus</div>
+                    <div className="text-xl font-bold font-heading text-emerald-400">28.5%</div>
+                  </div>
+                  <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800">
+                    <div className="text-[11px] text-slate-400">Tingkat Seleksi</div>
+                    <div className="text-xl font-bold font-heading text-indigo-400">Ketat</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* PROYEK 2 DEPLOY CONTENT (KLINKER OPTIMIZATION) */}
         {activeTab === "energy" && (
           <div className="space-y-6 animate-in fade-in duration-300">
-            {/* Direct Link to Full Dedicated Industrial AI Platform */}
-            <div className="p-4 rounded-xl bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 border border-emerald-500/50 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            {/* Direct Link Banner to Dedicated Klinker Optimization Page */}
+            <div className="p-5 rounded-2xl bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 border border-emerald-500/50 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div className="space-y-1">
-                <div className="font-bold text-slate-50 font-heading text-base flex items-center">
-                  <span>🏭 Full Industrial AI Analytics Platform</span>
-                  <span className="ml-2 px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-[10px] font-mono">
-                    NEW APP ROUTE
-                  </span>
+                <div className="font-bold text-slate-50 font-heading text-lg flex items-center">
+                  <span>🏭 Industrial AI Analytics Platform (PT Semen Gresik)</span>
                 </div>
-                <div className="text-xs text-slate-400 font-sans">
-                  Buka aplikasi platform analitik industri lengkap dengan sidebar, 5 KPI Cards, Line Chart Aktual vs Prediksi, Stacked Area Biaya Energi, Histogram, Donut R², & Simulator XGBoost.
+                <div className="text-xs text-slate-300 font-sans leading-relaxed">
+                  Platform analitik industri lengkap dengan sidebar, 5 KPI Cards, Line Chart Aktual vs Prediksi, Stacked Area Biaya Energi, Histogram, Donut R², & Simulator XGBoost.
                 </div>
               </div>
 
               <Link
                 href="/lab/klinker-optimization"
-                className="px-4 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold font-heading text-xs transition-all shadow-lg shadow-emerald-500/20 flex items-center space-x-2 shrink-0"
+                className="px-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold font-heading text-xs transition-all shadow-lg shadow-emerald-500/20 flex items-center space-x-2 shrink-0"
               >
-                <span>Buka Dashboard /lab/klinker-optimization</span>
+                <span>Buka Dashboard (/lab/klinker-optimization)</span>
                 <ExternalLink className="w-4 h-4" />
               </Link>
             </div>
@@ -244,7 +289,7 @@ export const InteractiveLab: React.FC = () => {
             <div className="flex flex-wrap items-center justify-between gap-4 p-4 rounded-xl bg-slate-950 border border-slate-800">
               <div>
                 <Badge variant="emerald">Industrial Operations & Multi-Fuel Telemetry</Badge>
-                <h3 className="text-lg font-bold font-heading text-slate-50 mt-1">
+                <h3 className="text-base font-bold font-heading text-slate-50 mt-1">
                   Dashboard Quick View Optimasi Pabrik Semen & Biaya Energi
                 </h3>
               </div>
@@ -334,22 +379,6 @@ export const InteractiveLab: React.FC = () => {
                         max="200"
                         value={fm2Feed}
                         onChange={(e) => setFm2Feed(Number(e.target.value))}
-                        className="w-full accent-emerald-500 bg-slate-950 rounded-lg cursor-pointer"
-                      />
-                    </div>
-
-                    <div>
-                      <div className="flex justify-between text-slate-300 mb-1 font-medium">
-                        <span>Stok Awal Terak Silo (Ton)</span>
-                        <span className="text-emerald-400 font-bold">{initialStock} Ton</span>
-                      </div>
-                      <input
-                        type="range"
-                        min="1000"
-                        max="20000"
-                        step="500"
-                        value={initialStock}
-                        onChange={(e) => setInitialStock(Number(e.target.value))}
                         className="w-full accent-emerald-500 bg-slate-950 rounded-lg cursor-pointer"
                       />
                     </div>
@@ -448,34 +477,6 @@ export const InteractiveLab: React.FC = () => {
                 </div>
               </div>
             )}
-          </div>
-        )}
-
-        {/* PROYEK 1 DEPLOY CONTENT */}
-        {activeTab === "skb" && (
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center animate-in fade-in duration-300">
-            <div className="space-y-5">
-              <div>
-                <Badge variant="emerald">Random Forest & XGBoost Classifier</Badge>
-                <h3 className="text-xl font-bold font-heading text-slate-50 mt-2">
-                  Simulator Prediksi Kelulusan SKB STMKG
-                </h3>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {/* PROYEK 3 DEPLOY CONTENT */}
-        {activeTab === "cement" && (
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center animate-in fade-in duration-300">
-            <div className="space-y-5">
-              <div>
-                <Badge variant="emerald">TensorFlow / Keras Deep MLP</Badge>
-                <h3 className="text-xl font-bold font-heading text-slate-50 mt-2">
-                  Simulator Prediksi Kuat Tekan Semen 28 Hari
-                </h3>
-              </div>
-            </div>
           </div>
         )}
       </Card>

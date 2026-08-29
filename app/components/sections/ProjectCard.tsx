@@ -1,5 +1,6 @@
 import React from "react";
-import { ArrowUpRight, Github } from "lucide-react";
+import Link from "next/link";
+import { ArrowUpRight, Github, Sparkles } from "lucide-react";
 import { Card } from "../ui/Card";
 import { Badge } from "../ui/Badge";
 import { ProjectItem } from "@/data/projects";
@@ -9,6 +10,11 @@ interface ProjectCardProps {
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+  // Determine if this project has a deployed interactive lab route
+  let labRoute: string | null = null;
+  if (project.id === "proj-1") labRoute = "/lab/skb-stmkg";
+  if (project.id === "proj-2") labRoute = "/lab/klinker-optimization";
+
   return (
     <div className="group transition-all duration-300 transform hover:-translate-y-1">
       <Card className="h-full flex flex-col justify-between space-y-6 group-hover:border-emerald-500/50">
@@ -47,25 +53,36 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </div>
         </div>
 
-        <div className="pt-4 border-t border-slate-700/60 flex items-center justify-between">
-          <a
-            href={project.projectUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center text-xs font-sans font-semibold text-emerald-400 hover:text-emerald-300 transition-colors"
-          >
-            <span>{project.urlLabel}</span>
-            <ArrowUpRight className="w-3.5 h-3.5 ml-1" />
-          </a>
+        <div className="pt-4 border-t border-slate-700/60 flex flex-wrap items-center justify-between gap-3">
+          {labRoute ? (
+            <Link
+              href={labRoute}
+              className="inline-flex items-center px-3.5 py-1.5 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/40 text-emerald-400 font-bold text-xs transition-colors"
+            >
+              <Sparkles className="w-3.5 h-3.5 mr-1.5" />
+              <span>Buka Interactive Lab</span>
+            </Link>
+          ) : (
+            <a
+              href={project.projectUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-xs font-sans font-semibold text-emerald-400 hover:text-emerald-300 transition-colors"
+            >
+              <span>{project.urlLabel}</span>
+              <ArrowUpRight className="w-3.5 h-3.5 ml-1" />
+            </a>
+          )}
 
           <a
             href={project.projectUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 text-slate-400 hover:text-slate-100 hover:bg-slate-700 rounded transition-colors"
+            className="p-2 text-slate-400 hover:text-slate-100 hover:bg-slate-700 rounded transition-colors flex items-center space-x-1 text-xs"
             title={project.urlLabel}
           >
             <Github className="w-4 h-4" />
+            <span className="hidden sm:inline text-[11px]">Notebook</span>
           </a>
         </div>
       </Card>

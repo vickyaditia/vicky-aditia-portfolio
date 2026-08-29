@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Download, Menu, X } from "lucide-react";
+import { Download, Menu, X, Sparkles } from "lucide-react";
 import { Button } from "./ui/Button";
 
 export const Navbar: React.FC = () => {
@@ -18,11 +18,11 @@ export const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { label: "Proyek", href: "#projects" },
-    { label: "Skill", href: "#skills" },
-    { label: "Pengalaman", href: "#experience" },
-    { label: "Lab", href: "#lab" },
-    { label: "Kontak", href: "#contact" },
+    { label: "Proyek", href: "/#projects" },
+    { label: "Skill", href: "/#skills" },
+    { label: "Pengalaman", href: "/#experience" },
+    { label: "Lab Portal", href: "/lab", isHighlight: true },
+    { label: "Kontak", href: "/#contact" },
   ];
 
   return (
@@ -49,13 +49,18 @@ export const Navbar: React.FC = () => {
         {/* Desktop Nav Links */}
         <nav className="hidden md:flex items-center space-x-8 text-sm font-sans font-medium">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
               href={link.href}
-              className="text-slate-300 hover:text-emerald-400 transition-colors py-1"
+              className={`py-1 transition-colors flex items-center space-x-1 ${
+                link.isHighlight
+                  ? "text-indigo-400 font-bold hover:text-indigo-300"
+                  : "text-slate-300 hover:text-emerald-400"
+              }`}
             >
-              {link.label}
-            </a>
+              {link.isHighlight && <Sparkles className="w-3.5 h-3.5 mr-1" />}
+              <span>{link.label}</span>
+            </Link>
           ))}
         </nav>
 
@@ -91,14 +96,17 @@ export const Navbar: React.FC = () => {
         <div className="md:hidden border-b border-slate-700 bg-slate-900/95 backdrop-blur-lg px-4 pt-4 pb-6 space-y-4 font-sans text-sm">
           <div className="flex flex-col space-y-3">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-slate-200 hover:text-emerald-400 py-1.5 transition-colors"
+                className={`py-1.5 transition-colors flex items-center ${
+                  link.isHighlight ? "text-indigo-400 font-bold" : "text-slate-200 hover:text-emerald-400"
+                }`}
               >
-                {link.label}
-              </a>
+                {link.isHighlight && <Sparkles className="w-3.5 h-3.5 mr-1.5" />}
+                <span>{link.label}</span>
+              </Link>
             ))}
           </div>
           <div className="pt-3 border-t border-slate-700">
