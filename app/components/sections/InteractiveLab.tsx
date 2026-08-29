@@ -2,30 +2,19 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import {
-  Play,
-  RotateCcw,
   CheckCircle2,
-  AlertTriangle,
-  Cpu,
   Flame,
-  Activity,
-  Zap,
-  TrendingUp,
   BarChart3,
   ArrowRight,
   Database,
-  DollarSign,
-  PieChart,
-  Lightbulb,
   ExternalLink,
   GraduationCap,
+  Beaker,
+  Cpu,
 } from "lucide-react";
 import {
   ResponsiveContainer,
-  BarChart,
-  Bar,
   LineChart,
   Line,
   XAxis,
@@ -38,7 +27,6 @@ import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
 import { Card } from "../ui/Card";
 import { Badge } from "../ui/Badge";
-import { Button } from "../ui/Button";
 
 export const InteractiveLab: React.FC = () => {
   const [activeTab, setActiveTab] = useState<"skb" | "energy" | "cement">("skb");
@@ -50,30 +38,18 @@ export const InteractiveLab: React.FC = () => {
   const [physicalScore, setPhysicalScore] = useState<number>(88);
   const [interviewScore, setInterviewScore] = useState<number>(85);
 
-  const calculateSkbPrediction = () => {
-    const composite = skdScore * 0.4 + tpaScore * 0.25 + physicalScore * 0.2 + interviewScore * 0.15;
-    const probability = Math.min(99, Math.max(10, Math.round((composite / 320) * 100)));
-    const passed = composite >= 250;
-    return { composite: composite.toFixed(1), probability, passed };
-  };
-  const skbResult = calculateSkbPrediction();
-
   // MODEL 2 STATE: INDUSTRIAL KILN & FINISH MILL SIMULATION
-  const [kilnOutput, setKilnOutput] = useState<number>(240); // Ton/jam terak kiln
-  const [fm1Feed, setFm1Feed] = useState<number>(110); // Ton/jam terak FM1
-  const [fm2Feed, setFm2Feed] = useState<number>(120); // Ton/jam terak FM2
-  const [initialStock, setInitialStock] = useState<number>(8500); // Ton stok awal silo
+  const [kilnOutput, setKilnOutput] = useState<number>(240);
+  const [fm1Feed, setFm1Feed] = useState<number>(110);
+  const [fm2Feed, setFm2Feed] = useState<number>(120);
+  const [initialStock, setInitialStock] = useState<number>(8500);
 
-  // Unit Energy Prices
-  const [coalPrice, setCoalPrice] = useState<number>(1550); // Rp/kg batu bara
-  const [electricityPrice, setElectricityPrice] = useState<number>(1450); // Rp/kWh listrik
-  const [dieselPrice, setDieselPrice] = useState<number>(18200); // Rp/Liter solar
+  const [coalPrice, setCoalPrice] = useState<number>(1550);
+  const [electricityPrice, setElectricityPrice] = useState<number>(1450);
+  const [dieselPrice, setDieselPrice] = useState<number>(18200);
 
-  // Calculations for Project 2
   const totalFmFeed = fm1Feed + fm2Feed;
-  const netTerakFlow = kilnOutput - totalFmFeed; // Balance per jam
 
-  // Generate 24-hour simulation trend for FM1, FM2, and Silo Stock Level
   const generateTrendData = () => {
     const data = [];
     let currentStock = initialStock;
@@ -95,7 +71,6 @@ export const InteractiveLab: React.FC = () => {
   };
   const trendData = generateTrendData();
 
-  // Energy Insights & Cost Calculations
   const calcEnergyCosts = () => {
     const coalConsumptionKgPerHour = kilnOutput * 125;
     const coalCostPerHour = coalConsumptionKgPerHour * coalPrice;
@@ -107,27 +82,12 @@ export const InteractiveLab: React.FC = () => {
     const dieselCostPerHour = dieselLitersPerHour * dieselPrice;
 
     const totalCostPerHour = coalCostPerHour + electricityCostPerHour + dieselCostPerHour;
-    const totalCostPerDay = (totalCostPerHour * 24) / 1000000; // Juta Rupiah per Hari
-    const totalProductionDailyTon = (fm1Feed + fm2Feed) * 24;
-    const costPerTonCement = totalProductionDailyTon > 0 ? (totalCostPerHour * 24) / totalProductionDailyTon : 0;
-
-    const coalPercent = Math.round((coalCostPerHour / totalCostPerHour) * 100);
-    const electricityPercent = Math.round((electricityCostPerHour / totalCostPerHour) * 100);
-    const dieselPercent = Math.round((dieselCostPerHour / totalCostPerHour) * 100);
 
     return {
       coalCostPerHour,
       electricityCostPerHour,
       dieselCostPerHour,
       totalCostPerHour,
-      totalCostPerDay: totalCostPerDay.toFixed(2),
-      costPerTonCement: Math.round(costPerTonCement),
-      coalPercent,
-      electricityPercent,
-      dieselPercent,
-      totalPowerKwhPerHour,
-      coalConsumptionKgPerHour,
-      dieselLitersPerHour,
     };
   };
   const energyInsight = calcEnergyCosts();
@@ -137,12 +97,12 @@ export const InteractiveLab: React.FC = () => {
       <SectionHeading
         badgeText="INTERACTIVE DATA LAB"
         title="Simulasi Interaktif & Dashboard Project Real"
-        description="Eksplorasi simulator Machine Learning interaktif untuk Klasifikasi SKB STMKG dan Optimasi Klinker Industri."
+        description="Eksplorasi simulator Machine Learning interaktif untuk Klasifikasi SKB STMKG, Optimasi Klinker Industri, dan Prediksi Kuat Tekan Semen 28 Hari."
       />
 
       <Card className="space-y-8 p-6 md:p-8">
         {/* Main Tab Selector (Project 1, Project 2, Project 3) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 border-b border-slate-700/60 pb-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 border-b border-slate-700/60 pb-6">
           <button
             onClick={() => setActiveTab("skb")}
             className={`p-4 rounded-xl text-left transition-all border ${
@@ -155,8 +115,8 @@ export const InteractiveLab: React.FC = () => {
               <GraduationCap className="w-4 h-4" />
               <span>PROYEK 1 — SKB STMKG 2024</span>
             </div>
-            <div className="font-bold font-heading text-base text-slate-100">
-              Klasifikasi SKB STMKG 2024
+            <div className="font-bold font-heading text-sm sm:text-base text-slate-100">
+              Klasifikasi SKB STMKG
             </div>
           </button>
 
@@ -172,8 +132,25 @@ export const InteractiveLab: React.FC = () => {
               <Flame className="w-4 h-4" />
               <span>PROYEK 2 — KLINKER OPTIMIZATION</span>
             </div>
-            <div className="font-bold font-heading text-base text-slate-100">
-              Optimasi Klinker & Biaya Energi
+            <div className="font-bold font-heading text-sm sm:text-base text-slate-100">
+              Optimasi Klinker & Energi
+            </div>
+          </button>
+
+          <button
+            onClick={() => setActiveTab("cement")}
+            className={`p-4 rounded-xl text-left transition-all border ${
+              activeTab === "cement"
+                ? "bg-cyan-500/15 border-cyan-500 text-slate-50 shadow-lg shadow-cyan-500/10"
+                : "bg-slate-900 border-slate-700/60 text-slate-400 hover:text-slate-200"
+            }`}
+          >
+            <div className="flex items-center space-x-2 text-xs font-mono text-cyan-400 mb-1">
+              <Beaker className="w-4 h-4" />
+              <span>PROYEK 3 — DEEP MLP REGRESSION</span>
+            </div>
+            <div className="font-bold font-heading text-sm sm:text-base text-slate-100">
+              Prediksi Kuat Tekan Semen 28 Hari
             </div>
           </button>
         </div>
@@ -181,7 +158,6 @@ export const InteractiveLab: React.FC = () => {
         {/* PROYEK 1 DEPLOY CONTENT (SKB STMKG 2024) */}
         {activeTab === "skb" && (
           <div className="space-y-6 animate-in fade-in duration-300">
-            {/* Direct Link Banner to Dedicated SKB STMKG Page */}
             <div className="p-5 rounded-2xl bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 border border-indigo-500/50 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div className="space-y-1">
                 <div className="font-bold text-slate-50 font-heading text-lg flex items-center">
@@ -202,7 +178,6 @@ export const InteractiveLab: React.FC = () => {
               </Link>
             </div>
 
-            {/* Quick Interactive Preview Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center pt-2">
               <div className="space-y-4 bg-slate-950 p-6 rounded-2xl border border-slate-800">
                 <div className="font-bold font-heading text-sm text-slate-100 border-b border-slate-800 pb-3">
@@ -216,15 +191,11 @@ export const InteractiveLab: React.FC = () => {
                   </div>
                   <div className="flex items-center space-x-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                    <span>Input Nilai SKD & 5 Mata Pelajaran (Matematika, Fisika, B. Inggris, MetKlim, Geofisika)</span>
+                    <span>Input Nilai SKD & 5 Mata Pelajaran</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
                     <span>Estimasi Probabilitas Kelulusan % & Progress Bar</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                    <span>Grafik Perbandingan Nilai Kamu vs Rerata Dataset</span>
                   </div>
                 </div>
 
@@ -265,7 +236,6 @@ export const InteractiveLab: React.FC = () => {
         {/* PROYEK 2 DEPLOY CONTENT (KLINKER OPTIMIZATION) */}
         {activeTab === "energy" && (
           <div className="space-y-6 animate-in fade-in duration-300">
-            {/* Direct Link Banner to Dedicated Klinker Optimization Page */}
             <div className="p-5 rounded-2xl bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 border border-emerald-500/50 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div className="space-y-1">
                 <div className="font-bold text-slate-50 font-heading text-lg flex items-center">
@@ -285,7 +255,6 @@ export const InteractiveLab: React.FC = () => {
               </Link>
             </div>
 
-            {/* Sub-Dashboard Navigation */}
             <div className="flex flex-wrap items-center justify-between gap-4 p-4 rounded-xl bg-slate-950 border border-slate-800">
               <div>
                 <Badge variant="emerald">Industrial Operations & Multi-Fuel Telemetry</Badge>
@@ -328,7 +297,6 @@ export const InteractiveLab: React.FC = () => {
               </div>
             </div>
 
-            {/* SUB-TAB 1: TREND */}
             {proj2SubTab === "trend" && (
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 <div className="space-y-5 bg-slate-900 p-5 rounded-2xl border border-slate-700/80">
@@ -349,36 +317,6 @@ export const InteractiveLab: React.FC = () => {
                         max="400"
                         value={kilnOutput}
                         onChange={(e) => setKilnOutput(Number(e.target.value))}
-                        className="w-full accent-emerald-500 bg-slate-950 rounded-lg cursor-pointer"
-                      />
-                    </div>
-
-                    <div>
-                      <div className="flex justify-between text-slate-300 mb-1 font-medium">
-                        <span>Feed Rate Terak Finish Mill 1 (FM1)</span>
-                        <span className="text-emerald-400 font-bold">{fm1Feed} Ton/Jam</span>
-                      </div>
-                      <input
-                        type="range"
-                        min="40"
-                        max="200"
-                        value={fm1Feed}
-                        onChange={(e) => setFm1Feed(Number(e.target.value))}
-                        className="w-full accent-emerald-500 bg-slate-950 rounded-lg cursor-pointer"
-                      />
-                    </div>
-
-                    <div>
-                      <div className="flex justify-between text-slate-300 mb-1 font-medium">
-                        <span>Feed Rate Terak Finish Mill 2 (FM2)</span>
-                        <span className="text-emerald-400 font-bold">{fm2Feed} Ton/Jam</span>
-                      </div>
-                      <input
-                        type="range"
-                        min="40"
-                        max="200"
-                        value={fm2Feed}
-                        onChange={(e) => setFm2Feed(Number(e.target.value))}
                         className="w-full accent-emerald-500 bg-slate-950 rounded-lg cursor-pointer"
                       />
                     </div>
@@ -408,75 +346,88 @@ export const InteractiveLab: React.FC = () => {
                 </div>
               </div>
             )}
+          </div>
+        )}
 
-            {/* SUB-TAB 2: FLOW */}
-            {proj2SubTab === "flow" && (
-              <div className="space-y-8 py-4">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 items-center font-sans text-xs">
-                  <div className="p-5 rounded-2xl bg-slate-900 border-2 border-emerald-500/60 space-y-3 text-center">
-                    <div className="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 mx-auto flex items-center justify-center font-bold">
-                      <Flame className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <div className="font-bold text-sm text-slate-100 font-heading">KILN PLANT</div>
-                      <div className="text-slate-400 text-[11px]">Pembakaran Klinker</div>
-                    </div>
-                    <div className="p-2 rounded-lg bg-slate-950 border border-slate-800 text-emerald-400 font-bold text-sm">
-                      +{kilnOutput} Ton/Jam
-                    </div>
+        {/* PROYEK 3 DEPLOY CONTENT (CEMENT STRENGTH PREDICTION) */}
+        {activeTab === "cement" && (
+          <div className="space-y-6 animate-in fade-in duration-300">
+            <div className="p-5 rounded-2xl bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 border border-cyan-500/50 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div className="space-y-1">
+                <div className="font-bold text-slate-50 font-heading text-lg flex items-center">
+                  <Beaker className="w-5 h-5 mr-2 text-cyan-400" />
+                  <span>🧪 Prediksi Kuat Tekan Semen 28 Hari (Deep MLP)</span>
+                </div>
+                <div className="text-xs text-slate-300 font-sans leading-relaxed max-w-2xl">
+                  Estimasi kuat tekan semen pada umur 28 hari berdasarkan 6 karakteristik kimia (MgO, CaO, SO3, LOI, FL, Insol) menggunakan Deep Neural Network (DNN).
+                </div>
+              </div>
+
+              <Link
+                href="/lab/cement-strength"
+                className="px-5 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold font-heading text-xs transition-all shadow-lg shadow-cyan-500/20 flex items-center space-x-2 shrink-0"
+              >
+                <span>Buka Prediksi (/lab/cement-strength)</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center pt-2">
+              <div className="space-y-4 bg-slate-950 p-6 rounded-2xl border border-slate-800">
+                <div className="font-bold font-heading text-sm text-slate-100 border-b border-slate-800 pb-3">
+                  Ringkasan Aplikasi Laboratorium
+                </div>
+
+                <div className="space-y-3 text-xs text-slate-300">
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
+                    <span>454 Data Sampel Laboratorium Historis Real</span>
                   </div>
-
-                  <div className="hidden md:flex flex-col items-center justify-center text-slate-400">
-                    <span className="text-[10px] font-mono text-emerald-400 mb-1">Transfer Terak</span>
-                    <ArrowRight className="w-6 h-6 text-emerald-400 animate-pulse" />
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
+                    <span>Arsitektur Deep MLP (Dense 128 → Dense 64 → Dense 1)</span>
                   </div>
-
-                  <div className="p-5 rounded-2xl bg-slate-900 border border-slate-700 space-y-3 text-center">
-                    <div className="w-10 h-10 rounded-full bg-slate-800 text-slate-300 mx-auto flex items-center justify-center font-bold">
-                      <Database className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <div className="font-bold text-sm text-slate-100 font-heading">SILO TERAK</div>
-                      <div className="text-slate-400 text-[11px]">Penampungan Utama</div>
-                    </div>
-                    <div className="p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-200 font-bold text-sm">
-                      Stok: {initialStock} Ton
-                    </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
+                    <span>Pencarian Sampel Historis Terdekat (Euclidean Standardized)</span>
                   </div>
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
+                    <span>Histogram Distribusi & Interpretasi Otomatis</span>
+                  </div>
+                </div>
 
-                  <div className="hidden md:flex flex-col items-center justify-center text-slate-400">
-                    <span className="text-[10px] font-mono text-emerald-400 mb-1">Distribusi Grinding</span>
-                    <ArrowRight className="w-6 h-6 text-emerald-400 animate-pulse" />
+                <Link
+                  href="/lab/cement-strength"
+                  className="w-full py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold font-heading text-xs transition-all flex items-center justify-center space-x-2"
+                >
+                  <span>Mulai Prediksi Sampel Semen</span>
+                  <ExternalLink className="w-4 h-4" />
+                </Link>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4 text-center">
+                <div className="text-xs font-mono text-slate-400">DATASET HISTORIS LABORATORIUM</div>
+                <div className="grid grid-cols-2 gap-3 text-left">
+                  <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800">
+                    <div className="text-[11px] text-slate-400">Total Observasi</div>
+                    <div className="text-xl font-bold font-heading text-slate-100">454 Sampel</div>
+                  </div>
+                  <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800">
+                    <div className="text-[11px] text-slate-400">Rerata 28 Hari</div>
+                    <div className="text-xl font-bold font-heading text-cyan-400">356.8 kg/cm²</div>
+                  </div>
+                  <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800">
+                    <div className="text-[11px] text-slate-400">Rentang Min-Max</div>
+                    <div className="text-xl font-bold font-heading text-slate-100">285.5 - 442.6</div>
+                  </div>
+                  <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800">
+                    <div className="text-[11px] text-slate-400">Model Neural Net</div>
+                    <div className="text-xl font-bold font-heading text-emerald-400">Deep MLP</div>
                   </div>
                 </div>
               </div>
-            )}
-
-            {/* SUB-TAB 3: INSIGHT */}
-            {proj2SubTab === "insight" && (
-              <div className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className="p-5 rounded-2xl bg-slate-900 border border-slate-700/80 space-y-3">
-                    <div className="text-xs text-slate-400 font-mono">BATU BARA (KILN)</div>
-                    <div className="text-2xl font-extrabold font-heading text-slate-50">
-                      Rp {(energyInsight.coalCostPerHour / 1000000).toFixed(2)} <span className="text-xs text-slate-400">Juta/Jam</span>
-                    </div>
-                  </div>
-                  <div className="p-5 rounded-2xl bg-slate-900 border border-slate-700/80 space-y-3">
-                    <div className="text-xs text-slate-400 font-mono">LISTRIK (MILLING)</div>
-                    <div className="text-2xl font-extrabold font-heading text-slate-50">
-                      Rp {(energyInsight.electricityCostPerHour / 1000000).toFixed(2)} <span className="text-xs text-slate-400">Juta/Jam</span>
-                    </div>
-                  </div>
-                  <div className="p-5 rounded-2xl bg-slate-900 border border-slate-700/80 space-y-3">
-                    <div className="text-xs text-slate-400 font-mono">SOLAR INDUSTRI</div>
-                    <div className="text-2xl font-extrabold font-heading text-slate-50">
-                      Rp {(energyInsight.dieselCostPerHour / 1000000).toFixed(2)} <span className="text-xs text-slate-400">Juta/Jam</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
+            </div>
           </div>
         )}
       </Card>

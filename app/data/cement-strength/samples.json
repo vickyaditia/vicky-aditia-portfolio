@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "Historical Sample #1",
+    "MgO": 0.82,
+    "CaO": 54.81,
+    "SO3": 1.77,
+    "LOI": 5.73,
+    "FL": 1.0,
+    "Insol": 8.35,
+    "strength28": 377.0
+  },
+  {
+    "id": "Historical Sample #2",
+    "MgO": 1.19,
+    "CaO": 56.47,
+    "SO3": 1.65,
+    "LOI": 8.23,
+    "FL": 1.18,
+    "Insol": 10.69,
+    "strength28": 337.9
+  },
+  {
+    "id": "Historical Sample #3",
+    "MgO": 0.99,
+    "CaO": 57.92,
+    "SO3": 1.68,
+    "LOI": 6.65,
+    "FL": 1.11,
+    "Insol": 6.0,
+    "strength28": 364.3
+  },
+  {
+    "id": "Historical Sample #4",
+    "MgO": 0.67,
+    "CaO": 59.13,
+    "SO3": 2.12,
+    "LOI": 7.3,
+    "FL": 1.45,
+    "Insol": 11.97,
+    "strength28": 339.0
+  },
+  {
+    "id": "Historical Sample #5",
+    "MgO": 1.3,
+    "CaO": 58.64,
+    "SO3": 1.76,
+    "LOI": 5.89,
+    "FL": 0.58,
+    "Insol": 11.71,
+    "strength28": 346.5
+  },
+  {
+    "id": "Historical Sample #6",
+    "MgO": 0.79,
+    "CaO": 53.56,
+    "SO3": 1.66,
+    "LOI": 5.64,
+    "FL": 1.89,
+    "Insol": 13.34,
+    "strength28": 360.1
+  },
+  {
+    "id": "Historical Sample #7",
+    "MgO": 0.9,
+    "CaO": 59.36,
+    "SO3": 1.81,
+    "LOI": 6.08,
+    "FL": 1.83,
+    "Insol": 12.51,
+    "strength28": 311.9
+  },
+  {
+    "id": "Historical Sample #8",
+    "MgO": 0.74,
+    "CaO": 56.02,
+    "SO3": 1.61,
+    "LOI": 5.03,
+    "FL": 1.59,
+    "Insol": 15.8,
+    "strength28": 333.8
+  },
+  {
+    "id": "Historical Sample #9",
+    "MgO": 0.69,
+    "CaO": 57.53,
+    "SO3": 1.66,
+    "LOI": 6.83,
+    "FL": 0.98,
+    "Insol": 9.15,
+    "strength28": 348.9
+  },
+  {
+    "id": "Historical Sample #10",
+    "MgO": 0.91,
+    "CaO": 54.74,
+    "SO3": 1.84,
+    "LOI": 7.7,
+    "FL": 1.12,
+    "Insol": 9.04,
+    "strength28": 350.6
+  },
+  {
+    "id": "Historical Sample #11",
+    "MgO": 0.81,
+    "CaO": 57.91,
+    "SO3": 1.89,
+    "LOI": 5.84,
+    "FL": 1.26,
+    "Insol": 13.02,
+    "strength28": 315.1
+  },
+  {
+    "id": "Historical Sample #12",
+    "MgO": 0.65,
+    "CaO": 57.49,
+    "SO3": 1.66,
+    "LOI": 8.94,
+    "FL": 0.91,
+    "Insol": 6.89,
+    "strength28": 365.4
+  },
+  {
+    "id": "Historical Sample #13",
+    "MgO": 0.66,
+    "CaO": 56.5,
+    "SO3": 1.84,
+    "LOI": 5.99,
+    "FL": 1.48,
+    "Insol": 7.23,
+    "strength28": 388.8
+  },
+  {
+    "id": "Historical Sample #14",
+    "MgO": 0.89,
+    "CaO": 53.98,
+    "SO3": 1.66,
+    "LOI": 7.89,
+    "FL": 0.88,
+    "Insol": 10.3,
+    "strength28": 347.4
+  },
+  {
+    "id": "Historical Sample #15",
+    "MgO": 1.05,
+    "CaO": 55.25,
+    "SO3": 1.96,
+    "LOI": 5.54,
+    "FL": 1.43,
+    "Insol": 14.68,
+    "strength28": 316.8
+  },
+  {
+    "id": "Historical Sample #16",
+    "MgO": 0.53,
+    "CaO": 54.81,
+    "SO3": 1.91,
+    "LOI": 7.39,
+    "FL": 1.37,
+    "Insol": 9.77,
+    "strength28": 388.6
+  },
+  {
+    "id": "Historical Sample #17",
+    "MgO": 0.91,
+    "CaO": 56.09,
+    "SO3": 2.02,
+    "LOI": 8.31,
+    "FL": 1.36,
+    "Insol": 10.23,
+    "strength28": 327.9
+  },
+  {
+    "id": "Historical Sample #18",
+    "MgO": 0.83,
+    "CaO": 55.53,
+    "SO3": 1.87,
+    "LOI": 6.96,
+    "FL": 1.34,
+    "Insol": 16.2,
+    "strength28": 301.6
+  },
+  {
+    "id": "Historical Sample #19",
+    "MgO": 1.03,
+    "CaO": 55.75,
+    "SO3": 2.03,
+    "LOI": 6.98,
+    "FL": 0.4,
+    "Insol": 8.8,
+    "strength28": 364.0
+  },
+  {
+    "id": "Historical Sample #20",
+    "MgO": 0.62,
+    "CaO": 55.7,
+    "SO3": 1.79,
+    "LOI": 11.0,
+    "FL": 1.35,
+    "Insol": 10.69,
+    "strength28": 345.4
+  },
+  {
+    "id": "Historical Sample #21",
+    "MgO": 1.02,
+    "CaO": 51.98,
+    "SO3": 1.84,
+    "LOI": 9.34,
+    "FL": 0.63,
+    "Insol": 13.97,
+    "strength28": 340.1
+  },
+  {
+    "id": "Historical Sample #22",
+    "MgO": 0.95,
+    "CaO": 55.57,
+    "SO3": 1.92,
+    "LOI": 11.0,
+    "FL": 1.29,
+    "Insol": 11.82,
+    "strength28": 312.9
+  },
+  {
+    "id": "Historical Sample #23",
+    "MgO": 0.83,
+    "CaO": 54.7,
+    "SO3": 1.96,
+    "LOI": 6.09,
+    "FL": 1.25,
+    "Insol": 10.07,
+    "strength28": 363.2
+  },
+  {
+    "id": "Historical Sample #24",
+    "MgO": 0.97,
+    "CaO": 57.07,
+    "SO3": 2.0,
+    "LOI": 6.78,
+    "FL": 1.11,
+    "Insol": 8.87,
+    "strength28": 341.1
+  },
+  {
+    "id": "Historical Sample #25",
+    "MgO": 0.83,
+    "CaO": 57.15,
+    "SO3": 1.94,
+    "LOI": 5.96,
+    "FL": 1.57,
+    "Insol": 14.47,
+    "strength28": 314.3
+  },
+  {
+    "id": "Historical Sample #26",
+    "MgO": 0.96,
+    "CaO": 60.15,
+    "SO3": 1.64,
+    "LOI": 5.31,
+    "FL": 0.51,
+    "Insol": 14.81,
+    "strength28": 330.2
+  },
+  {
+    "id": "Historical Sample #27",
+    "MgO": 1.0,
+    "CaO": 56.29,
+    "SO3": 1.85,
+    "LOI": 5.55,
+    "FL": 2.2,
+    "Insol": 11.53,
+    "strength28": 350.1
+  },
+  {
+    "id": "Historical Sample #28",
+    "MgO": 0.92,
+    "CaO": 57.85,
+    "SO3": 1.89,
+    "LOI": 8.25,
+    "FL": 0.9,
+    "Insol": 12.35,
+    "strength28": 303.6
+  },
+  {
+    "id": "Historical Sample #29",
+    "MgO": 1.18,
+    "CaO": 59.09,
+    "SO3": 2.11,
+    "LOI": 6.78,
+    "FL": 0.82,
+    "Insol": 10.92,
+    "strength28": 330.5
+  },
+  {
+    "id": "Historical Sample #30",
+    "MgO": 0.91,
+    "CaO": 58.59,
+    "SO3": 1.45,
+    "LOI": 10.86,
+    "FL": 1.16,
+    "Insol": 10.2,
+    "strength28": 325.7
+  },
+  {
+    "id": "Historical Sample #31",
+    "MgO": 0.75,
+    "CaO": 53.09,
+    "SO3": 1.95,
+    "LOI": 7.95,
+    "FL": 0.7,
+    "Insol": 8.11,
+    "strength28": 392.6
+  },
+  {
+    "id": "Historical Sample #32",
+    "MgO": 0.85,
+    "CaO": 59.74,
+    "SO3": 1.74,
+    "LOI": 4.79,
+    "FL": 1.12,
+    "Insol": 10.57,
+    "strength28": 336.0
+  },
+  {
+    "id": "Historical Sample #33",
+    "MgO": 0.5,
+    "CaO": 56.29,
+    "SO3": 1.74,
+    "LOI": 9.19,
+    "FL": 1.96,
+    "Insol": 13.92,
+    "strength28": 381.6
+  },
+  {
+    "id": "Historical Sample #34",
+    "MgO": 0.86,
+    "CaO": 54.19,
+    "SO3": 2.3,
+    "LOI": 7.92,
+    "FL": 1.23,
+    "Insol": 11.16,
+    "strength28": 369.6
+  },
+  {
+    "id": "Historical Sample #35",
+    "MgO": 0.93,
+    "CaO": 56.11,
+    "SO3": 1.68,
+    "LOI": 6.71,
+    "FL": 1.21,
+    "Insol": 9.92,
+    "strength28": 340.4
+  },
+  {
+    "id": "Historical Sample #36",
+    "MgO": 0.79,
+    "CaO": 56.61,
+    "SO3": 1.74,
+    "LOI": 10.81,
+    "FL": 0.3,
+    "Insol": 13.84,
+    "strength28": 339.6
+  },
+  {
+    "id": "Historical Sample #37",
+    "MgO": 1.09,
+    "CaO": 52.25,
+    "SO3": 1.72,
+    "LOI": 7.06,
+    "FL": 0.66,
+    "Insol": 9.35,
+    "strength28": 390.4
+  },
+  {
+    "id": "Historical Sample #38",
+    "MgO": 0.73,
+    "CaO": 59.9,
+    "SO3": 1.98,
+    "LOI": 10.34,
+    "FL": 1.51,
+    "Insol": 8.51,
+    "strength28": 339.8
+  },
+  {
+    "id": "Historical Sample #39",
+    "MgO": 0.82,
+    "CaO": 57.38,
+    "SO3": 1.55,
+    "LOI": 9.23,
+    "FL": 1.12,
+    "Insol": 10.32,
+    "strength28": 321.2
+  },
+  {
+    "id": "Historical Sample #40",
+    "MgO": 1.01,
+    "CaO": 57.29,
+    "SO3": 1.72,
+    "LOI": 10.12,
+    "FL": 0.79,
+    "Insol": 12.7,
+    "strength28": 301.8
+  },
+  {
+    "id": "Historical Sample #41",
+    "MgO": 0.99,
+    "CaO": 55.78,
+    "SO3": 1.86,
+    "LOI": 5.3,
+    "FL": 1.59,
+    "Insol": 10.78,
+    "strength28": 346.6
+  },
+  {
+    "id": "Historical Sample #42",
+    "MgO": 0.82,
+    "CaO": 58.5,
+    "SO3": 1.65,
+    "LOI": 4.98,
+    "FL": 0.6,
+    "Insol": 12.67,
+    "strength28": 340.7
+  },
+  {
+    "id": "Historical Sample #43",
+    "MgO": 0.71,
+    "CaO": 59.91,
+    "SO3": 1.37,
+    "LOI": 11.0,
+    "FL": 1.3,
+    "Insol": 10.99,
+    "strength28": 352.1
+  },
+  {
+    "id": "Historical Sample #44",
+    "MgO": 0.82,
+    "CaO": 57.2,
+    "SO3": 1.78,
+    "LOI": 10.01,
+    "FL": 1.27,
+    "Insol": 11.58,
+    "strength28": 308.5
+  },
+  {
+    "id": "Historical Sample #45",
+    "MgO": 0.85,
+    "CaO": 56.29,
+    "SO3": 1.85,
+    "LOI": 4.38,
+    "FL": 0.68,
+    "Insol": 13.0,
+    "strength28": 345.5
+  },
+  {
+    "id": "Historical Sample #46",
+    "MgO": 0.93,
+    "CaO": 56.03,
+    "SO3": 1.79,
+    "LOI": 8.5,
+    "FL": 1.0,
+    "Insol": 9.35,
+    "strength28": 335.7
+  },
+  {
+    "id": "Historical Sample #47",
+    "MgO": 0.93,
+    "CaO": 54.44,
+    "SO3": 1.87,
+    "LOI": 4.39,
+    "FL": 1.63,
+    "Insol": 12.35,
+    "strength28": 357.2
+  },
+  {
+    "id": "Historical Sample #48",
+    "MgO": 0.94,
+    "CaO": 58.37,
+    "SO3": 2.12,
+    "LOI": 9.83,
+    "FL": 0.48,
+    "Insol": 8.15,
+    "strength28": 351.0
+  },
+  {
+    "id": "Historical Sample #49",
+    "MgO": 0.81,
+    "CaO": 56.45,
+    "SO3": 1.89,
+    "LOI": 6.35,
+    "FL": 1.29,
+    "Insol": 9.41,
+    "strength28": 350.7
+  },
+  {
+    "id": "Historical Sample #50",
+    "MgO": 0.81,
+    "CaO": 53.59,
+    "SO3": 1.61,
+    "LOI": 5.1,
+    "FL": 0.83,
+    "Insol": 13.75,
+    "strength28": 350.6
+  },
+  {
+    "id": "Historical Sample #51",
+    "MgO": 0.76,
+    "CaO": 61.66,
+    "SO3": 1.89,
+    "LOI": 8.17,
+    "FL": 0.88,
+    "Insol": 12.9,
+    "strength28": 323.6
+  },
+  {
+    "id": "Historical Sample #52",
+    "MgO": 0.81,
+    "CaO": 56.64,
+    "SO3": 2.3,
+    "LOI": 7.61,
+    "FL": 1.68,
+    "Insol": 9.53,
+    "strength28": 375.8
+  },
+  {
+    "id": "Historical Sample #53",
+    "MgO": 0.89,
+    "CaO": 59.94,
+    "SO3": 1.66,
+    "LOI": 11.0,
+    "FL": 1.5,
+    "Insol": 9.87,
+    "strength28": 324.2
+  },
+  {
+    "id": "Historical Sample #54",
+    "MgO": 0.99,
+    "CaO": 58.35,
+    "SO3": 1.91,
+    "LOI": 4.66,
+    "FL": 0.93,
+    "Insol": 10.63,
+    "strength28": 337.0
+  },
+  {
+    "id": "Historical Sample #55",
+    "MgO": 0.89,
+    "CaO": 57.64,
+    "SO3": 1.83,
+    "LOI": 5.13,
+    "FL": 1.37,
+    "Insol": 12.69,
+    "strength28": 320.6
+  },
+  {
+    "id": "Historical Sample #56",
+    "MgO": 0.98,
+    "CaO": 58.56,
+    "SO3": 1.96,
+    "LOI": 8.72,
+    "FL": 1.19,
+    "Insol": 7.23,
+    "strength28": 335.5
+  },
+  {
+    "id": "Historical Sample #57",
+    "MgO": 0.96,
+    "CaO": 56.82,
+    "SO3": 1.84,
+    "LOI": 5.25,
+    "FL": 0.79,
+    "Insol": 13.75,
+    "strength28": 322.9
+  },
+  {
+    "id": "Historical Sample #58",
+    "MgO": 0.89,
+    "CaO": 57.76,
+    "SO3": 1.8,
+    "LOI": 7.86,
+    "FL": 1.6,
+    "Insol": 9.98,
+    "strength28": 321.2
+  },
+  {
+    "id": "Historical Sample #59",
+    "MgO": 0.91,
+    "CaO": 55.48,
+    "SO3": 1.7,
+    "LOI": 7.18,
+    "FL": 1.31,
+    "Insol": 10.07,
+    "strength28": 340.2
+  },
+  {
+    "id": "Historical Sample #60",
+    "MgO": 1.09,
+    "CaO": 54.61,
+    "SO3": 1.75,
+    "LOI": 6.92,
+    "FL": 1.8,
+    "Insol": 11.69,
+    "strength28": 342.3
+  },
+  {
+    "id": "Historical Sample #61",
+    "MgO": 1.05,
+    "CaO": 53.43,
+    "SO3": 1.84,
+    "LOI": 9.58,
+    "FL": 1.25,
+    "Insol": 13.78,
+    "strength28": 313.3
+  },
+  {
+    "id": "Historical Sample #62",
+    "MgO": 0.82,
+    "CaO": 59.22,
+    "SO3": 2.25,
+    "LOI": 7.07,
+    "FL": 1.04,
+    "Insol": 14.71,
+    "strength28": 322.7
+  },
+  {
+    "id": "Historical Sample #63",
+    "MgO": 1.14,
+    "CaO": 55.35,
+    "SO3": 1.71,
+    "LOI": 7.24,
+    "FL": 0.68,
+    "Insol": 9.02,
+    "strength28": 359.5
+  },
+  {
+    "id": "Historical Sample #64",
+    "MgO": 0.75,
+    "CaO": 54.86,
+    "SO3": 1.78,
+    "LOI": 8.27,
+    "FL": 1.84,
+    "Insol": 8.82,
+    "strength28": 357.3
+  },
+  {
+    "id": "Historical Sample #65",
+    "MgO": 1.05,
+    "CaO": 55.97,
+    "SO3": 1.78,
+    "LOI": 9.15,
+    "FL": 0.77,
+    "Insol": 12.14,
+    "strength28": 312.1
+  },
+  {
+    "id": "Historical Sample #66",
+    "MgO": 0.92,
+    "CaO": 57.38,
+    "SO3": 1.85,
+    "LOI": 11.0,
+    "FL": 0.96,
+    "Insol": 9.95,
+    "strength28": 313.7
+  },
+  {
+    "id": "Historical Sample #67",
+    "MgO": 0.81,
+    "CaO": 55.29,
+    "SO3": 1.66,
+    "LOI": 10.18,
+    "FL": 1.79,
+    "Insol": 9.85,
+    "strength28": 333.7
+  },
+  {
+    "id": "Historical Sample #68",
+    "MgO": 0.78,
+    "CaO": 57.34,
+    "SO3": 1.68,
+    "LOI": 9.07,
+    "FL": 1.3,
+    "Insol": 7.58,
+    "strength28": 340.0
+  },
+  {
+    "id": "Historical Sample #69",
+    "MgO": 1.13,
+    "CaO": 59.99,
+    "SO3": 1.67,
+    "LOI": 7.02,
+    "FL": 1.33,
+    "Insol": 12.02,
+    "strength28": 316.4
+  },
+  {
+    "id": "Historical Sample #70",
+    "MgO": 1.0,
+    "CaO": 60.42,
+    "SO3": 1.75,
+    "LOI": 6.2,
+    "FL": 0.67,
+    "Insol": 9.47,
+    "strength28": 329.6
+  },
+  {
+    "id": "Historical Sample #71",
+    "MgO": 0.9,
+    "CaO": 59.99,
+    "SO3": 1.69,
+    "LOI": 8.25,
+    "FL": 1.21,
+    "Insol": 14.07,
+    "strength28": 303.1
+  },
+  {
+    "id": "Historical Sample #72",
+    "MgO": 1.28,
+    "CaO": 55.34,
+    "SO3": 1.69,
+    "LOI": 9.89,
+    "FL": 1.49,
+    "Insol": 15.65,
+    "strength28": 325.3
+  },
+  {
+    "id": "Historical Sample #73",
+    "MgO": 0.99,
+    "CaO": 55.68,
+    "SO3": 1.91,
+    "LOI": 10.02,
+    "FL": 1.55,
+    "Insol": 12.44,
+    "strength28": 312.2
+  },
+  {
+    "id": "Historical Sample #74",
+    "MgO": 1.06,
+    "CaO": 58.74,
+    "SO3": 2.07,
+    "LOI": 9.1,
+    "FL": 1.15,
+    "Insol": 11.57,
+    "strength28": 311.3
+  },
+  {
+    "id": "Historical Sample #75",
+    "MgO": 1.08,
+    "CaO": 54.77,
+    "SO3": 1.86,
+    "LOI": 7.01,
+    "FL": 1.23,
+    "Insol": 14.29,
+    "strength28": 311.0
+  },
+  {
+    "id": "Historical Sample #76",
+    "MgO": 0.93,
+    "CaO": 56.49,
+    "SO3": 1.52,
+    "LOI": 9.29,
+    "FL": 1.48,
+    "Insol": 16.41,
+    "strength28": 303.1
+  },
+  {
+    "id": "Historical Sample #77",
+    "MgO": 0.85,
+    "CaO": 56.84,
+    "SO3": 1.84,
+    "LOI": 10.95,
+    "FL": 1.18,
+    "Insol": 11.89,
+    "strength28": 308.3
+  },
+  {
+    "id": "Historical Sample #78",
+    "MgO": 0.99,
+    "CaO": 56.77,
+    "SO3": 1.7,
+    "LOI": 8.19,
+    "FL": 1.65,
+    "Insol": 8.76,
+    "strength28": 336.3
+  },
+  {
+    "id": "Historical Sample #79",
+    "MgO": 0.92,
+    "CaO": 55.0,
+    "SO3": 2.03,
+    "LOI": 4.75,
+    "FL": 1.0,
+    "Insol": 12.13,
+    "strength28": 356.0
+  },
+  {
+    "id": "Historical Sample #80",
+    "MgO": 1.13,
+    "CaO": 56.27,
+    "SO3": 1.68,
+    "LOI": 11.0,
+    "FL": 0.64,
+    "Insol": 6.0,
+    "strength28": 378.6
+  },
+  {
+    "id": "Historical Sample #81",
+    "MgO": 0.97,
+    "CaO": 55.4,
+    "SO3": 1.59,
+    "LOI": 9.22,
+    "FL": 1.32,
+    "Insol": 9.87,
+    "strength28": 332.2
+  },
+  {
+    "id": "Historical Sample #82",
+    "MgO": 0.71,
+    "CaO": 58.14,
+    "SO3": 1.92,
+    "LOI": 7.6,
+    "FL": 1.96,
+    "Insol": 8.65,
+    "strength28": 358.2
+  },
+  {
+    "id": "Historical Sample #83",
+    "MgO": 0.67,
+    "CaO": 55.02,
+    "SO3": 1.78,
+    "LOI": 8.29,
+    "FL": 1.12,
+    "Insol": 12.06,
+    "strength28": 331.1
+  },
+  {
+    "id": "Historical Sample #84",
+    "MgO": 0.71,
+    "CaO": 59.29,
+    "SO3": 1.77,
+    "LOI": 10.03,
+    "FL": 1.36,
+    "Insol": 12.32,
+    "strength28": 321.7
+  },
+  {
+    "id": "Historical Sample #85",
+    "MgO": 0.99,
+    "CaO": 57.3,
+    "SO3": 1.92,
+    "LOI": 10.46,
+    "FL": 1.3,
+    "Insol": 12.92,
+    "strength28": 301.3
+  },
+  {
+    "id": "Historical Sample #86",
+    "MgO": 0.89,
+    "CaO": 59.28,
+    "SO3": 1.65,
+    "LOI": 11.0,
+    "FL": 1.2,
+    "Insol": 7.79,
+    "strength28": 327.6
+  },
+  {
+    "id": "Historical Sample #87",
+    "MgO": 0.92,
+    "CaO": 55.04,
+    "SO3": 1.96,
+    "LOI": 6.49,
+    "FL": 1.04,
+    "Insol": 6.69,
+    "strength28": 385.2
+  },
+  {
+    "id": "Historical Sample #88",
+    "MgO": 0.83,
+    "CaO": 51.55,
+    "SO3": 1.47,
+    "LOI": 9.32,
+    "FL": 1.53,
+    "Insol": 12.24,
+    "strength28": 352.2
+  },
+  {
+    "id": "Historical Sample #89",
+    "MgO": 0.75,
+    "CaO": 56.3,
+    "SO3": 1.79,
+    "LOI": 5.48,
+    "FL": 1.82,
+    "Insol": 13.33,
+    "strength28": 341.5
+  },
+  {
+    "id": "Historical Sample #90",
+    "MgO": 0.87,
+    "CaO": 56.45,
+    "SO3": 1.83,
+    "LOI": 3.72,
+    "FL": 1.12,
+    "Insol": 9.58,
+    "strength28": 371.2
+  },
+  {
+    "id": "Historical Sample #91",
+    "MgO": 0.75,
+    "CaO": 55.84,
+    "SO3": 2.15,
+    "LOI": 9.08,
+    "FL": 0.99,
+    "Insol": 12.59,
+    "strength28": 333.3
+  },
+  {
+    "id": "Historical Sample #92",
+    "MgO": 1.11,
+    "CaO": 58.25,
+    "SO3": 1.8,
+    "LOI": 6.51,
+    "FL": 1.5,
+    "Insol": 12.16,
+    "strength28": 313.5
+  },
+  {
+    "id": "Historical Sample #93",
+    "MgO": 1.03,
+    "CaO": 57.67,
+    "SO3": 2.0,
+    "LOI": 6.73,
+    "FL": 1.75,
+    "Insol": 11.69,
+    "strength28": 320.5
+  },
+  {
+    "id": "Historical Sample #94",
+    "MgO": 1.21,
+    "CaO": 55.02,
+    "SO3": 2.14,
+    "LOI": 8.2,
+    "FL": 0.96,
+    "Insol": 10.06,
+    "strength28": 351.7
+  },
+  {
+    "id": "Historical Sample #95",
+    "MgO": 0.85,
+    "CaO": 57.25,
+    "SO3": 1.89,
+    "LOI": 6.65,
+    "FL": 1.21,
+    "Insol": 16.36,
+    "strength28": 297.1
+  },
+  {
+    "id": "Historical Sample #96",
+    "MgO": 1.16,
+    "CaO": 57.27,
+    "SO3": 1.8,
+    "LOI": 8.04,
+    "FL": 1.47,
+    "Insol": 8.77,
+    "strength28": 344.9
+  },
+  {
+    "id": "Historical Sample #97",
+    "MgO": 0.86,
+    "CaO": 53.06,
+    "SO3": 1.87,
+    "LOI": 9.09,
+    "FL": 1.03,
+    "Insol": 15.0,
+    "strength28": 312.9
+  },
+  {
+    "id": "Historical Sample #98",
+    "MgO": 0.72,
+    "CaO": 53.47,
+    "SO3": 1.83,
+    "LOI": 9.89,
+    "FL": 1.89,
+    "Insol": 10.12,
+    "strength28": 362.1
+  },
+  {
+    "id": "Historical Sample #99",
+    "MgO": 1.06,
+    "CaO": 56.32,
+    "SO3": 1.76,
+    "LOI": 9.57,
+    "FL": 1.48,
+    "Insol": 7.44,
+    "strength28": 348.5
+  },
+  {
+    "id": "Historical Sample #100",
+    "MgO": 1.12,
+    "CaO": 59.16,
+    "SO3": 1.66,
+    "LOI": 8.59,
+    "FL": 1.42,
+    "Insol": 11.85,
+    "strength28": 310.5
+  }
+]

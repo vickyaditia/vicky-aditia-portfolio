@@ -1,0 +1,10 @@
+{
+  "totalObservations": 454,
+  "meanStrength28Day": 356.84,
+  "minStrength28Day": 285.5,
+  "maxStrength28Day": 442.6,
+  "medianStrength28Day": 355.8,
+  "q25Strength28Day": 340.2,
+  "q75Strength28Day": 371.4,
+  "unit": "kg/cm\u00b2"
+}

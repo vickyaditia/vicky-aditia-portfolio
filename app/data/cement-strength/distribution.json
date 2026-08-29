@@ -1,0 +1,56 @@
+[
+  {
+    "range": "280 - 300",
+    "minVal": 280.0,
+    "maxVal": 300.0,
+    "count": 2
+  },
+  {
+    "range": "300 - 320",
+    "minVal": 300.0,
+    "maxVal": 320.0,
+    "count": 22
+  },
+  {
+    "range": "320 - 340",
+    "minVal": 320.0,
+    "maxVal": 340.0,
+    "count": 88
+  },
+  {
+    "range": "340 - 360",
+    "minVal": 340.0,
+    "maxVal": 360.0,
+    "count": 136
+  },
+  {
+    "range": "360 - 380",
+    "minVal": 360.0,
+    "maxVal": 380.0,
+    "count": 135
+  },
+  {
+    "range": "380 - 400",
+    "minVal": 380.0,
+    "maxVal": 400.0,
+    "count": 53
+  },
+  {
+    "range": "400 - 420",
+    "minVal": 400.0,
+    "maxVal": 420.0,
+    "count": 16
+  },
+  {
+    "range": "420 - 440",
+    "minVal": 420.0,
+    "maxVal": 440.0,
+    "count": 1
+  },
+  {
+    "range": "440 - 460",
+    "minVal": 440.0,
+    "maxVal": 460.0,
+    "count": 1
+  }
+]

@@ -14,6 +14,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   let labRoute: string | null = null;
   if (project.id === "proj-1") labRoute = "/lab/skb-stmkg";
   if (project.id === "proj-2") labRoute = "/lab/klinker-optimization";
+  if (project.id === "proj-3") labRoute = "/lab/cement-strength";
 
   return (
     <div className="group transition-all duration-300 transform hover:-translate-y-1">

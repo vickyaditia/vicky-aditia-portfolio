@@ -9,7 +9,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
-import { GraduationCap, Factory, ArrowRight, Sparkles } from "lucide-react";
+import { GraduationCap, Factory, Beaker, ArrowRight } from "lucide-react";
 
 export default function LabPortalPage() {
   return (
@@ -25,8 +25,8 @@ export default function LabPortalPage() {
               description="Pilih salah satu aplikasi analitik interaktif atau simulator Machine Learning yang telah dideploy di bawah ini."
             />
 
-            {/* Grid 2 Project Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Grid 3 Project Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               
               {/* CARD 1: SKB STMKG 2024 */}
               <Card className="flex flex-col justify-between space-y-6 hover:border-indigo-500/60 transition-all duration-300 group">
@@ -38,7 +38,7 @@ export default function LabPortalPage() {
                     <Badge variant="emerald">Simulasi Machine Learning</Badge>
                   </div>
 
-                  <h3 className="text-2xl font-bold font-heading text-slate-50 group-hover:text-indigo-400 transition-colors">
+                  <h3 className="text-xl font-bold font-heading text-slate-50 group-hover:text-indigo-400 transition-colors">
                     Klasifikasi SKB STMKG 2024
                   </h3>
 
@@ -82,7 +82,7 @@ export default function LabPortalPage() {
                     <Badge variant="emerald">Industrial AI Analytics</Badge>
                   </div>
 
-                  <h3 className="text-2xl font-bold font-heading text-slate-50 group-hover:text-emerald-400 transition-colors">
+                  <h3 className="text-xl font-bold font-heading text-slate-50 group-hover:text-emerald-400 transition-colors">
                     Optimasi Produksi Klinker & Prediksi Biaya Energi
                   </h3>
 
@@ -111,6 +111,52 @@ export default function LabPortalPage() {
                     className="w-full justify-between"
                   >
                     <span>Buka Dashboard Klinker</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </Button>
+                </div>
+              </Card>
+
+              {/* CARD 3: CEMENT STRENGTH PREDICTION */}
+              <Card className="flex flex-col justify-between space-y-6 hover:border-cyan-500/60 transition-all duration-300 group">
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <div className="p-2.5 rounded-xl bg-cyan-500/15 border border-cyan-500/30 text-cyan-400">
+                      <Beaker className="w-6 h-6" />
+                    </div>
+                    <Badge variant="emerald" className="bg-cyan-500/10 border-cyan-500/30 text-cyan-400">
+                      Deep Learning / Regression
+                    </Badge>
+                  </div>
+
+                  <h3 className="text-xl font-bold font-heading text-slate-50 group-hover:text-cyan-400 transition-colors">
+                    Prediksi Kuat Tekan Semen 28 Hari
+                  </h3>
+
+                  <p className="text-sm text-slate-300 font-sans leading-relaxed">
+                    Prediksi kuat tekan semen pada umur 28 hari berdasarkan karakteristik kimia menggunakan Deep Neural Network.
+                  </p>
+
+                  <div className="flex flex-wrap gap-2 pt-2 text-[11px] font-mono">
+                    <span className="px-2.5 py-1 rounded-full bg-slate-950 border border-slate-800 text-cyan-400">
+                      Deep Learning
+                    </span>
+                    <span className="px-2.5 py-1 rounded-full bg-slate-950 border border-slate-800 text-slate-300">
+                      Regression
+                    </span>
+                    <span className="px-2.5 py-1 rounded-full bg-slate-950 border border-slate-800 text-slate-300">
+                      Cement Quality
+                    </span>
+                  </div>
+                </div>
+
+                <div className="pt-4 border-t border-slate-800">
+                  <Button
+                    href="/lab/cement-strength"
+                    variant="primary"
+                    size="md"
+                    className="w-full justify-between bg-cyan-600 hover:bg-cyan-500 text-slate-950 font-bold"
+                  >
+                    <span>Buka Prediksi</span>
                     <ArrowRight className="w-4 h-4" />
                   </Button>
                 </div>
