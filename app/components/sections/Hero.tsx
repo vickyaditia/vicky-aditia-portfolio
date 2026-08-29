@@ -5,8 +5,11 @@ import { motion } from "framer-motion";
 import { ArrowRight, Download, CheckCircle2 } from "lucide-react";
 import { Button } from "../ui/Button";
 import { Badge } from "../ui/Badge";
+import { useLanguage } from "../../context/LanguageContext";
 
 export const Hero: React.FC = () => {
+  const { language } = useLanguage();
+
   return (
     <section className="relative min-h-[80vh] flex items-center pt-28 pb-20 md:pt-36 md:pb-24 border-b border-slate-700/50">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -25,16 +28,20 @@ export const Hero: React.FC = () => {
             </Badge>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-50 font-heading leading-[1.15]">
-              Data Scientist yang Mengubah Telemetri Industri & Data Operasional Menjadi Keputusan Bisnis Terukur
+              {language === "ID"
+                ? "Data Scientist yang Mengubah Telemetri Industri & Data Operasional Menjadi Keputusan Bisnis Terukur"
+                : "Data Scientist Transforming Industrial Telemetry & Operational Data into Measurable Business Decisions"}
             </h1>
 
             <p className="text-base sm:text-lg text-slate-400 font-sans leading-relaxed max-w-2xl">
-              Lulusan Sains Data ITERA (IPK 3.09) berpengalaman membangun model Machine Learning optimasi biaya bahan bakar klinker semen di PT Semen Gresik, serta merancang otomatisasi data penjualan 7 brand produk di PT Depoguna Bangunan Online.
+              {language === "ID"
+                ? "Lulusan Sains Data ITERA (IPK 3.09) berpengalaman membangun model Machine Learning optimasi biaya bahan bakar klinker semen di PT Semen Gresik, serta merancang otomatisasi data penjualan 7 brand produk di PT Depoguna Bangunan Online."
+                : "Data Science graduate from ITERA (GPA 3.09) experienced in building Machine Learning models for clinker fuel cost optimization at PT Semen Gresik, and engineering sales data automation across 7 product brands at PT Depoguna Bangunan Online."}
             </p>
 
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <Button href="#projects" variant="primary" size="lg">
-                <span>Lihat Proyek</span>
+                <span>{language === "ID" ? "Lihat Proyek" : "View Projects"}</span>
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
 
@@ -47,32 +54,40 @@ export const Hero: React.FC = () => {
                 size="lg"
               >
                 <Download className="w-4 h-4 mr-2" />
-                Download CV
+                {language === "ID" ? "Unduh CV" : "Download CV"}
               </Button>
             </div>
 
-            {/* 3-4 Secondary Compact Metrics */}
+            {/* 4 Secondary Compact Metrics */}
             <div className="pt-8 border-t border-slate-700/60 grid grid-cols-2 sm:grid-cols-4 gap-6">
               <div className="space-y-1">
-                <div className="text-xs text-slate-400 font-sans">Data Diproses</div>
+                <div className="text-xs text-slate-400 font-sans">
+                  {language === "ID" ? "Data Diproses" : "Data Processed"}
+                </div>
                 <div className="text-lg font-bold text-slate-50 font-heading">68,000+ Rows</div>
               </div>
               <div className="space-y-1">
-                <div className="text-xs text-slate-400 font-sans">Akurasi Model</div>
+                <div className="text-xs text-slate-400 font-sans">
+                  {language === "ID" ? "Akurasi Model" : "Model Accuracy"}
+                </div>
                 <div className="text-lg font-bold text-emerald-400 font-heading">R² = 0.934</div>
               </div>
               <div className="space-y-1">
-                <div className="text-xs text-slate-400 font-sans">Efisiensi Waktu</div>
+                <div className="text-xs text-slate-400 font-sans">
+                  {language === "ID" ? "Efisiensi Waktu" : "Time Savings"}
+                </div>
                 <div className="text-lg font-bold text-slate-50 font-heading">88% Faster</div>
               </div>
               <div className="space-y-1">
-                <div className="text-xs text-slate-400 font-sans">Pendidikan</div>
-                <div className="text-lg font-bold text-slate-50 font-heading">IPK 3.09 / 4.00</div>
+                <div className="text-xs text-slate-400 font-sans">
+                  {language === "ID" ? "Pendidikan" : "Education"}
+                </div>
+                <div className="text-lg font-bold text-slate-50 font-heading">GPA 3.09 / 4.00</div>
               </div>
             </div>
           </motion.div>
 
-          {/* Right Column: Profile Photo Container */}
+          {/* Right Column: Profile Avatar */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -90,7 +105,7 @@ export const Hero: React.FC = () => {
                 </div>
                 <div className="inline-flex items-center space-x-1 px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 text-[11px] font-sans">
                   <CheckCircle2 className="w-3 h-3 mr-1" />
-                  <span>Available for Hire</span>
+                  <span>{language === "ID" ? "Siap Bekerja" : "Available for Hire"}</span>
                 </div>
               </div>
             </div>

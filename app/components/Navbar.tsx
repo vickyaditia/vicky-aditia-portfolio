@@ -2,14 +2,16 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Download, Menu, X, Sparkles, Sun, Moon } from "lucide-react";
+import { Download, Menu, X, Sparkles, Sun, Moon, Globe } from "lucide-react";
 import { Button } from "./ui/Button";
 import { useTheme } from "../context/ThemeContext";
+import { useLanguage } from "../context/LanguageContext";
 
 export const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
+  const { language, toggleLanguage } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,11 +22,11 @@ export const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { label: "Proyek", href: "/#projects" },
-    { label: "Skill", href: "/#skills" },
-    { label: "Pengalaman", href: "/#experience" },
-    { label: "Lab Portal", href: "/lab", isHighlight: true },
-    { label: "Kontak", href: "/#contact" },
+    { label: language === "ID" ? "Proyek" : "Projects", href: "/#projects" },
+    { label: language === "ID" ? "Skill" : "Skills", href: "/#skills" },
+    { label: language === "ID" ? "Pengalaman" : "Experience", href: "/#experience" },
+    { label: language === "ID" ? "Lab Portal" : "Lab Portal", href: "/lab", isHighlight: true },
+    { label: language === "ID" ? "Kontak" : "Contact", href: "/#contact" },
   ];
 
   return (
@@ -66,8 +68,21 @@ export const Navbar: React.FC = () => {
           ))}
         </nav>
 
-        {/* Right Action Controls: Theme Toggle & CV Download */}
+        {/* Right Action Controls: Language Toggle, Theme Toggle & CV Download */}
         <div className="hidden md:flex items-center space-x-3">
+          {/* ID / ENG Language Switcher */}
+          <button
+            onClick={toggleLanguage}
+            className="px-2.5 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 transition-all flex items-center space-x-1.5 text-xs font-mono font-bold"
+            title={`Ganti bahasa ke ${language === "ID" ? "English" : "Bahasa Indonesia"}`}
+            aria-label="Toggle Language ID/EN"
+          >
+            <Globe className="w-3.5 h-3.5 text-emerald-400" />
+            <span className={language === "ID" ? "text-emerald-400 font-extrabold" : "text-slate-400"}>ID</span>
+            <span className="text-slate-600">/</span>
+            <span className={language === "EN" ? "text-emerald-400 font-extrabold" : "text-slate-400"}>ENG</span>
+          </button>
+
           {/* Light / Dark Mode Toggle Button */}
           <button
             onClick={toggleTheme}
@@ -95,8 +110,19 @@ export const Navbar: React.FC = () => {
           </Button>
         </div>
 
-        {/* Mobile Controls (Theme Toggle + Hamburger) */}
+        {/* Mobile Controls (Language Toggle + Theme Toggle + Hamburger) */}
         <div className="flex md:hidden items-center space-x-2">
+          {/* Mobile ID/ENG Toggle */}
+          <button
+            onClick={toggleLanguage}
+            className="px-2 py-1 rounded-lg bg-slate-800 border border-slate-700 text-xs font-mono font-bold flex items-center space-x-1"
+            aria-label="Toggle Language ID/EN"
+          >
+            <span className={language === "ID" ? "text-emerald-400" : "text-slate-400"}>ID</span>
+            <span className="text-slate-600">/</span>
+            <span className={language === "EN" ? "text-emerald-400" : "text-slate-400"}>ENG</span>
+          </button>
+
           <button
             onClick={toggleTheme}
             className="p-2 rounded-lg bg-slate-800 border border-slate-700 text-slate-100"

@@ -6,20 +6,27 @@ import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
 import { Card } from "../ui/Card";
 import { Button } from "../ui/Button";
+import { useLanguage } from "../../context/LanguageContext";
 
 export const Contact: React.FC = () => {
+  const { language } = useLanguage();
+
   return (
     <Container id="contact">
       <SectionHeading
-        badgeText="KONTAK & KOLABORASI"
-        title="Mari Diskusikan Proyek Data Anda"
-        description="Terbuka untuk peluang karir sebagai Data Scientist, Data Analyst, maupun kolaborasi otomatisasi pipeline data."
+        badgeText={language === "ID" ? "KONTAK & KOLABORASI" : "CONTACT & COLLABORATION"}
+        title={language === "ID" ? "Mari Diskusikan Proyek Data Anda" : "Let's Discuss Your Data Project"}
+        description={
+          language === "ID"
+            ? "Terbuka untuk peluang karir sebagai Data Scientist, Data Analyst, maupun kolaborasi otomatisasi pipeline data."
+            : "Open for career opportunities as Data Scientist, Data Analyst, and data pipeline automation collaborations."
+        }
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <Card className="space-y-6">
           <h3 className="text-xl font-bold text-slate-50 font-heading">
-            Saluran Kontak Direct
+            {language === "ID" ? "Saluran Kontak Direct" : "Direct Contact Channels"}
           </h3>
           <div className="space-y-4 font-sans text-sm">
             <a
@@ -65,10 +72,12 @@ export const Contact: React.FC = () => {
         <Card className="flex flex-col justify-between space-y-6">
           <div className="space-y-3">
             <h3 className="text-xl font-bold text-slate-50 font-heading">
-              Unduh Curriculum Vitae (PDF)
+              {language === "ID" ? "Unduh Curriculum Vitae (PDF)" : "Download Curriculum Vitae (PDF)"}
             </h3>
             <p className="text-sm text-slate-400 leading-relaxed font-sans">
-              Dapatkan salinan CV format ATS standar 1 halaman lengkap dengan riwayat proyek industri dan pendidikan.
+              {language === "ID"
+                ? "Dapatkan salinan CV format ATS standar 1 halaman lengkap dengan riwayat proyek industri dan pendidikan."
+                : "Get a copy of standard 1-page ATS-formatted CV complete with industry project experience and education history."}
             </p>
           </div>
 
@@ -82,7 +91,7 @@ export const Contact: React.FC = () => {
             className="w-full"
           >
             <Download className="w-4 h-4 mr-2" />
-            Download CV ATS (PDF)
+            {language === "ID" ? "Download CV ATS (PDF)" : "Download ATS CV (PDF)"}
           </Button>
         </Card>
       </div>

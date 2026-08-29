@@ -5,11 +5,14 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Download, Mail, Github, Linkedin, MapPin, Database, Award, HardHat } from "lucide-react";
 import { Button } from "./ui/Button";
+import { useLanguage } from "../context/LanguageContext";
 
 export const AuthoryHeader: React.FC = () => {
+  const { language } = useLanguage();
+
   return (
     <section className="relative pt-28 pb-16 border-b border-slate-700/60 overflow-hidden min-h-[460px] flex items-center">
-      {/* Industrial Field Background Image (Brightened & Vivid) */}
+      {/* Industrial Field Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/hero-bg.jpg"
@@ -18,7 +21,6 @@ export const AuthoryHeader: React.FC = () => {
           className="object-cover object-center filter brightness-105 contrast-105 opacity-60"
           priority
         />
-        {/* Lighter Gradient Overlay for Clear Background Visibility + High Contrast Text */}
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/65 to-slate-950/45" />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/50" />
       </div>
@@ -30,7 +32,7 @@ export const AuthoryHeader: React.FC = () => {
           transition={{ duration: 0.4 }}
           className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8"
         >
-          {/* Candidate Profile Avatar (Cropped Waist-Up) & Bio */}
+          {/* Candidate Profile Avatar & Bio */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
             <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full p-1 bg-gradient-to-tr from-emerald-500 via-slate-600 to-emerald-400 shrink-0 shadow-xl shadow-emerald-500/20">
               <div className="w-full h-full rounded-full overflow-hidden relative border-2 border-slate-900 bg-slate-900">
@@ -68,12 +70,12 @@ export const AuthoryHeader: React.FC = () => {
                 <span>•</span>
                 <span className="flex items-center">
                   <Database className="w-3.5 h-3.5 mr-1 text-emerald-400" />
-                  68,000+ Rows Processed
+                  {language === "ID" ? "68.000+ Baris Data Diproses" : "68,000+ Rows Processed"}
                 </span>
                 <span>•</span>
                 <span className="flex items-center">
                   <Award className="w-3.5 h-3.5 mr-1 text-slate-300" />
-                  IPK 3.09 / 4.00
+                  GPA 3.09 / 4.00
                 </span>
               </div>
             </div>
@@ -118,7 +120,7 @@ export const AuthoryHeader: React.FC = () => {
               size="md"
             >
               <Download className="w-3.5 h-3.5 mr-1.5" />
-              Download CV
+              {language === "ID" ? "Unduh CV" : "Download CV"}
             </Button>
           </div>
         </motion.div>
@@ -126,7 +128,9 @@ export const AuthoryHeader: React.FC = () => {
         {/* Value Proposition Statement */}
         <div className="mt-8 text-sm text-slate-200 leading-relaxed font-sans max-w-4xl bg-slate-950/60 p-5 rounded-xl border border-slate-800/80 backdrop-blur-md shadow-lg">
           <span className="font-semibold text-emerald-400">Value Proposition: </span>
-          Lulusan Sains Data ITERA (IPK 3.09) berpengalaman membangun model Machine Learning optimasi biaya bahan bakar klinker semen di PT Semen Gresik, serta merancang otomatisasi data penjualan 7 brand produk di PT Depoguna Bangunan Online.
+          {language === "ID"
+            ? "Lulusan Sains Data ITERA (IPK 3.09) berpengalaman membangun model Machine Learning optimasi biaya bahan bakar klinker semen di PT Semen Gresik, serta merancang otomatisasi data penjualan 7 brand produk di PT Depoguna Bangunan Online."
+            : "Data Science graduate from ITERA (GPA 3.09) experienced in building Machine Learning models for clinker fuel cost optimization at PT Semen Gresik, and engineering sales data automation across 7 product brands at PT Depoguna Bangunan Online."}
         </div>
       </div>
     </section>
