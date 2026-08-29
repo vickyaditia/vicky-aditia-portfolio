@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "./context/ThemeContext";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -43,9 +44,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className={`${inter.variable} ${spaceGrotesk.variable} scroll-smooth`}>
-      <body className="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen">
-        {children}
+    <html lang="id" className={`${inter.variable} ${spaceGrotesk.variable} dark scroll-smooth`}>
+      <body className="font-sans antialiased min-h-screen">
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

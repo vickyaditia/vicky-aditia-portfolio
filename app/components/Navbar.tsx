@@ -2,12 +2,14 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Download, Menu, X, Sparkles } from "lucide-react";
+import { Download, Menu, X, Sparkles, Sun, Moon } from "lucide-react";
 import { Button } from "./ui/Button";
+import { useTheme } from "../context/ThemeContext";
 
 export const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,8 +66,22 @@ export const Navbar: React.FC = () => {
           ))}
         </nav>
 
-        {/* Right CTA Button */}
-        <div className="hidden md:flex items-center">
+        {/* Right Action Controls: Theme Toggle & CV Download */}
+        <div className="hidden md:flex items-center space-x-3">
+          {/* Light / Dark Mode Toggle Button */}
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 transition-colors flex items-center justify-center"
+            title={`Switch to ${theme === "dark" ? "Light" : "Dark"} Mode`}
+            aria-label="Toggle Light / Dark Mode"
+          >
+            {theme === "dark" ? (
+              <Sun className="w-4 h-4 text-amber-400" />
+            ) : (
+              <Moon className="w-4 h-4 text-indigo-500" />
+            )}
+          </button>
+
           <Button
             href="/docs/CV.pdf"
             target="_blank"
@@ -79,8 +95,20 @@ export const Navbar: React.FC = () => {
           </Button>
         </div>
 
-        {/* Mobile Hamburger Toggle */}
-        <div className="flex md:hidden items-center">
+        {/* Mobile Controls (Theme Toggle + Hamburger) */}
+        <div className="flex md:hidden items-center space-x-2">
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-lg bg-slate-800 border border-slate-700 text-slate-100"
+            aria-label="Toggle Theme"
+          >
+            {theme === "dark" ? (
+              <Sun className="w-4 h-4 text-amber-400" />
+            ) : (
+              <Moon className="w-4 h-4 text-indigo-400" />
+            )}
+          </button>
+
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="p-2 rounded-lg bg-slate-800 border border-slate-700 text-slate-100"
