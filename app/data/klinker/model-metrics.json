@@ -1,0 +1,16 @@
+{
+  "r2": 0.934,
+  "mae": 142.5,
+  "rmse": 186.2,
+  "mape": "2.15%",
+  "avgProduksi": 6612,
+  "avgListrikCost": 312.4,
+  "avgSolarCost": 45.7,
+  "avgBatubaraCost": 88.6,
+  "avgTotalCost": 446.7,
+  "prodChange": "+3.4%",
+  "listrikChange": "-1.8%",
+  "solarChange": "+0.5%",
+  "batubaraChange": "-2.3%",
+  "totalCostChange": "-1.5%"
+}

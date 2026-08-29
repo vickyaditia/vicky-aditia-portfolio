@@ -1,0 +1,7 @@
+[
+  { "feature": "Stok Terak Total", "importance": 0.38, "description": "Akumulasi stok klinker di dome & yard" },
+  { "feature": "Kebutuhan FM", "importance": 0.24, "description": "Laju konsumsi penggilingan Finish Mill 1 & 2" },
+  { "feature": "Rilis Semen", "importance": 0.18, "description": "Volume rilis pasar semen PCC, PPC, OPC" },
+  { "feature": "Produksi Semen", "importance": 0.12, "description": "Total produksi semen siap kemas" },
+  { "feature": "Stok Dome", "importance": 0.08, "description": "Kapasitas penyimpanan indoor dome terak" }
+]

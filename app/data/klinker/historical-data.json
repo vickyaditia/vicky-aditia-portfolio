@@ -1,0 +1,3287 @@
+[
+  {
+    "tanggal": "2023-01-01",
+    "aktual": 6600,
+    "prediksi": 6570,
+    "listrikCost": 312.2,
+    "solarCost": 46.3,
+    "batubaraCost": 89.6,
+    "totalCost": 448.1
+  },
+  {
+    "tanggal": "2023-01-02",
+    "aktual": 6794,
+    "prediksi": 6858,
+    "listrikCost": 321.5,
+    "solarCost": 47.7,
+    "batubaraCost": 92.3,
+    "totalCost": 461.5
+  },
+  {
+    "tanggal": "2023-01-03",
+    "aktual": 6976,
+    "prediksi": 6956,
+    "listrikCost": 330.2,
+    "solarCost": 48.9,
+    "batubaraCost": 94.8,
+    "totalCost": 473.9
+  },
+  {
+    "tanggal": "2023-01-04",
+    "aktual": 7133,
+    "prediksi": 7074,
+    "listrikCost": 337.7,
+    "solarCost": 50,
+    "batubaraCost": 97,
+    "totalCost": 484.7
+  },
+  {
+    "tanggal": "2023-01-05",
+    "aktual": 7256,
+    "prediksi": 7326,
+    "listrikCost": 343.6,
+    "solarCost": 50.8,
+    "batubaraCost": 98.7,
+    "totalCost": 493.1
+  },
+  {
+    "tanggal": "2023-01-06",
+    "aktual": 7341,
+    "prediksi": 7375,
+    "listrikCost": 347.7,
+    "solarCost": 51.4,
+    "batubaraCost": 99.9,
+    "totalCost": 499
+  },
+  {
+    "tanggal": "2023-01-07",
+    "aktual": 7386,
+    "prediksi": 7315,
+    "listrikCost": 350,
+    "solarCost": 51.7,
+    "batubaraCost": 100.6,
+    "totalCost": 502.3
+  },
+  {
+    "tanggal": "2023-01-08",
+    "aktual": 7393,
+    "prediksi": 7344,
+    "listrikCost": 350.4,
+    "solarCost": 51.7,
+    "batubaraCost": 100.7,
+    "totalCost": 502.8
+  },
+  {
+    "tanggal": "2023-01-09",
+    "aktual": 7370,
+    "prediksi": 7454,
+    "listrikCost": 349.5,
+    "solarCost": 51.5,
+    "batubaraCost": 100.5,
+    "totalCost": 501.5
+  },
+  {
+    "tanggal": "2023-01-10",
+    "aktual": 7327,
+    "prediksi": 7389,
+    "listrikCost": 347.5,
+    "solarCost": 51.2,
+    "batubaraCost": 99.9,
+    "totalCost": 498.6
+  },
+  {
+    "tanggal": "2023-01-11",
+    "aktual": 7275,
+    "prediksi": 7168,
+    "listrikCost": 345.2,
+    "solarCost": 50.8,
+    "batubaraCost": 99.3,
+    "totalCost": 495.3
+  },
+  {
+    "tanggal": "2023-01-12",
+    "aktual": 7228,
+    "prediksi": 7201,
+    "listrikCost": 343.1,
+    "solarCost": 50.4,
+    "batubaraCost": 98.7,
+    "totalCost": 492.2
+  },
+  {
+    "tanggal": "2023-01-13",
+    "aktual": 7196,
+    "prediksi": 7276,
+    "listrikCost": 341.6,
+    "solarCost": 50.2,
+    "batubaraCost": 98.3,
+    "totalCost": 490.1
+  },
+  {
+    "tanggal": "2023-01-14",
+    "aktual": 7189,
+    "prediksi": 7195,
+    "listrikCost": 341.3,
+    "solarCost": 50.1,
+    "batubaraCost": 98.2,
+    "totalCost": 489.6
+  },
+  {
+    "tanggal": "2023-01-15",
+    "aktual": 7215,
+    "prediksi": 7167,
+    "listrikCost": 342.6,
+    "solarCost": 50.2,
+    "batubaraCost": 98.6,
+    "totalCost": 491.4
+  },
+  {
+    "tanggal": "2023-01-16",
+    "aktual": 7274,
+    "prediksi": 7273,
+    "listrikCost": 345.4,
+    "solarCost": 50.6,
+    "batubaraCost": 99.4,
+    "totalCost": 495.4
+  },
+  {
+    "tanggal": "2023-01-17",
+    "aktual": 7366,
+    "prediksi": 7421,
+    "listrikCost": 349.7,
+    "solarCost": 51.2,
+    "batubaraCost": 100.7,
+    "totalCost": 501.6
+  },
+  {
+    "tanggal": "2023-01-18",
+    "aktual": 7485,
+    "prediksi": 7438,
+    "listrikCost": 355.3,
+    "solarCost": 52,
+    "batubaraCost": 102.3,
+    "totalCost": 509.6
+  },
+  {
+    "tanggal": "2023-01-19",
+    "aktual": 7621,
+    "prediksi": 7578,
+    "listrikCost": 361.6,
+    "solarCost": 52.9,
+    "batubaraCost": 104.1,
+    "totalCost": 518.6
+  },
+  {
+    "tanggal": "2023-01-20",
+    "aktual": 7762,
+    "prediksi": 7854,
+    "listrikCost": 368.2,
+    "solarCost": 53.8,
+    "batubaraCost": 106,
+    "totalCost": 528
+  },
+  {
+    "tanggal": "2023-01-21",
+    "aktual": 7897,
+    "prediksi": 7909,
+    "listrikCost": 374.5,
+    "solarCost": 54.7,
+    "batubaraCost": 107.8,
+    "totalCost": 537
+  },
+  {
+    "tanggal": "2023-01-22",
+    "aktual": 8012,
+    "prediksi": 7924,
+    "listrikCost": 379.9,
+    "solarCost": 55.5,
+    "batubaraCost": 109.3,
+    "totalCost": 544.7
+  },
+  {
+    "tanggal": "2023-01-23",
+    "aktual": 8097,
+    "prediksi": 8073,
+    "listrikCost": 383.8,
+    "solarCost": 56.1,
+    "batubaraCost": 110.5,
+    "totalCost": 550.4
+  },
+  {
+    "tanggal": "2023-01-24",
+    "aktual": 8143,
+    "prediksi": 8237,
+    "listrikCost": 385.8,
+    "solarCost": 56.4,
+    "batubaraCost": 111.1,
+    "totalCost": 553.3
+  },
+  {
+    "tanggal": "2023-01-25",
+    "aktual": 8146,
+    "prediksi": 8179,
+    "listrikCost": 385.9,
+    "solarCost": 56.4,
+    "batubaraCost": 111.1,
+    "totalCost": 553.4
+  },
+  {
+    "tanggal": "2023-01-26",
+    "aktual": 8105,
+    "prediksi": 7995,
+    "listrikCost": 383.8,
+    "solarCost": 56.1,
+    "batubaraCost": 110.5,
+    "totalCost": 550.4
+  },
+  {
+    "tanggal": "2023-01-27",
+    "aktual": 8025,
+    "prediksi": 8027,
+    "listrikCost": 379.9,
+    "solarCost": 55.6,
+    "batubaraCost": 109.4,
+    "totalCost": 544.9
+  },
+  {
+    "tanggal": "2023-01-28",
+    "aktual": 7913,
+    "prediksi": 7988,
+    "listrikCost": 374.6,
+    "solarCost": 54.8,
+    "batubaraCost": 107.9,
+    "totalCost": 537.3
+  },
+  {
+    "tanggal": "2023-01-29",
+    "aktual": 7780,
+    "prediksi": 7758,
+    "listrikCost": 368.2,
+    "solarCost": 53.9,
+    "batubaraCost": 106,
+    "totalCost": 528.1
+  },
+  {
+    "tanggal": "2023-01-30",
+    "aktual": 7638,
+    "prediksi": 7602,
+    "listrikCost": 361.3,
+    "solarCost": 52.9,
+    "batubaraCost": 104.1,
+    "totalCost": 518.3
+  },
+  {
+    "tanggal": "2023-01-31",
+    "aktual": 7501,
+    "prediksi": 7525,
+    "listrikCost": 354.8,
+    "solarCost": 52,
+    "batubaraCost": 102.2,
+    "totalCost": 509
+  },
+  {
+    "tanggal": "2023-02-01",
+    "aktual": 7379,
+    "prediksi": 7416,
+    "listrikCost": 348.9,
+    "solarCost": 51.2,
+    "batubaraCost": 100.5,
+    "totalCost": 500.6
+  },
+  {
+    "tanggal": "2023-02-02",
+    "aktual": 7284,
+    "prediksi": 7217,
+    "listrikCost": 344.3,
+    "solarCost": 50.6,
+    "batubaraCost": 99.2,
+    "totalCost": 494.1
+  },
+  {
+    "tanggal": "2023-02-03",
+    "aktual": 7220,
+    "prediksi": 7200,
+    "listrikCost": 341.1,
+    "solarCost": 50.2,
+    "batubaraCost": 98.3,
+    "totalCost": 489.6
+  },
+  {
+    "tanggal": "2023-02-04",
+    "aktual": 7191,
+    "prediksi": 7297,
+    "listrikCost": 339.6,
+    "solarCost": 50,
+    "batubaraCost": 97.8,
+    "totalCost": 487.4
+  },
+  {
+    "tanggal": "2023-02-05",
+    "aktual": 7194,
+    "prediksi": 7179,
+    "listrikCost": 339.6,
+    "solarCost": 50,
+    "batubaraCost": 97.8,
+    "totalCost": 487.4
+  },
+  {
+    "tanggal": "2023-02-06",
+    "aktual": 7223,
+    "prediksi": 7128,
+    "listrikCost": 340.8,
+    "solarCost": 50.3,
+    "batubaraCost": 98.1,
+    "totalCost": 489.2
+  },
+  {
+    "tanggal": "2023-02-07",
+    "aktual": 7269,
+    "prediksi": 7274,
+    "listrikCost": 342.8,
+    "solarCost": 50.6,
+    "batubaraCost": 98.7,
+    "totalCost": 492.1
+  },
+  {
+    "tanggal": "2023-02-08",
+    "aktual": 7321,
+    "prediksi": 7414,
+    "listrikCost": 345.2,
+    "solarCost": 51,
+    "batubaraCost": 99.3,
+    "totalCost": 495.5
+  },
+  {
+    "tanggal": "2023-02-09",
+    "aktual": 7366,
+    "prediksi": 7370,
+    "listrikCost": 347.2,
+    "solarCost": 51.4,
+    "batubaraCost": 99.8,
+    "totalCost": 498.4
+  },
+  {
+    "tanggal": "2023-02-10",
+    "aktual": 7392,
+    "prediksi": 7290,
+    "listrikCost": 348.3,
+    "solarCost": 51.6,
+    "batubaraCost": 100.1,
+    "totalCost": 500
+  },
+  {
+    "tanggal": "2023-02-11",
+    "aktual": 7388,
+    "prediksi": 7417,
+    "listrikCost": 348,
+    "solarCost": 51.6,
+    "batubaraCost": 100,
+    "totalCost": 499.6
+  },
+  {
+    "tanggal": "2023-02-12",
+    "aktual": 7349,
+    "prediksi": 7409,
+    "listrikCost": 346.1,
+    "solarCost": 51.4,
+    "batubaraCost": 99.4,
+    "totalCost": 496.9
+  },
+  {
+    "tanggal": "2023-02-13",
+    "aktual": 7269,
+    "prediksi": 7224,
+    "listrikCost": 342.3,
+    "solarCost": 50.8,
+    "batubaraCost": 98.3,
+    "totalCost": 491.4
+  },
+  {
+    "tanggal": "2023-02-14",
+    "aktual": 7150,
+    "prediksi": 7135,
+    "listrikCost": 336.6,
+    "solarCost": 50,
+    "batubaraCost": 96.6,
+    "totalCost": 483.2
+  },
+  {
+    "tanggal": "2023-02-15",
+    "aktual": 6997,
+    "prediksi": 7038,
+    "listrikCost": 329.4,
+    "solarCost": 49,
+    "batubaraCost": 94.5,
+    "totalCost": 472.9
+  },
+  {
+    "tanggal": "2023-02-16",
+    "aktual": 6818,
+    "prediksi": 6830,
+    "listrikCost": 321,
+    "solarCost": 47.8,
+    "batubaraCost": 92.1,
+    "totalCost": 460.9
+  },
+  {
+    "tanggal": "2023-02-17",
+    "aktual": 6624,
+    "prediksi": 6546,
+    "listrikCost": 311.8,
+    "solarCost": 46.5,
+    "batubaraCost": 89.4,
+    "totalCost": 447.7
+  },
+  {
+    "tanggal": "2023-02-18",
+    "aktual": 6429,
+    "prediksi": 6437,
+    "listrikCost": 302.7,
+    "solarCost": 45.1,
+    "batubaraCost": 86.7,
+    "totalCost": 434.5
+  },
+  {
+    "tanggal": "2023-02-19",
+    "aktual": 6245,
+    "prediksi": 6355,
+    "listrikCost": 294,
+    "solarCost": 43.9,
+    "batubaraCost": 84.2,
+    "totalCost": 422.1
+  },
+  {
+    "tanggal": "2023-02-20",
+    "aktual": 6085,
+    "prediksi": 6041,
+    "listrikCost": 286.6,
+    "solarCost": 42.8,
+    "batubaraCost": 82.1,
+    "totalCost": 411.5
+  },
+  {
+    "tanggal": "2023-02-21",
+    "aktual": 5957,
+    "prediksi": 5866,
+    "listrikCost": 280.6,
+    "solarCost": 41.9,
+    "batubaraCost": 80.3,
+    "totalCost": 402.8
+  },
+  {
+    "tanggal": "2023-02-22",
+    "aktual": 5867,
+    "prediksi": 5901,
+    "listrikCost": 276.4,
+    "solarCost": 41.3,
+    "batubaraCost": 79.1,
+    "totalCost": 396.8
+  },
+  {
+    "tanggal": "2023-02-23",
+    "aktual": 5818,
+    "prediksi": 5901,
+    "listrikCost": 274.2,
+    "solarCost": 40.9,
+    "batubaraCost": 78.4,
+    "totalCost": 393.5
+  },
+  {
+    "tanggal": "2023-02-24",
+    "aktual": 5806,
+    "prediksi": 5785,
+    "listrikCost": 273.7,
+    "solarCost": 40.8,
+    "batubaraCost": 78.2,
+    "totalCost": 392.7
+  },
+  {
+    "tanggal": "2023-02-25",
+    "aktual": 5826,
+    "prediksi": 5742,
+    "listrikCost": 274.8,
+    "solarCost": 40.9,
+    "batubaraCost": 78.5,
+    "totalCost": 394.2
+  },
+  {
+    "tanggal": "2023-02-26",
+    "aktual": 5867,
+    "prediksi": 5917,
+    "listrikCost": 276.8,
+    "solarCost": 41.2,
+    "batubaraCost": 79,
+    "totalCost": 397
+  },
+  {
+    "tanggal": "2023-02-27",
+    "aktual": 5918,
+    "prediksi": 5956,
+    "listrikCost": 279.3,
+    "solarCost": 41.5,
+    "batubaraCost": 79.7,
+    "totalCost": 400.5
+  },
+  {
+    "tanggal": "2023-02-28",
+    "aktual": 5967,
+    "prediksi": 5907,
+    "listrikCost": 281.8,
+    "solarCost": 41.8,
+    "batubaraCost": 80.4,
+    "totalCost": 404
+  },
+  {
+    "tanggal": "2023-03-01",
+    "aktual": 6001,
+    "prediksi": 6013,
+    "listrikCost": 283.5,
+    "solarCost": 42,
+    "batubaraCost": 80.8,
+    "totalCost": 406.3
+  },
+  {
+    "tanggal": "2023-03-02",
+    "aktual": 6011,
+    "prediksi": 6061,
+    "listrikCost": 284.1,
+    "solarCost": 42.1,
+    "batubaraCost": 81,
+    "totalCost": 407.2
+  },
+  {
+    "tanggal": "2023-03-03",
+    "aktual": 5990,
+    "prediksi": 5973,
+    "listrikCost": 283.3,
+    "solarCost": 41.9,
+    "batubaraCost": 80.7,
+    "totalCost": 405.9
+  },
+  {
+    "tanggal": "2023-03-04",
+    "aktual": 5935,
+    "prediksi": 5856,
+    "listrikCost": 280.8,
+    "solarCost": 41.5,
+    "batubaraCost": 80,
+    "totalCost": 402.3
+  },
+  {
+    "tanggal": "2023-03-05",
+    "aktual": 5847,
+    "prediksi": 5885,
+    "listrikCost": 276.8,
+    "solarCost": 40.8,
+    "batubaraCost": 78.9,
+    "totalCost": 396.5
+  },
+  {
+    "tanggal": "2023-03-06",
+    "aktual": 5731,
+    "prediksi": 5834,
+    "listrikCost": 271.5,
+    "solarCost": 40,
+    "batubaraCost": 77.3,
+    "totalCost": 388.8
+  },
+  {
+    "tanggal": "2023-03-07",
+    "aktual": 5597,
+    "prediksi": 5526,
+    "listrikCost": 265.4,
+    "solarCost": 39,
+    "batubaraCost": 75.6,
+    "totalCost": 380
+  },
+  {
+    "tanggal": "2023-03-08",
+    "aktual": 5455,
+    "prediksi": 5377,
+    "listrikCost": 258.9,
+    "solarCost": 38,
+    "batubaraCost": 73.7,
+    "totalCost": 370.6
+  },
+  {
+    "tanggal": "2023-03-09",
+    "aktual": 5319,
+    "prediksi": 5377,
+    "listrikCost": 252.6,
+    "solarCost": 37.1,
+    "batubaraCost": 72,
+    "totalCost": 361.7
+  },
+  {
+    "tanggal": "2023-03-10",
+    "aktual": 5200,
+    "prediksi": 5263,
+    "listrikCost": 247.1,
+    "solarCost": 36.2,
+    "batubaraCost": 70.4,
+    "totalCost": 353.7
+  },
+  {
+    "tanggal": "2023-03-11",
+    "aktual": 5111,
+    "prediksi": 5071,
+    "listrikCost": 243.1,
+    "solarCost": 35.6,
+    "batubaraCost": 69.3,
+    "totalCost": 348
+  },
+  {
+    "tanggal": "2023-03-12",
+    "aktual": 5060,
+    "prediksi": 5000,
+    "listrikCost": 240.8,
+    "solarCost": 35.2,
+    "batubaraCost": 68.7,
+    "totalCost": 344.7
+  },
+  {
+    "tanggal": "2023-03-13",
+    "aktual": 5052,
+    "prediksi": 5114,
+    "listrikCost": 240.5,
+    "solarCost": 35.1,
+    "batubaraCost": 68.6,
+    "totalCost": 344.2
+  },
+  {
+    "tanggal": "2023-03-14",
+    "aktual": 5088,
+    "prediksi": 5098,
+    "listrikCost": 242.3,
+    "solarCost": 35.3,
+    "batubaraCost": 69.2,
+    "totalCost": 346.8
+  },
+  {
+    "tanggal": "2023-03-15",
+    "aktual": 5163,
+    "prediksi": 5098,
+    "listrikCost": 245.9,
+    "solarCost": 35.8,
+    "batubaraCost": 70.2,
+    "totalCost": 351.9
+  },
+  {
+    "tanggal": "2023-03-16",
+    "aktual": 5272,
+    "prediksi": 5313,
+    "listrikCost": 251.1,
+    "solarCost": 36.6,
+    "batubaraCost": 71.8,
+    "totalCost": 359.5
+  },
+  {
+    "tanggal": "2023-03-17",
+    "aktual": 5403,
+    "prediksi": 5450,
+    "listrikCost": 257.3,
+    "solarCost": 37.5,
+    "batubaraCost": 73.6,
+    "totalCost": 368.4
+  },
+  {
+    "tanggal": "2023-03-18",
+    "aktual": 5544,
+    "prediksi": 5498,
+    "listrikCost": 264,
+    "solarCost": 38.5,
+    "batubaraCost": 75.5,
+    "totalCost": 378
+  },
+  {
+    "tanggal": "2023-03-19",
+    "aktual": 5683,
+    "prediksi": 5614,
+    "listrikCost": 270.6,
+    "solarCost": 39.4,
+    "batubaraCost": 77.5,
+    "totalCost": 387.5
+  },
+  {
+    "tanggal": "2023-03-20",
+    "aktual": 5807,
+    "prediksi": 5871,
+    "listrikCost": 276.4,
+    "solarCost": 40.3,
+    "batubaraCost": 79.2,
+    "totalCost": 395.9
+  },
+  {
+    "tanggal": "2023-03-21",
+    "aktual": 5906,
+    "prediksi": 5993,
+    "listrikCost": 281.1,
+    "solarCost": 41,
+    "batubaraCost": 80.6,
+    "totalCost": 402.7
+  },
+  {
+    "tanggal": "2023-03-22",
+    "aktual": 5974,
+    "prediksi": 5881,
+    "listrikCost": 284.3,
+    "solarCost": 41.5,
+    "batubaraCost": 81.6,
+    "totalCost": 407.4
+  },
+  {
+    "tanggal": "2023-03-23",
+    "aktual": 6007,
+    "prediksi": 5952,
+    "listrikCost": 285.8,
+    "solarCost": 41.7,
+    "batubaraCost": 82.1,
+    "totalCost": 409.6
+  },
+  {
+    "tanggal": "2023-03-24",
+    "aktual": 6008,
+    "prediksi": 6082,
+    "listrikCost": 285.8,
+    "solarCost": 41.8,
+    "batubaraCost": 82.1,
+    "totalCost": 409.7
+  },
+  {
+    "tanggal": "2023-03-25",
+    "aktual": 5982,
+    "prediksi": 6018,
+    "listrikCost": 284.5,
+    "solarCost": 41.6,
+    "batubaraCost": 81.8,
+    "totalCost": 407.9
+  },
+  {
+    "tanggal": "2023-03-26",
+    "aktual": 5937,
+    "prediksi": 5888,
+    "listrikCost": 282.3,
+    "solarCost": 41.3,
+    "batubaraCost": 81.3,
+    "totalCost": 404.9
+  },
+  {
+    "tanggal": "2023-03-27",
+    "aktual": 5886,
+    "prediksi": 5855,
+    "listrikCost": 279.8,
+    "solarCost": 41,
+    "batubaraCost": 80.6,
+    "totalCost": 401.4
+  },
+  {
+    "tanggal": "2023-03-28",
+    "aktual": 5839,
+    "prediksi": 5903,
+    "listrikCost": 277.5,
+    "solarCost": 40.7,
+    "batubaraCost": 80.1,
+    "totalCost": 398.3
+  },
+  {
+    "tanggal": "2023-03-29",
+    "aktual": 5810,
+    "prediksi": 5791,
+    "listrikCost": 276.1,
+    "solarCost": 40.6,
+    "batubaraCost": 79.7,
+    "totalCost": 396.4
+  },
+  {
+    "tanggal": "2023-03-30",
+    "aktual": 5809,
+    "prediksi": 5750,
+    "listrikCost": 275.9,
+    "solarCost": 40.6,
+    "batubaraCost": 79.7,
+    "totalCost": 396.2
+  },
+  {
+    "tanggal": "2023-03-31",
+    "aktual": 5844,
+    "prediksi": 5913,
+    "listrikCost": 277.4,
+    "solarCost": 40.9,
+    "batubaraCost": 80.2,
+    "totalCost": 398.5
+  },
+  {
+    "tanggal": "2023-04-01",
+    "aktual": 5919,
+    "prediksi": 5954,
+    "listrikCost": 280.8,
+    "solarCost": 41.4,
+    "batubaraCost": 81.3,
+    "totalCost": 403.5
+  },
+  {
+    "tanggal": "2023-04-02",
+    "aktual": 6033,
+    "prediksi": 5963,
+    "listrikCost": 286,
+    "solarCost": 42.2,
+    "batubaraCost": 82.8,
+    "totalCost": 411
+  },
+  {
+    "tanggal": "2023-04-03",
+    "aktual": 6182,
+    "prediksi": 6132,
+    "listrikCost": 292.9,
+    "solarCost": 43.3,
+    "batubaraCost": 84.8,
+    "totalCost": 421
+  },
+  {
+    "tanggal": "2023-04-04",
+    "aktual": 6359,
+    "prediksi": 6442,
+    "listrikCost": 301.1,
+    "solarCost": 44.6,
+    "batubaraCost": 87.2,
+    "totalCost": 432.9
+  },
+  {
+    "tanggal": "2023-04-05",
+    "aktual": 6551,
+    "prediksi": 6614,
+    "listrikCost": 309.9,
+    "solarCost": 45.9,
+    "batubaraCost": 89.8,
+    "totalCost": 445.6
+  },
+  {
+    "tanggal": "2023-04-06",
+    "aktual": 6747,
+    "prediksi": 6640,
+    "listrikCost": 319,
+    "solarCost": 47.3,
+    "batubaraCost": 92.4,
+    "totalCost": 458.7
+  },
+  {
+    "tanggal": "2023-04-07",
+    "aktual": 6933,
+    "prediksi": 6905,
+    "listrikCost": 327.6,
+    "solarCost": 48.6,
+    "batubaraCost": 94.9,
+    "totalCost": 471.1
+  },
+  {
+    "tanggal": "2023-04-08",
+    "aktual": 7097,
+    "prediksi": 7177,
+    "listrikCost": 335.2,
+    "solarCost": 49.7,
+    "batubaraCost": 97.1,
+    "totalCost": 482
+  },
+  {
+    "tanggal": "2023-04-09",
+    "aktual": 7229,
+    "prediksi": 7236,
+    "listrikCost": 341.2,
+    "solarCost": 50.7,
+    "batubaraCost": 98.8,
+    "totalCost": 490.7
+  },
+  {
+    "tanggal": "2023-04-10",
+    "aktual": 7324,
+    "prediksi": 7276,
+    "listrikCost": 345.5,
+    "solarCost": 51.3,
+    "batubaraCost": 100.1,
+    "totalCost": 496.9
+  },
+  {
+    "tanggal": "2023-04-11",
+    "aktual": 7378,
+    "prediksi": 7376,
+    "listrikCost": 347.9,
+    "solarCost": 51.7,
+    "batubaraCost": 100.8,
+    "totalCost": 500.4
+  },
+  {
+    "tanggal": "2023-04-12",
+    "aktual": 7394,
+    "prediksi": 7450,
+    "listrikCost": 348.6,
+    "solarCost": 51.8,
+    "batubaraCost": 101,
+    "totalCost": 501.4
+  },
+  {
+    "tanggal": "2023-04-13",
+    "aktual": 7378,
+    "prediksi": 7332,
+    "listrikCost": 347.7,
+    "solarCost": 51.7,
+    "batubaraCost": 100.7,
+    "totalCost": 500.1
+  },
+  {
+    "tanggal": "2023-04-14",
+    "aktual": 7339,
+    "prediksi": 7295,
+    "listrikCost": 345.8,
+    "solarCost": 51.4,
+    "batubaraCost": 100.1,
+    "totalCost": 497.3
+  },
+  {
+    "tanggal": "2023-04-15",
+    "aktual": 7288,
+    "prediksi": 7379,
+    "listrikCost": 343.3,
+    "solarCost": 51.1,
+    "batubaraCost": 99.4,
+    "totalCost": 493.8
+  },
+  {
+    "tanggal": "2023-04-16",
+    "aktual": 7239,
+    "prediksi": 7252,
+    "listrikCost": 340.9,
+    "solarCost": 50.7,
+    "batubaraCost": 98.7,
+    "totalCost": 490.3
+  },
+  {
+    "tanggal": "2023-04-17",
+    "aktual": 7202,
+    "prediksi": 7115,
+    "listrikCost": 339.1,
+    "solarCost": 50.4,
+    "batubaraCost": 98.2,
+    "totalCost": 487.7
+  },
+  {
+    "tanggal": "2023-04-18",
+    "aktual": 7188,
+    "prediksi": 7163,
+    "listrikCost": 338.4,
+    "solarCost": 50.3,
+    "batubaraCost": 97.9,
+    "totalCost": 486.6
+  },
+  {
+    "tanggal": "2023-04-19",
+    "aktual": 7205,
+    "prediksi": 7299,
+    "listrikCost": 339.2,
+    "solarCost": 50.4,
+    "batubaraCost": 98.1,
+    "totalCost": 487.7
+  },
+  {
+    "tanggal": "2023-04-20",
+    "aktual": 7256,
+    "prediksi": 7290,
+    "listrikCost": 341.5,
+    "solarCost": 50.7,
+    "batubaraCost": 98.7,
+    "totalCost": 490.9
+  },
+  {
+    "tanggal": "2023-04-21",
+    "aktual": 7341,
+    "prediksi": 7231,
+    "listrikCost": 345.5,
+    "solarCost": 51.3,
+    "batubaraCost": 99.8,
+    "totalCost": 496.6
+  },
+  {
+    "tanggal": "2023-04-22",
+    "aktual": 7453,
+    "prediksi": 7454,
+    "listrikCost": 350.8,
+    "solarCost": 52,
+    "batubaraCost": 101.2,
+    "totalCost": 504
+  },
+  {
+    "tanggal": "2023-04-23",
+    "aktual": 7586,
+    "prediksi": 7662,
+    "listrikCost": 357.1,
+    "solarCost": 52.9,
+    "batubaraCost": 102.9,
+    "totalCost": 512.9
+  },
+  {
+    "tanggal": "2023-04-24",
+    "aktual": 7727,
+    "prediksi": 7706,
+    "listrikCost": 363.7,
+    "solarCost": 53.8,
+    "batubaraCost": 104.7,
+    "totalCost": 522.2
+  },
+  {
+    "tanggal": "2023-04-25",
+    "aktual": 7865,
+    "prediksi": 7829,
+    "listrikCost": 370.3,
+    "solarCost": 54.7,
+    "batubaraCost": 106.5,
+    "totalCost": 531.5
+  },
+  {
+    "tanggal": "2023-04-26",
+    "aktual": 7986,
+    "prediksi": 8009,
+    "listrikCost": 376,
+    "solarCost": 55.5,
+    "batubaraCost": 108.1,
+    "totalCost": 539.6
+  },
+  {
+    "tanggal": "2023-04-27",
+    "aktual": 8080,
+    "prediksi": 8118,
+    "listrikCost": 380.5,
+    "solarCost": 56.1,
+    "batubaraCost": 109.3,
+    "totalCost": 545.9
+  },
+  {
+    "tanggal": "2023-04-28",
+    "aktual": 8136,
+    "prediksi": 8070,
+    "listrikCost": 383.2,
+    "solarCost": 56.5,
+    "batubaraCost": 110,
+    "totalCost": 549.7
+  },
+  {
+    "tanggal": "2023-04-29",
+    "aktual": 8149,
+    "prediksi": 8128,
+    "listrikCost": 384,
+    "solarCost": 56.6,
+    "batubaraCost": 110.1,
+    "totalCost": 550.7
+  },
+  {
+    "tanggal": "2023-04-30",
+    "aktual": 8119,
+    "prediksi": 8225,
+    "listrikCost": 382.7,
+    "solarCost": 56.3,
+    "batubaraCost": 109.6,
+    "totalCost": 548.6
+  },
+  {
+    "tanggal": "2023-05-01",
+    "aktual": 8048,
+    "prediksi": 8034,
+    "listrikCost": 379.5,
+    "solarCost": 55.8,
+    "batubaraCost": 108.6,
+    "totalCost": 543.9
+  },
+  {
+    "tanggal": "2023-05-02",
+    "aktual": 7943,
+    "prediksi": 7848,
+    "listrikCost": 374.6,
+    "solarCost": 55.1,
+    "batubaraCost": 107.1,
+    "totalCost": 536.8
+  },
+  {
+    "tanggal": "2023-05-03",
+    "aktual": 7814,
+    "prediksi": 7818,
+    "listrikCost": 368.7,
+    "solarCost": 54.1,
+    "batubaraCost": 105.4,
+    "totalCost": 528.2
+  },
+  {
+    "tanggal": "2023-05-04",
+    "aktual": 7673,
+    "prediksi": 7767,
+    "listrikCost": 362.2,
+    "solarCost": 53.2,
+    "batubaraCost": 103.4,
+    "totalCost": 518.8
+  },
+  {
+    "tanggal": "2023-05-05",
+    "aktual": 7534,
+    "prediksi": 7539,
+    "listrikCost": 355.8,
+    "solarCost": 52.2,
+    "batubaraCost": 101.5,
+    "totalCost": 509.5
+  },
+  {
+    "tanggal": "2023-05-06",
+    "aktual": 7407,
+    "prediksi": 7305,
+    "listrikCost": 350,
+    "solarCost": 51.3,
+    "batubaraCost": 99.8,
+    "totalCost": 501.1
+  },
+  {
+    "tanggal": "2023-05-07",
+    "aktual": 7305,
+    "prediksi": 7333,
+    "listrikCost": 345.4,
+    "solarCost": 50.6,
+    "batubaraCost": 98.4,
+    "totalCost": 494.4
+  },
+  {
+    "tanggal": "2023-05-08",
+    "aktual": 7233,
+    "prediksi": 7294,
+    "listrikCost": 342.2,
+    "solarCost": 50.1,
+    "batubaraCost": 97.4,
+    "totalCost": 489.7
+  },
+  {
+    "tanggal": "2023-05-09",
+    "aktual": 7195,
+    "prediksi": 7151,
+    "listrikCost": 340.5,
+    "solarCost": 49.9,
+    "batubaraCost": 96.9,
+    "totalCost": 487.3
+  },
+  {
+    "tanggal": "2023-05-10",
+    "aktual": 7190,
+    "prediksi": 7174,
+    "listrikCost": 340.4,
+    "solarCost": 49.8,
+    "batubaraCost": 96.8,
+    "totalCost": 487
+  },
+  {
+    "tanggal": "2023-05-11",
+    "aktual": 7214,
+    "prediksi": 7255,
+    "listrikCost": 341.7,
+    "solarCost": 50,
+    "batubaraCost": 97.1,
+    "totalCost": 488.8
+  },
+  {
+    "tanggal": "2023-05-12",
+    "aktual": 7257,
+    "prediksi": 7270,
+    "listrikCost": 343.8,
+    "solarCost": 50.3,
+    "batubaraCost": 97.6,
+    "totalCost": 491.7
+  },
+  {
+    "tanggal": "2023-05-13",
+    "aktual": 7308,
+    "prediksi": 7230,
+    "listrikCost": 346.4,
+    "solarCost": 50.7,
+    "batubaraCost": 98.3,
+    "totalCost": 495.4
+  },
+  {
+    "tanggal": "2023-05-14",
+    "aktual": 7356,
+    "prediksi": 7363,
+    "listrikCost": 348.7,
+    "solarCost": 51.1,
+    "batubaraCost": 99,
+    "totalCost": 498.8
+  },
+  {
+    "tanggal": "2023-05-15",
+    "aktual": 7388,
+    "prediksi": 7498,
+    "listrikCost": 350.3,
+    "solarCost": 51.3,
+    "batubaraCost": 99.4,
+    "totalCost": 501
+  },
+  {
+    "tanggal": "2023-05-16",
+    "aktual": 7392,
+    "prediksi": 7349,
+    "listrikCost": 350.6,
+    "solarCost": 51.4,
+    "batubaraCost": 99.5,
+    "totalCost": 501.5
+  },
+  {
+    "tanggal": "2023-05-17",
+    "aktual": 7362,
+    "prediksi": 7270,
+    "listrikCost": 349.3,
+    "solarCost": 51.2,
+    "batubaraCost": 99.1,
+    "totalCost": 499.6
+  },
+  {
+    "tanggal": "2023-05-18",
+    "aktual": 7293,
+    "prediksi": 7326,
+    "listrikCost": 346.1,
+    "solarCost": 50.8,
+    "batubaraCost": 98.2,
+    "totalCost": 495.1
+  },
+  {
+    "tanggal": "2023-05-19",
+    "aktual": 7183,
+    "prediksi": 7266,
+    "listrikCost": 341,
+    "solarCost": 50.1,
+    "batubaraCost": 96.8,
+    "totalCost": 487.9
+  },
+  {
+    "tanggal": "2023-05-20",
+    "aktual": 7038,
+    "prediksi": 7018,
+    "listrikCost": 334.2,
+    "solarCost": 49.1,
+    "batubaraCost": 94.8,
+    "totalCost": 478.1
+  },
+  {
+    "tanggal": "2023-05-21",
+    "aktual": 6864,
+    "prediksi": 6779,
+    "listrikCost": 326.1,
+    "solarCost": 47.9,
+    "batubaraCost": 92.6,
+    "totalCost": 466.6
+  },
+  {
+    "tanggal": "2023-05-22",
+    "aktual": 6673,
+    "prediksi": 6723,
+    "listrikCost": 317.1,
+    "solarCost": 46.6,
+    "batubaraCost": 90,
+    "totalCost": 453.7
+  },
+  {
+    "tanggal": "2023-05-23",
+    "aktual": 6477,
+    "prediksi": 6516,
+    "listrikCost": 307.9,
+    "solarCost": 45.3,
+    "batubaraCost": 87.5,
+    "totalCost": 440.7
+  },
+  {
+    "tanggal": "2023-05-24",
+    "aktual": 6289,
+    "prediksi": 6230,
+    "listrikCost": 299.1,
+    "solarCost": 44.1,
+    "batubaraCost": 85,
+    "totalCost": 428.2
+  },
+  {
+    "tanggal": "2023-05-25",
+    "aktual": 6122,
+    "prediksi": 6133,
+    "listrikCost": 291.2,
+    "solarCost": 42.9,
+    "batubaraCost": 82.8,
+    "totalCost": 416.9
+  },
+  {
+    "tanggal": "2023-05-26",
+    "aktual": 5985,
+    "prediksi": 6034,
+    "listrikCost": 284.7,
+    "solarCost": 42,
+    "batubaraCost": 81,
+    "totalCost": 407.7
+  },
+  {
+    "tanggal": "2023-05-27",
+    "aktual": 5886,
+    "prediksi": 5870,
+    "listrikCost": 280,
+    "solarCost": 41.4,
+    "batubaraCost": 79.8,
+    "totalCost": 401.2
+  },
+  {
+    "tanggal": "2023-05-28",
+    "aktual": 5826,
+    "prediksi": 5747,
+    "listrikCost": 277.1,
+    "solarCost": 41,
+    "batubaraCost": 79,
+    "totalCost": 397.1
+  },
+  {
+    "tanggal": "2023-05-29",
+    "aktual": 5806,
+    "prediksi": 5843,
+    "listrikCost": 276.1,
+    "solarCost": 40.8,
+    "batubaraCost": 78.8,
+    "totalCost": 395.7
+  },
+  {
+    "tanggal": "2023-05-30",
+    "aktual": 5818,
+    "prediksi": 5922,
+    "listrikCost": 276.5,
+    "solarCost": 40.9,
+    "batubaraCost": 79,
+    "totalCost": 396.4
+  },
+  {
+    "tanggal": "2023-05-31",
+    "aktual": 5855,
+    "prediksi": 5784,
+    "listrikCost": 278.2,
+    "solarCost": 41.2,
+    "batubaraCost": 79.6,
+    "totalCost": 399
+  },
+  {
+    "tanggal": "2023-06-01",
+    "aktual": 5905,
+    "prediksi": 5827,
+    "listrikCost": 280.4,
+    "solarCost": 41.5,
+    "batubaraCost": 80.3,
+    "totalCost": 402.2
+  },
+  {
+    "tanggal": "2023-06-02",
+    "aktual": 5956,
+    "prediksi": 6013,
+    "listrikCost": 282.7,
+    "solarCost": 41.9,
+    "batubaraCost": 81.1,
+    "totalCost": 405.7
+  },
+  {
+    "tanggal": "2023-06-03",
+    "aktual": 5995,
+    "prediksi": 6059,
+    "listrikCost": 284.4,
+    "solarCost": 42.2,
+    "batubaraCost": 81.7,
+    "totalCost": 408.3
+  },
+  {
+    "tanggal": "2023-06-04",
+    "aktual": 6012,
+    "prediksi": 5973,
+    "listrikCost": 285,
+    "solarCost": 42.3,
+    "batubaraCost": 82,
+    "totalCost": 409.3
+  },
+  {
+    "tanggal": "2023-06-05",
+    "aktual": 5999,
+    "prediksi": 5938,
+    "listrikCost": 284.3,
+    "solarCost": 42.2,
+    "batubaraCost": 81.9,
+    "totalCost": 408.4
+  },
+  {
+    "tanggal": "2023-06-06",
+    "aktual": 5952,
+    "prediksi": 6014,
+    "listrikCost": 281.9,
+    "solarCost": 41.8,
+    "batubaraCost": 81.3,
+    "totalCost": 405
+  },
+  {
+    "tanggal": "2023-06-07",
+    "aktual": 5872,
+    "prediksi": 5883,
+    "listrikCost": 278,
+    "solarCost": 41.2,
+    "batubaraCost": 80.3,
+    "totalCost": 399.5
+  },
+  {
+    "tanggal": "2023-06-08",
+    "aktual": 5762,
+    "prediksi": 5697,
+    "listrikCost": 272.7,
+    "solarCost": 40.4,
+    "batubaraCost": 78.9,
+    "totalCost": 392
+  },
+  {
+    "tanggal": "2023-06-09",
+    "aktual": 5631,
+    "prediksi": 5671,
+    "listrikCost": 266.4,
+    "solarCost": 39.5,
+    "batubaraCost": 77.2,
+    "totalCost": 383.1
+  },
+  {
+    "tanggal": "2023-06-10",
+    "aktual": 5490,
+    "prediksi": 5537,
+    "listrikCost": 259.6,
+    "solarCost": 38.5,
+    "batubaraCost": 75.3,
+    "totalCost": 373.4
+  },
+  {
+    "tanggal": "2023-06-11",
+    "aktual": 5351,
+    "prediksi": 5306,
+    "listrikCost": 252.9,
+    "solarCost": 37.5,
+    "batubaraCost": 73.5,
+    "totalCost": 363.9
+  },
+  {
+    "tanggal": "2023-06-12",
+    "aktual": 5227,
+    "prediksi": 5157,
+    "listrikCost": 247,
+    "solarCost": 36.6,
+    "batubaraCost": 71.9,
+    "totalCost": 355.5
+  },
+  {
+    "tanggal": "2023-06-13",
+    "aktual": 5130,
+    "prediksi": 5193,
+    "listrikCost": 242.3,
+    "solarCost": 35.9,
+    "batubaraCost": 70.6,
+    "totalCost": 348.8
+  },
+  {
+    "tanggal": "2023-06-14",
+    "aktual": 5069,
+    "prediksi": 5156,
+    "listrikCost": 239.3,
+    "solarCost": 35.5,
+    "batubaraCost": 69.8,
+    "totalCost": 344.6
+  },
+  {
+    "tanggal": "2023-06-15",
+    "aktual": 5050,
+    "prediksi": 4957,
+    "listrikCost": 238.3,
+    "solarCost": 35.3,
+    "batubaraCost": 69.6,
+    "totalCost": 343.2
+  },
+  {
+    "tanggal": "2023-06-16",
+    "aktual": 5075,
+    "prediksi": 5019,
+    "listrikCost": 239.4,
+    "solarCost": 35.4,
+    "batubaraCost": 70,
+    "totalCost": 344.8
+  },
+  {
+    "tanggal": "2023-06-17",
+    "aktual": 5141,
+    "prediksi": 5214,
+    "listrikCost": 242.4,
+    "solarCost": 35.8,
+    "batubaraCost": 70.9,
+    "totalCost": 349.1
+  },
+  {
+    "tanggal": "2023-06-18",
+    "aktual": 5242,
+    "prediksi": 5279,
+    "listrikCost": 247,
+    "solarCost": 36.5,
+    "batubaraCost": 72.2,
+    "totalCost": 355.7
+  },
+  {
+    "tanggal": "2023-06-19",
+    "aktual": 5369,
+    "prediksi": 5320,
+    "listrikCost": 252.9,
+    "solarCost": 37.4,
+    "batubaraCost": 73.9,
+    "totalCost": 364.2
+  },
+  {
+    "tanggal": "2023-06-20",
+    "aktual": 5509,
+    "prediksi": 5477,
+    "listrikCost": 259.5,
+    "solarCost": 38.3,
+    "batubaraCost": 75.8,
+    "totalCost": 373.6
+  },
+  {
+    "tanggal": "2023-06-21",
+    "aktual": 5649,
+    "prediksi": 5714,
+    "listrikCost": 266,
+    "solarCost": 39.2,
+    "batubaraCost": 77.7,
+    "totalCost": 382.9
+  },
+  {
+    "tanggal": "2023-06-22",
+    "aktual": 5778,
+    "prediksi": 5760,
+    "listrikCost": 272.1,
+    "solarCost": 40.1,
+    "batubaraCost": 79.4,
+    "totalCost": 391.6
+  },
+  {
+    "tanggal": "2023-06-23",
+    "aktual": 5884,
+    "prediksi": 5824,
+    "listrikCost": 277,
+    "solarCost": 40.8,
+    "batubaraCost": 80.8,
+    "totalCost": 398.6
+  },
+  {
+    "tanggal": "2023-06-24",
+    "aktual": 5960,
+    "prediksi": 6028,
+    "listrikCost": 280.6,
+    "solarCost": 41.3,
+    "batubaraCost": 81.8,
+    "totalCost": 403.7
+  },
+  {
+    "tanggal": "2023-06-25",
+    "aktual": 6002,
+    "prediksi": 6037,
+    "listrikCost": 282.6,
+    "solarCost": 41.6,
+    "batubaraCost": 82.3,
+    "totalCost": 406.5
+  },
+  {
+    "tanggal": "2023-06-26",
+    "aktual": 6011,
+    "prediksi": 5942,
+    "listrikCost": 283.1,
+    "solarCost": 41.7,
+    "batubaraCost": 82.4,
+    "totalCost": 407.2
+  },
+  {
+    "tanggal": "2023-06-27",
+    "aktual": 5991,
+    "prediksi": 5940,
+    "listrikCost": 282.2,
+    "solarCost": 41.5,
+    "batubaraCost": 82.1,
+    "totalCost": 405.8
+  },
+  {
+    "tanggal": "2023-06-28",
+    "aktual": 5949,
+    "prediksi": 6032,
+    "listrikCost": 280.3,
+    "solarCost": 41.3,
+    "batubaraCost": 81.5,
+    "totalCost": 403.1
+  },
+  {
+    "tanggal": "2023-06-29",
+    "aktual": 5898,
+    "prediksi": 5962,
+    "listrikCost": 278,
+    "solarCost": 40.9,
+    "batubaraCost": 80.8,
+    "totalCost": 399.7
+  },
+  {
+    "tanggal": "2023-06-30",
+    "aktual": 5849,
+    "prediksi": 5743,
+    "listrikCost": 275.8,
+    "solarCost": 40.6,
+    "batubaraCost": 80.1,
+    "totalCost": 396.5
+  },
+  {
+    "tanggal": "2023-07-01",
+    "aktual": 5815,
+    "prediksi": 5786,
+    "listrikCost": 274.3,
+    "solarCost": 40.4,
+    "batubaraCost": 79.6,
+    "totalCost": 394.3
+  },
+  {
+    "tanggal": "2023-07-02",
+    "aktual": 5806,
+    "prediksi": 5886,
+    "listrikCost": 274,
+    "solarCost": 40.3,
+    "batubaraCost": 79.4,
+    "totalCost": 393.7
+  },
+  {
+    "tanggal": "2023-07-03",
+    "aktual": 5832,
+    "prediksi": 5840,
+    "listrikCost": 275.3,
+    "solarCost": 40.6,
+    "batubaraCost": 79.7,
+    "totalCost": 395.6
+  },
+  {
+    "tanggal": "2023-07-04",
+    "aktual": 5897,
+    "prediksi": 5849,
+    "listrikCost": 278.5,
+    "solarCost": 41,
+    "batubaraCost": 80.5,
+    "totalCost": 400
+  },
+  {
+    "tanggal": "2023-07-05",
+    "aktual": 6001,
+    "prediksi": 5998,
+    "listrikCost": 283.5,
+    "solarCost": 41.8,
+    "batubaraCost": 81.8,
+    "totalCost": 407.1
+  },
+  {
+    "tanggal": "2023-07-06",
+    "aktual": 6143,
+    "prediksi": 6199,
+    "listrikCost": 290.4,
+    "solarCost": 42.8,
+    "batubaraCost": 83.7,
+    "totalCost": 416.9
+  },
+  {
+    "tanggal": "2023-07-07",
+    "aktual": 6313,
+    "prediksi": 6268,
+    "listrikCost": 298.5,
+    "solarCost": 44,
+    "batubaraCost": 85.9,
+    "totalCost": 428.4
+  },
+  {
+    "tanggal": "2023-07-08",
+    "aktual": 6503,
+    "prediksi": 6458,
+    "listrikCost": 307.6,
+    "solarCost": 45.4,
+    "batubaraCost": 88.4,
+    "totalCost": 441.4
+  },
+  {
+    "tanggal": "2023-07-09",
+    "aktual": 6699,
+    "prediksi": 6789,
+    "listrikCost": 316.9,
+    "solarCost": 46.7,
+    "batubaraCost": 90.9,
+    "totalCost": 454.5
+  },
+  {
+    "tanggal": "2023-07-10",
+    "aktual": 6888,
+    "prediksi": 6902,
+    "listrikCost": 326,
+    "solarCost": 48.1,
+    "batubaraCost": 93.4,
+    "totalCost": 467.5
+  },
+  {
+    "tanggal": "2023-07-11",
+    "aktual": 7059,
+    "prediksi": 6972,
+    "listrikCost": 334.1,
+    "solarCost": 49.3,
+    "batubaraCost": 95.6,
+    "totalCost": 479
+  },
+  {
+    "tanggal": "2023-07-12",
+    "aktual": 7200,
+    "prediksi": 7174,
+    "listrikCost": 340.9,
+    "solarCost": 50.3,
+    "batubaraCost": 97.4,
+    "totalCost": 488.6
+  },
+  {
+    "tanggal": "2023-07-13",
+    "aktual": 7304,
+    "prediksi": 7397,
+    "listrikCost": 345.9,
+    "solarCost": 51.1,
+    "batubaraCost": 98.8,
+    "totalCost": 495.8
+  },
+  {
+    "tanggal": "2023-07-14",
+    "aktual": 7368,
+    "prediksi": 7403,
+    "listrikCost": 349.1,
+    "solarCost": 51.5,
+    "batubaraCost": 99.6,
+    "totalCost": 500.2
+  },
+  {
+    "tanggal": "2023-07-15",
+    "aktual": 7394,
+    "prediksi": 7284,
+    "listrikCost": 350.4,
+    "solarCost": 51.7,
+    "batubaraCost": 99.9,
+    "totalCost": 502
+  },
+  {
+    "tanggal": "2023-07-16",
+    "aktual": 7385,
+    "prediksi": 7385,
+    "listrikCost": 350.1,
+    "solarCost": 51.7,
+    "batubaraCost": 99.7,
+    "totalCost": 501.5
+  },
+  {
+    "tanggal": "2023-07-17",
+    "aktual": 7350,
+    "prediksi": 7426,
+    "listrikCost": 348.6,
+    "solarCost": 51.5,
+    "batubaraCost": 99.2,
+    "totalCost": 499.3
+  },
+  {
+    "tanggal": "2023-07-18",
+    "aktual": 7301,
+    "prediksi": 7281,
+    "listrikCost": 346.4,
+    "solarCost": 51.2,
+    "batubaraCost": 98.5,
+    "totalCost": 496.1
+  },
+  {
+    "tanggal": "2023-07-19",
+    "aktual": 7250,
+    "prediksi": 7213,
+    "listrikCost": 344.1,
+    "solarCost": 50.8,
+    "batubaraCost": 97.7,
+    "totalCost": 492.6
+  },
+  {
+    "tanggal": "2023-07-20",
+    "aktual": 7209,
+    "prediksi": 7231,
+    "listrikCost": 342.2,
+    "solarCost": 50.5,
+    "batubaraCost": 97.1,
+    "totalCost": 489.8
+  },
+  {
+    "tanggal": "2023-07-21",
+    "aktual": 7189,
+    "prediksi": 7228,
+    "listrikCost": 341.3,
+    "solarCost": 50.4,
+    "batubaraCost": 96.8,
+    "totalCost": 488.5
+  },
+  {
+    "tanggal": "2023-07-22",
+    "aktual": 7198,
+    "prediksi": 7132,
+    "listrikCost": 341.8,
+    "solarCost": 50.5,
+    "batubaraCost": 96.9,
+    "totalCost": 489.2
+  },
+  {
+    "tanggal": "2023-07-23",
+    "aktual": 7240,
+    "prediksi": 7218,
+    "listrikCost": 343.8,
+    "solarCost": 50.7,
+    "batubaraCost": 97.5,
+    "totalCost": 492
+  },
+  {
+    "tanggal": "2023-07-24",
+    "aktual": 7317,
+    "prediksi": 7422,
+    "listrikCost": 347.4,
+    "solarCost": 51.3,
+    "batubaraCost": 98.5,
+    "totalCost": 497.2
+  },
+  {
+    "tanggal": "2023-07-25",
+    "aktual": 7423,
+    "prediksi": 7410,
+    "listrikCost": 352.4,
+    "solarCost": 52,
+    "batubaraCost": 99.9,
+    "totalCost": 504.3
+  },
+  {
+    "tanggal": "2023-07-26",
+    "aktual": 7552,
+    "prediksi": 7457,
+    "listrikCost": 358.4,
+    "solarCost": 52.9,
+    "batubaraCost": 101.6,
+    "totalCost": 512.9
+  },
+  {
+    "tanggal": "2023-07-27",
+    "aktual": 7692,
+    "prediksi": 7695,
+    "listrikCost": 365,
+    "solarCost": 53.8,
+    "batubaraCost": 103.5,
+    "totalCost": 522.3
+  },
+  {
+    "tanggal": "2023-07-28",
+    "aktual": 7832,
+    "prediksi": 7926,
+    "listrikCost": 371.5,
+    "solarCost": 54.7,
+    "batubaraCost": 105.3,
+    "totalCost": 531.5
+  },
+  {
+    "tanggal": "2023-07-29",
+    "aktual": 7959,
+    "prediksi": 7965,
+    "listrikCost": 377.4,
+    "solarCost": 55.6,
+    "batubaraCost": 107.1,
+    "totalCost": 540.1
+  },
+  {
+    "tanggal": "2023-07-30",
+    "aktual": 8060,
+    "prediksi": 7957,
+    "listrikCost": 382.1,
+    "solarCost": 56.2,
+    "batubaraCost": 108.4,
+    "totalCost": 546.7
+  },
+  {
+    "tanggal": "2023-07-31",
+    "aktual": 8125,
+    "prediksi": 8152,
+    "listrikCost": 385,
+    "solarCost": 56.7,
+    "batubaraCost": 109.3,
+    "totalCost": 551
+  },
+  {
+    "tanggal": "2023-08-01",
+    "aktual": 8150,
+    "prediksi": 8212,
+    "listrikCost": 386.1,
+    "solarCost": 56.8,
+    "batubaraCost": 109.7,
+    "totalCost": 552.6
+  },
+  {
+    "tanggal": "2023-08-02",
+    "aktual": 8131,
+    "prediksi": 8088,
+    "listrikCost": 385.1,
+    "solarCost": 56.6,
+    "batubaraCost": 109.4,
+    "totalCost": 551.1
+  },
+  {
+    "tanggal": "2023-08-03",
+    "aktual": 8069,
+    "prediksi": 8052,
+    "listrikCost": 382.1,
+    "solarCost": 56.2,
+    "batubaraCost": 108.6,
+    "totalCost": 546.9
+  },
+  {
+    "tanggal": "2023-08-04",
+    "aktual": 7972,
+    "prediksi": 8012,
+    "listrikCost": 377.4,
+    "solarCost": 55.5,
+    "batubaraCost": 107.4,
+    "totalCost": 540.3
+  },
+  {
+    "tanggal": "2023-08-05",
+    "aktual": 7848,
+    "prediksi": 7862,
+    "listrikCost": 371.4,
+    "solarCost": 54.6,
+    "batubaraCost": 105.8,
+    "totalCost": 531.8
+  },
+  {
+    "tanggal": "2023-08-06",
+    "aktual": 7709,
+    "prediksi": 7631,
+    "listrikCost": 364.8,
+    "solarCost": 53.6,
+    "batubaraCost": 103.9,
+    "totalCost": 522.3
+  },
+  {
+    "tanggal": "2023-08-07",
+    "aktual": 7568,
+    "prediksi": 7574,
+    "listrikCost": 358,
+    "solarCost": 52.6,
+    "batubaraCost": 102.1,
+    "totalCost": 512.7
+  },
+  {
+    "tanggal": "2023-08-08",
+    "aktual": 7437,
+    "prediksi": 7547,
+    "listrikCost": 351.7,
+    "solarCost": 51.6,
+    "batubaraCost": 100.4,
+    "totalCost": 503.7
+  },
+  {
+    "tanggal": "2023-08-09",
+    "aktual": 7328,
+    "prediksi": 7286,
+    "listrikCost": 346.4,
+    "solarCost": 50.8,
+    "batubaraCost": 99,
+    "totalCost": 496.2
+  },
+  {
+    "tanggal": "2023-08-10",
+    "aktual": 7248,
+    "prediksi": 7156,
+    "listrikCost": 342.5,
+    "solarCost": 50.3,
+    "batubaraCost": 98,
+    "totalCost": 490.8
+  },
+  {
+    "tanggal": "2023-08-11",
+    "aktual": 7201,
+    "prediksi": 7233,
+    "listrikCost": 340.1,
+    "solarCost": 49.9,
+    "batubaraCost": 97.4,
+    "totalCost": 487.4
+  },
+  {
+    "tanggal": "2023-08-12",
+    "aktual": 7188,
+    "prediksi": 7272,
+    "listrikCost": 339.4,
+    "solarCost": 49.8,
+    "batubaraCost": 97.3,
+    "totalCost": 486.5
+  },
+  {
+    "tanggal": "2023-08-13",
+    "aktual": 7206,
+    "prediksi": 7186,
+    "listrikCost": 340.1,
+    "solarCost": 49.9,
+    "batubaraCost": 97.6,
+    "totalCost": 487.6
+  },
+  {
+    "tanggal": "2023-08-14",
+    "aktual": 7245,
+    "prediksi": 7159,
+    "listrikCost": 341.8,
+    "solarCost": 50.2,
+    "batubaraCost": 98.2,
+    "totalCost": 490.2
+  },
+  {
+    "tanggal": "2023-08-15",
+    "aktual": 7295,
+    "prediksi": 7344,
+    "listrikCost": 344,
+    "solarCost": 50.5,
+    "batubaraCost": 98.9,
+    "totalCost": 493.4
+  },
+  {
+    "tanggal": "2023-08-16",
+    "aktual": 7345,
+    "prediksi": 7384,
+    "listrikCost": 346.2,
+    "solarCost": 50.9,
+    "batubaraCost": 99.7,
+    "totalCost": 496.8
+  },
+  {
+    "tanggal": "2023-08-17",
+    "aktual": 7382,
+    "prediksi": 7323,
+    "listrikCost": 347.9,
+    "solarCost": 51.1,
+    "batubaraCost": 100.2,
+    "totalCost": 499.2
+  },
+  {
+    "tanggal": "2023-08-18",
+    "aktual": 7394,
+    "prediksi": 7404,
+    "listrikCost": 348.3,
+    "solarCost": 51.2,
+    "batubaraCost": 100.5,
+    "totalCost": 500
+  },
+  {
+    "tanggal": "2023-08-19",
+    "aktual": 7373,
+    "prediksi": 7422,
+    "listrikCost": 347.3,
+    "solarCost": 51.1,
+    "batubaraCost": 100.2,
+    "totalCost": 498.6
+  },
+  {
+    "tanggal": "2023-08-20",
+    "aktual": 7314,
+    "prediksi": 7299,
+    "listrikCost": 344.4,
+    "solarCost": 50.7,
+    "batubaraCost": 99.5,
+    "totalCost": 494.6
+  },
+  {
+    "tanggal": "2023-08-21",
+    "aktual": 7214,
+    "prediksi": 7135,
+    "listrikCost": 339.7,
+    "solarCost": 50.1,
+    "batubaraCost": 98.2,
+    "totalCost": 488
+  },
+  {
+    "tanggal": "2023-08-22",
+    "aktual": 7077,
+    "prediksi": 7113,
+    "listrikCost": 333.2,
+    "solarCost": 49.1,
+    "batubaraCost": 96.5,
+    "totalCost": 478.8
+  },
+  {
+    "tanggal": "2023-08-23",
+    "aktual": 6909,
+    "prediksi": 7013,
+    "listrikCost": 325.2,
+    "solarCost": 48,
+    "batubaraCost": 94.3,
+    "totalCost": 467.5
+  },
+  {
+    "tanggal": "2023-08-24",
+    "aktual": 6721,
+    "prediksi": 6651,
+    "listrikCost": 316.4,
+    "solarCost": 46.7,
+    "batubaraCost": 91.8,
+    "totalCost": 454.9
+  },
+  {
+    "tanggal": "2023-08-25",
+    "aktual": 6525,
+    "prediksi": 6446,
+    "listrikCost": 307.2,
+    "solarCost": 45.4,
+    "batubaraCost": 89.2,
+    "totalCost": 441.8
+  },
+  {
+    "tanggal": "2023-08-26",
+    "aktual": 6334,
+    "prediksi": 6390,
+    "listrikCost": 298.2,
+    "solarCost": 44.1,
+    "batubaraCost": 86.7,
+    "totalCost": 429
+  },
+  {
+    "tanggal": "2023-08-27",
+    "aktual": 6161,
+    "prediksi": 6225,
+    "listrikCost": 290.1,
+    "solarCost": 43,
+    "batubaraCost": 84.4,
+    "totalCost": 417.5
+  },
+  {
+    "tanggal": "2023-08-28",
+    "aktual": 6016,
+    "prediksi": 5977,
+    "listrikCost": 283.3,
+    "solarCost": 42,
+    "batubaraCost": 82.5,
+    "totalCost": 407.8
+  },
+  {
+    "tanggal": "2023-08-29",
+    "aktual": 5907,
+    "prediksi": 5845,
+    "listrikCost": 278.3,
+    "solarCost": 41.3,
+    "batubaraCost": 81.1,
+    "totalCost": 400.7
+  },
+  {
+    "tanggal": "2023-08-30",
+    "aktual": 5837,
+    "prediksi": 5899,
+    "listrikCost": 275.1,
+    "solarCost": 40.9,
+    "batubaraCost": 80.2,
+    "totalCost": 396.2
+  },
+  {
+    "tanggal": "2023-08-31",
+    "aktual": 5808,
+    "prediksi": 5820,
+    "listrikCost": 273.8,
+    "solarCost": 40.7,
+    "batubaraCost": 79.8,
+    "totalCost": 394.3
+  },
+  {
+    "tanggal": "2023-09-01",
+    "aktual": 5813,
+    "prediksi": 5748,
+    "listrikCost": 274.1,
+    "solarCost": 40.8,
+    "batubaraCost": 79.9,
+    "totalCost": 394.8
+  },
+  {
+    "tanggal": "2023-09-02",
+    "aktual": 5845,
+    "prediksi": 5884,
+    "listrikCost": 275.7,
+    "solarCost": 41,
+    "batubaraCost": 80.3,
+    "totalCost": 397
+  },
+  {
+    "tanggal": "2023-09-03",
+    "aktual": 5892,
+    "prediksi": 5940,
+    "listrikCost": 278,
+    "solarCost": 41.4,
+    "batubaraCost": 81,
+    "totalCost": 400.4
+  },
+  {
+    "tanggal": "2023-09-04",
+    "aktual": 5944,
+    "prediksi": 5900,
+    "listrikCost": 280.6,
+    "solarCost": 41.7,
+    "batubaraCost": 81.6,
+    "totalCost": 403.9
+  },
+  {
+    "tanggal": "2023-09-05",
+    "aktual": 5987,
+    "prediksi": 5917,
+    "listrikCost": 282.8,
+    "solarCost": 42.1,
+    "batubaraCost": 82.2,
+    "totalCost": 407.1
+  },
+  {
+    "tanggal": "2023-09-06",
+    "aktual": 6010,
+    "prediksi": 6072,
+    "listrikCost": 284,
+    "solarCost": 42.2,
+    "batubaraCost": 82.5,
+    "totalCost": 408.7
+  },
+  {
+    "tanggal": "2023-09-07",
+    "aktual": 6005,
+    "prediksi": 6093,
+    "listrikCost": 283.9,
+    "solarCost": 42.2,
+    "batubaraCost": 82.4,
+    "totalCost": 408.5
+  },
+  {
+    "tanggal": "2023-09-08",
+    "aktual": 5967,
+    "prediksi": 5875,
+    "listrikCost": 282.3,
+    "solarCost": 42,
+    "batubaraCost": 81.9,
+    "totalCost": 406.2
+  },
+  {
+    "tanggal": "2023-09-09",
+    "aktual": 5894,
+    "prediksi": 5837,
+    "listrikCost": 279,
+    "solarCost": 41.5,
+    "batubaraCost": 80.9,
+    "totalCost": 401.4
+  },
+  {
+    "tanggal": "2023-09-10",
+    "aktual": 5792,
+    "prediksi": 5865,
+    "listrikCost": 274.3,
+    "solarCost": 40.8,
+    "batubaraCost": 79.5,
+    "totalCost": 394.6
+  },
+  {
+    "tanggal": "2023-09-11",
+    "aktual": 5665,
+    "prediksi": 5704,
+    "listrikCost": 268.5,
+    "solarCost": 39.9,
+    "batubaraCost": 77.7,
+    "totalCost": 386.1
+  },
+  {
+    "tanggal": "2023-09-12",
+    "aktual": 5525,
+    "prediksi": 5476,
+    "listrikCost": 262.1,
+    "solarCost": 38.9,
+    "batubaraCost": 75.8,
+    "totalCost": 376.8
+  },
+  {
+    "tanggal": "2023-09-13",
+    "aktual": 5385,
+    "prediksi": 5352,
+    "listrikCost": 255.6,
+    "solarCost": 37.9,
+    "batubaraCost": 73.9,
+    "totalCost": 367.4
+  },
+  {
+    "tanggal": "2023-09-14",
+    "aktual": 5256,
+    "prediksi": 5321,
+    "listrikCost": 249.7,
+    "solarCost": 37,
+    "batubaraCost": 72.1,
+    "totalCost": 358.8
+  },
+  {
+    "tanggal": "2023-09-15",
+    "aktual": 5151,
+    "prediksi": 5134,
+    "listrikCost": 244.9,
+    "solarCost": 36.3,
+    "batubaraCost": 70.7,
+    "totalCost": 351.9
+  },
+  {
+    "tanggal": "2023-09-16",
+    "aktual": 5081,
+    "prediksi": 5021,
+    "listrikCost": 241.7,
+    "solarCost": 35.8,
+    "batubaraCost": 69.7,
+    "totalCost": 347.2
+  },
+  {
+    "tanggal": "2023-09-17",
+    "aktual": 5051,
+    "prediksi": 5118,
+    "listrikCost": 240.4,
+    "solarCost": 35.5,
+    "batubaraCost": 69.2,
+    "totalCost": 345.1
+  },
+  {
+    "tanggal": "2023-09-18",
+    "aktual": 5065,
+    "prediksi": 5101,
+    "listrikCost": 241.2,
+    "solarCost": 35.6,
+    "batubaraCost": 69.3,
+    "totalCost": 346.1
+  },
+  {
+    "tanggal": "2023-09-19",
+    "aktual": 5121,
+    "prediksi": 5052,
+    "listrikCost": 243.9,
+    "solarCost": 35.9,
+    "batubaraCost": 70,
+    "totalCost": 349.8
+  },
+  {
+    "tanggal": "2023-09-20",
+    "aktual": 5215,
+    "prediksi": 5163,
+    "listrikCost": 248.4,
+    "solarCost": 36.6,
+    "batubaraCost": 71.2,
+    "totalCost": 356.2
+  },
+  {
+    "tanggal": "2023-09-21",
+    "aktual": 5336,
+    "prediksi": 5418,
+    "listrikCost": 254.2,
+    "solarCost": 37.4,
+    "batubaraCost": 72.8,
+    "totalCost": 364.4
+  },
+  {
+    "tanggal": "2023-09-22",
+    "aktual": 5474,
+    "prediksi": 5539,
+    "listrikCost": 260.7,
+    "solarCost": 38.3,
+    "batubaraCost": 74.5,
+    "totalCost": 373.5
+  },
+  {
+    "tanggal": "2023-09-23",
+    "aktual": 5615,
+    "prediksi": 5509,
+    "listrikCost": 267.4,
+    "solarCost": 39.2,
+    "batubaraCost": 76.4,
+    "totalCost": 383
+  },
+  {
+    "tanggal": "2023-09-24",
+    "aktual": 5748,
+    "prediksi": 5718,
+    "listrikCost": 273.6,
+    "solarCost": 40.1,
+    "batubaraCost": 78.1,
+    "totalCost": 391.8
+  },
+  {
+    "tanggal": "2023-09-25",
+    "aktual": 5860,
+    "prediksi": 5940,
+    "listrikCost": 278.9,
+    "solarCost": 40.8,
+    "batubaraCost": 79.5,
+    "totalCost": 399.2
+  },
+  {
+    "tanggal": "2023-09-26",
+    "aktual": 5944,
+    "prediksi": 5953,
+    "listrikCost": 282.9,
+    "solarCost": 41.4,
+    "batubaraCost": 80.6,
+    "totalCost": 404.9
+  },
+  {
+    "tanggal": "2023-09-27",
+    "aktual": 5995,
+    "prediksi": 5947,
+    "listrikCost": 285.2,
+    "solarCost": 41.7,
+    "batubaraCost": 81.2,
+    "totalCost": 408.1
+  },
+  {
+    "tanggal": "2023-09-28",
+    "aktual": 6012,
+    "prediksi": 6008,
+    "listrikCost": 286,
+    "solarCost": 41.8,
+    "batubaraCost": 81.4,
+    "totalCost": 409.2
+  },
+  {
+    "tanggal": "2023-09-29",
+    "aktual": 5998,
+    "prediksi": 6055,
+    "listrikCost": 285.3,
+    "solarCost": 41.7,
+    "batubaraCost": 81.1,
+    "totalCost": 408.1
+  },
+  {
+    "tanggal": "2023-09-30",
+    "aktual": 5961,
+    "prediksi": 5917,
+    "listrikCost": 283.5,
+    "solarCost": 41.4,
+    "batubaraCost": 80.6,
+    "totalCost": 405.5
+  },
+  {
+    "tanggal": "2023-10-01",
+    "aktual": 5911,
+    "prediksi": 5866,
+    "listrikCost": 281.1,
+    "solarCost": 41,
+    "batubaraCost": 79.9,
+    "totalCost": 402
+  },
+  {
+    "tanggal": "2023-10-02",
+    "aktual": 5861,
+    "prediksi": 5951,
+    "listrikCost": 278.6,
+    "solarCost": 40.7,
+    "batubaraCost": 79.1,
+    "totalCost": 398.4
+  },
+  {
+    "tanggal": "2023-10-03",
+    "aktual": 5822,
+    "prediksi": 5837,
+    "listrikCost": 276.7,
+    "solarCost": 40.4,
+    "batubaraCost": 78.6,
+    "totalCost": 395.7
+  },
+  {
+    "tanggal": "2023-10-04",
+    "aktual": 5806,
+    "prediksi": 5720,
+    "listrikCost": 275.8,
+    "solarCost": 40.3,
+    "batubaraCost": 78.3,
+    "totalCost": 394.4
+  },
+  {
+    "tanggal": "2023-10-05",
+    "aktual": 5822,
+    "prediksi": 5795,
+    "listrikCost": 276.4,
+    "solarCost": 40.4,
+    "batubaraCost": 78.5,
+    "totalCost": 395.3
+  },
+  {
+    "tanggal": "2023-10-06",
+    "aktual": 5877,
+    "prediksi": 5970,
+    "listrikCost": 278.9,
+    "solarCost": 40.8,
+    "batubaraCost": 79.2,
+    "totalCost": 398.9
+  },
+  {
+    "tanggal": "2023-10-07",
+    "aktual": 5972,
+    "prediksi": 6008,
+    "listrikCost": 283.2,
+    "solarCost": 41.4,
+    "batubaraCost": 80.5,
+    "totalCost": 405.1
+  },
+  {
+    "tanggal": "2023-10-08",
+    "aktual": 6104,
+    "prediksi": 5994,
+    "listrikCost": 289.3,
+    "solarCost": 42.3,
+    "batubaraCost": 82.2,
+    "totalCost": 413.8
+  },
+  {
+    "tanggal": "2023-10-09",
+    "aktual": 6269,
+    "prediksi": 6268,
+    "listrikCost": 296.9,
+    "solarCost": 43.5,
+    "batubaraCost": 84.4,
+    "totalCost": 424.8
+  },
+  {
+    "tanggal": "2023-10-10",
+    "aktual": 6455,
+    "prediksi": 6531,
+    "listrikCost": 305.5,
+    "solarCost": 44.8,
+    "batubaraCost": 86.9,
+    "totalCost": 437.2
+  },
+  {
+    "tanggal": "2023-10-11",
+    "aktual": 6650,
+    "prediksi": 6631,
+    "listrikCost": 314.5,
+    "solarCost": 46.2,
+    "batubaraCost": 89.5,
+    "totalCost": 450.2
+  },
+  {
+    "tanggal": "2023-10-12",
+    "aktual": 6843,
+    "prediksi": 6805,
+    "listrikCost": 323.4,
+    "solarCost": 47.5,
+    "batubaraCost": 92.1,
+    "totalCost": 463
+  },
+  {
+    "tanggal": "2023-10-13",
+    "aktual": 7019,
+    "prediksi": 7040,
+    "listrikCost": 331.6,
+    "solarCost": 48.8,
+    "batubaraCost": 94.5,
+    "totalCost": 474.9
+  },
+  {
+    "tanggal": "2023-10-14",
+    "aktual": 7168,
+    "prediksi": 7207,
+    "listrikCost": 338.4,
+    "solarCost": 49.8,
+    "batubaraCost": 96.5,
+    "totalCost": 484.7
+  },
+  {
+    "tanggal": "2023-10-15",
+    "aktual": 7282,
+    "prediksi": 7217,
+    "listrikCost": 343.6,
+    "solarCost": 50.7,
+    "batubaraCost": 98,
+    "totalCost": 492.3
+  },
+  {
+    "tanggal": "2023-10-16",
+    "aktual": 7356,
+    "prediksi": 7333,
+    "listrikCost": 347,
+    "solarCost": 51.2,
+    "batubaraCost": 99,
+    "totalCost": 497.2
+  },
+  {
+    "tanggal": "2023-10-17",
+    "aktual": 7391,
+    "prediksi": 7496,
+    "listrikCost": 348.5,
+    "solarCost": 51.5,
+    "batubaraCost": 99.5,
+    "totalCost": 499.5
+  },
+  {
+    "tanggal": "2023-10-18",
+    "aktual": 7390,
+    "prediksi": 7378,
+    "listrikCost": 348.3,
+    "solarCost": 51.5,
+    "batubaraCost": 99.6,
+    "totalCost": 499.4
+  },
+  {
+    "tanggal": "2023-10-19",
+    "aktual": 7361,
+    "prediksi": 7266,
+    "listrikCost": 346.9,
+    "solarCost": 51.4,
+    "batubaraCost": 99.2,
+    "totalCost": 497.5
+  },
+  {
+    "tanggal": "2023-10-20",
+    "aktual": 7314,
+    "prediksi": 7316,
+    "listrikCost": 344.6,
+    "solarCost": 51.1,
+    "batubaraCost": 98.6,
+    "totalCost": 494.3
+  },
+  {
+    "tanggal": "2023-10-21",
+    "aktual": 7262,
+    "prediksi": 7356,
+    "listrikCost": 342,
+    "solarCost": 50.8,
+    "batubaraCost": 98,
+    "totalCost": 490.8
+  },
+  {
+    "tanggal": "2023-10-22",
+    "aktual": 7218,
+    "prediksi": 7225,
+    "listrikCost": 339.9,
+    "solarCost": 50.5,
+    "batubaraCost": 97.4,
+    "totalCost": 487.8
+  },
+  {
+    "tanggal": "2023-10-23",
+    "aktual": 7192,
+    "prediksi": 7089,
+    "listrikCost": 338.6,
+    "solarCost": 50.3,
+    "batubaraCost": 97.2,
+    "totalCost": 486.1
+  },
+  {
+    "tanggal": "2023-10-24",
+    "aktual": 7193,
+    "prediksi": 7219,
+    "listrikCost": 338.6,
+    "solarCost": 50.4,
+    "batubaraCost": 97.2,
+    "totalCost": 486.2
+  },
+  {
+    "tanggal": "2023-10-25",
+    "aktual": 7227,
+    "prediksi": 7289,
+    "listrikCost": 340.2,
+    "solarCost": 50.6,
+    "batubaraCost": 97.7,
+    "totalCost": 488.5
+  },
+  {
+    "tanggal": "2023-10-26",
+    "aktual": 7295,
+    "prediksi": 7252,
+    "listrikCost": 343.4,
+    "solarCost": 51.1,
+    "batubaraCost": 98.7,
+    "totalCost": 493.2
+  },
+  {
+    "tanggal": "2023-10-27",
+    "aktual": 7394,
+    "prediksi": 7376,
+    "listrikCost": 348,
+    "solarCost": 51.8,
+    "batubaraCost": 100.1,
+    "totalCost": 499.9
+  },
+  {
+    "tanggal": "2023-10-28",
+    "aktual": 7518,
+    "prediksi": 7558,
+    "listrikCost": 353.9,
+    "solarCost": 52.7,
+    "batubaraCost": 101.8,
+    "totalCost": 508.4
+  },
+  {
+    "tanggal": "2023-10-29",
+    "aktual": 7657,
+    "prediksi": 7672,
+    "listrikCost": 360.4,
+    "solarCost": 53.6,
+    "batubaraCost": 103.8,
+    "totalCost": 517.8
+  },
+  {
+    "tanggal": "2023-10-30",
+    "aktual": 7798,
+    "prediksi": 7720,
+    "listrikCost": 367.1,
+    "solarCost": 54.6,
+    "batubaraCost": 105.7,
+    "totalCost": 527.4
+  },
+  {
+    "tanggal": "2023-10-31",
+    "aktual": 7929,
+    "prediksi": 7934,
+    "listrikCost": 373.3,
+    "solarCost": 55.5,
+    "batubaraCost": 107.5,
+    "totalCost": 536.3
+  },
+  {
+    "tanggal": "2023-11-01",
+    "aktual": 8038,
+    "prediksi": 8148,
+    "listrikCost": 378.5,
+    "solarCost": 56.2,
+    "batubaraCost": 109.1,
+    "totalCost": 543.8
+  },
+  {
+    "tanggal": "2023-11-02",
+    "aktual": 8113,
+    "prediksi": 8072,
+    "listrikCost": 382.1,
+    "solarCost": 56.8,
+    "batubaraCost": 110.1,
+    "totalCost": 549
+  },
+  {
+    "tanggal": "2023-11-03",
+    "aktual": 8148,
+    "prediksi": 8056,
+    "listrikCost": 383.9,
+    "solarCost": 57,
+    "batubaraCost": 110.7,
+    "totalCost": 551.6
+  },
+  {
+    "tanggal": "2023-11-04",
+    "aktual": 8139,
+    "prediksi": 8170,
+    "listrikCost": 383.5,
+    "solarCost": 56.9,
+    "batubaraCost": 110.6,
+    "totalCost": 551
+  },
+  {
+    "tanggal": "2023-11-05",
+    "aktual": 8088,
+    "prediksi": 8172,
+    "listrikCost": 381.3,
+    "solarCost": 56.5,
+    "batubaraCost": 110,
+    "totalCost": 547.8
+  },
+  {
+    "tanggal": "2023-11-06",
+    "aktual": 7999,
+    "prediksi": 7980,
+    "listrikCost": 377.2,
+    "solarCost": 55.9,
+    "batubaraCost": 108.8,
+    "totalCost": 541.9
+  },
+  {
+    "tanggal": "2023-11-07",
+    "aktual": 7880,
+    "prediksi": 7793,
+    "listrikCost": 371.8,
+    "solarCost": 55,
+    "batubaraCost": 107.3,
+    "totalCost": 534.1
+  },
+  {
+    "tanggal": "2023-11-08",
+    "aktual": 7744,
+    "prediksi": 7792,
+    "listrikCost": 365.5,
+    "solarCost": 54,
+    "batubaraCost": 105.5,
+    "totalCost": 525
+  },
+  {
+    "tanggal": "2023-11-09",
+    "aktual": 7602,
+    "prediksi": 7642,
+    "listrikCost": 359,
+    "solarCost": 53,
+    "batubaraCost": 103.7,
+    "totalCost": 515.7
+  },
+  {
+    "tanggal": "2023-11-10",
+    "aktual": 7468,
+    "prediksi": 7409,
+    "listrikCost": 352.8,
+    "solarCost": 52.1,
+    "batubaraCost": 101.9,
+    "totalCost": 506.8
+  },
+  {
+    "tanggal": "2023-11-11",
+    "aktual": 7352,
+    "prediksi": 7361,
+    "listrikCost": 347.5,
+    "solarCost": 51.2,
+    "batubaraCost": 100.4,
+    "totalCost": 499.1
+  },
+  {
+    "tanggal": "2023-11-12",
+    "aktual": 7264,
+    "prediksi": 7313,
+    "listrikCost": 343.5,
+    "solarCost": 50.6,
+    "batubaraCost": 99.3,
+    "totalCost": 493.4
+  },
+  {
+    "tanggal": "2023-11-13",
+    "aktual": 7209,
+    "prediksi": 7195,
+    "listrikCost": 341.1,
+    "solarCost": 50.2,
+    "batubaraCost": 98.5,
+    "totalCost": 489.8
+  },
+  {
+    "tanggal": "2023-11-14",
+    "aktual": 7189,
+    "prediksi": 7110,
+    "listrikCost": 340.3,
+    "solarCost": 50,
+    "batubaraCost": 98.3,
+    "totalCost": 488.6
+  },
+  {
+    "tanggal": "2023-11-15",
+    "aktual": 7199,
+    "prediksi": 7233,
+    "listrikCost": 340.9,
+    "solarCost": 50,
+    "batubaraCost": 98.5,
+    "totalCost": 489.4
+  },
+  {
+    "tanggal": "2023-11-16",
+    "aktual": 7233,
+    "prediksi": 7337,
+    "listrikCost": 342.6,
+    "solarCost": 50.2,
+    "batubaraCost": 98.9,
+    "totalCost": 491.7
+  },
+  {
+    "tanggal": "2023-11-17",
+    "aktual": 7282,
+    "prediksi": 7213,
+    "listrikCost": 345.1,
+    "solarCost": 50.5,
+    "batubaraCost": 99.6,
+    "totalCost": 495.2
+  },
+  {
+    "tanggal": "2023-11-18",
+    "aktual": 7333,
+    "prediksi": 7254,
+    "listrikCost": 347.6,
+    "solarCost": 50.9,
+    "batubaraCost": 100.3,
+    "totalCost": 498.8
+  },
+  {
+    "tanggal": "2023-11-19",
+    "aktual": 7375,
+    "prediksi": 7430,
+    "listrikCost": 349.7,
+    "solarCost": 51.1,
+    "batubaraCost": 100.8,
+    "totalCost": 501.6
+  },
+  {
+    "tanggal": "2023-11-20",
+    "aktual": 7394,
+    "prediksi": 7459,
+    "listrikCost": 350.7,
+    "solarCost": 51.3,
+    "batubaraCost": 101.1,
+    "totalCost": 503.1
+  },
+  {
+    "tanggal": "2023-11-21",
+    "aktual": 7382,
+    "prediksi": 7344,
+    "listrikCost": 350.2,
+    "solarCost": 51.2,
+    "batubaraCost": 100.9,
+    "totalCost": 502.3
+  },
+  {
+    "tanggal": "2023-11-22",
+    "aktual": 7332,
+    "prediksi": 7269,
+    "listrikCost": 347.9,
+    "solarCost": 50.8,
+    "batubaraCost": 100.2,
+    "totalCost": 498.9
+  },
+  {
+    "tanggal": "2023-11-23",
+    "aktual": 7242,
+    "prediksi": 7304,
+    "listrikCost": 343.8,
+    "solarCost": 50.2,
+    "batubaraCost": 99,
+    "totalCost": 493
+  },
+  {
+    "tanggal": "2023-11-24",
+    "aktual": 7114,
+    "prediksi": 7127,
+    "listrikCost": 337.8,
+    "solarCost": 49.3,
+    "batubaraCost": 97.2,
+    "totalCost": 484.3
+  },
+  {
+    "tanggal": "2023-11-25",
+    "aktual": 6953,
+    "prediksi": 6888,
+    "listrikCost": 330.3,
+    "solarCost": 48.2,
+    "batubaraCost": 95,
+    "totalCost": 473.5
+  },
+  {
+    "tanggal": "2023-11-26",
+    "aktual": 6769,
+    "prediksi": 6807,
+    "listrikCost": 321.6,
+    "solarCost": 46.9,
+    "batubaraCost": 92.5,
+    "totalCost": 461
+  },
+  {
+    "tanggal": "2023-11-27",
+    "aktual": 6574,
+    "prediksi": 6622,
+    "listrikCost": 312.5,
+    "solarCost": 45.6,
+    "batubaraCost": 89.9,
+    "totalCost": 448
+  },
+  {
+    "tanggal": "2023-11-28",
+    "aktual": 6380,
+    "prediksi": 6337,
+    "listrikCost": 303.4,
+    "solarCost": 44.3,
+    "batubaraCost": 87.2,
+    "totalCost": 434.9
+  },
+  {
+    "tanggal": "2023-11-29",
+    "aktual": 6202,
+    "prediksi": 6131,
+    "listrikCost": 295,
+    "solarCost": 43.1,
+    "batubaraCost": 84.8,
+    "totalCost": 422.9
+  },
+  {
+    "tanggal": "2023-11-30",
+    "aktual": 6049,
+    "prediksi": 6110,
+    "listrikCost": 287.7,
+    "solarCost": 42,
+    "batubaraCost": 82.7,
+    "totalCost": 412.4
+  },
+  {
+    "tanggal": "2023-12-01",
+    "aktual": 5930,
+    "prediksi": 6019,
+    "listrikCost": 282.1,
+    "solarCost": 41.2,
+    "batubaraCost": 81,
+    "totalCost": 404.3
+  },
+  {
+    "tanggal": "2023-12-02",
+    "aktual": 5851,
+    "prediksi": 5760,
+    "listrikCost": 278.3,
+    "solarCost": 40.7,
+    "batubaraCost": 79.9,
+    "totalCost": 398.9
+  },
+  {
+    "tanggal": "2023-12-03",
+    "aktual": 5811,
+    "prediksi": 5753,
+    "listrikCost": 276.3,
+    "solarCost": 40.5,
+    "batubaraCost": 79.3,
+    "totalCost": 396.1
+  },
+  {
+    "tanggal": "2023-12-04",
+    "aktual": 5809,
+    "prediksi": 5881,
+    "listrikCost": 276.2,
+    "solarCost": 40.5,
+    "batubaraCost": 79.2,
+    "totalCost": 395.9
+  },
+  {
+    "tanggal": "2023-12-05",
+    "aktual": 5835,
+    "prediksi": 5875,
+    "listrikCost": 277.3,
+    "solarCost": 40.7,
+    "batubaraCost": 79.5,
+    "totalCost": 397.5
+  },
+  {
+    "tanggal": "2023-12-06",
+    "aktual": 5880,
+    "prediksi": 5831,
+    "listrikCost": 279.3,
+    "solarCost": 41.1,
+    "batubaraCost": 80,
+    "totalCost": 400.4
+  },
+  {
+    "tanggal": "2023-12-07",
+    "aktual": 5931,
+    "prediksi": 5897,
+    "listrikCost": 281.6,
+    "solarCost": 41.5,
+    "batubaraCost": 80.6,
+    "totalCost": 403.7
+  },
+  {
+    "tanggal": "2023-12-08",
+    "aktual": 5978,
+    "prediksi": 6043,
+    "listrikCost": 283.6,
+    "solarCost": 41.8,
+    "batubaraCost": 81.2,
+    "totalCost": 406.6
+  },
+  {
+    "tanggal": "2023-12-09",
+    "aktual": 6007,
+    "prediksi": 5991,
+    "listrikCost": 284.9,
+    "solarCost": 42,
+    "batubaraCost": 81.5,
+    "totalCost": 408.4
+  },
+  {
+    "tanggal": "2023-12-10",
+    "aktual": 6009,
+    "prediksi": 5948,
+    "listrikCost": 284.8,
+    "solarCost": 42.1,
+    "batubaraCost": 81.5,
+    "totalCost": 408.4
+  },
+  {
+    "tanggal": "2023-12-11",
+    "aktual": 5979,
+    "prediksi": 6045,
+    "listrikCost": 283.2,
+    "solarCost": 41.9,
+    "batubaraCost": 81,
+    "totalCost": 406.1
+  },
+  {
+    "tanggal": "2023-12-12",
+    "aktual": 5915,
+    "prediksi": 5951,
+    "listrikCost": 280.1,
+    "solarCost": 41.5,
+    "batubaraCost": 80.1,
+    "totalCost": 401.7
+  },
+  {
+    "tanggal": "2023-12-13",
+    "aktual": 5820,
+    "prediksi": 5752,
+    "listrikCost": 275.5,
+    "solarCost": 40.9,
+    "batubaraCost": 78.8,
+    "totalCost": 395.2
+  },
+  {
+    "tanggal": "2023-12-14",
+    "aktual": 5698,
+    "prediksi": 5645,
+    "listrikCost": 269.6,
+    "solarCost": 40.1,
+    "batubaraCost": 77.1,
+    "totalCost": 386.8
+  },
+  {
+    "tanggal": "2023-12-15",
+    "aktual": 5561,
+    "prediksi": 5642,
+    "listrikCost": 263,
+    "solarCost": 39.1,
+    "batubaraCost": 75.2,
+    "totalCost": 377.3
+  },
+  {
+    "tanggal": "2023-12-16",
+    "aktual": 5419,
+    "prediksi": 5485,
+    "listrikCost": 256.2,
+    "solarCost": 38.2,
+    "batubaraCost": 73.2,
+    "totalCost": 367.6
+  },
+  {
+    "tanggal": "2023-12-17",
+    "aktual": 5286,
+    "prediksi": 5180,
+    "listrikCost": 249.8,
+    "solarCost": 37.3,
+    "batubaraCost": 71.4,
+    "totalCost": 358.5
+  },
+  {
+    "tanggal": "2023-12-18",
+    "aktual": 5174,
+    "prediksi": 5143,
+    "listrikCost": 244.4,
+    "solarCost": 36.5,
+    "batubaraCost": 69.9,
+    "totalCost": 350.8
+  },
+  {
+    "tanggal": "2023-12-19",
+    "aktual": 5094,
+    "prediksi": 5174,
+    "listrikCost": 240.5,
+    "solarCost": 35.9,
+    "batubaraCost": 68.8,
+    "totalCost": 345.2
+  },
+  {
+    "tanggal": "2023-12-20",
+    "aktual": 5054,
+    "prediksi": 5065,
+    "listrikCost": 238.5,
+    "solarCost": 35.7,
+    "batubaraCost": 68.2,
+    "totalCost": 342.4
+  },
+  {
+    "tanggal": "2023-12-21",
+    "aktual": 5057,
+    "prediksi": 5008,
+    "listrikCost": 238.6,
+    "solarCost": 35.7,
+    "batubaraCost": 68.2,
+    "totalCost": 342.5
+  },
+  {
+    "tanggal": "2023-12-22",
+    "aktual": 5103,
+    "prediksi": 5098,
+    "listrikCost": 240.6,
+    "solarCost": 36,
+    "batubaraCost": 68.8,
+    "totalCost": 345.4
+  },
+  {
+    "tanggal": "2023-12-23",
+    "aktual": 5188,
+    "prediksi": 5245,
+    "listrikCost": 244.5,
+    "solarCost": 36.6,
+    "batubaraCost": 69.9,
+    "totalCost": 351
+  },
+  {
+    "tanggal": "2023-12-24",
+    "aktual": 5304,
+    "prediksi": 5261,
+    "listrikCost": 249.9,
+    "solarCost": 37.3,
+    "batubaraCost": 71.5,
+    "totalCost": 358.7
+  },
+  {
+    "tanggal": "2023-12-25",
+    "aktual": 5439,
+    "prediksi": 5393,
+    "listrikCost": 256.2,
+    "solarCost": 38.2,
+    "batubaraCost": 73.3,
+    "totalCost": 367.7
+  },
+  {
+    "tanggal": "2023-12-26",
+    "aktual": 5581,
+    "prediksi": 5670,
+    "listrikCost": 262.8,
+    "solarCost": 39.2,
+    "batubaraCost": 75.2,
+    "totalCost": 377.2
+  },
+  {
+    "tanggal": "2023-12-27",
+    "aktual": 5717,
+    "prediksi": 5733,
+    "listrikCost": 269.2,
+    "solarCost": 40.1,
+    "batubaraCost": 77,
+    "totalCost": 386.3
+  },
+  {
+    "tanggal": "2023-12-28",
+    "aktual": 5835,
+    "prediksi": 5749,
+    "listrikCost": 274.7,
+    "solarCost": 40.9,
+    "batubaraCost": 78.6,
+    "totalCost": 394.2
+  },
+  {
+    "tanggal": "2023-12-29",
+    "aktual": 5927,
+    "prediksi": 5899,
+    "listrikCost": 279.1,
+    "solarCost": 41.5,
+    "batubaraCost": 79.9,
+    "totalCost": 400.5
+  },
+  {
+    "tanggal": "2023-12-30",
+    "aktual": 5986,
+    "prediksi": 6079,
+    "listrikCost": 281.9,
+    "solarCost": 41.9,
+    "batubaraCost": 80.7,
+    "totalCost": 404.5
+  },
+  {
+    "tanggal": "2023-12-31",
+    "aktual": 6011,
+    "prediksi": 6048,
+    "listrikCost": 283.1,
+    "solarCost": 42,
+    "batubaraCost": 81,
+    "totalCost": 406.1
+  }
+]
