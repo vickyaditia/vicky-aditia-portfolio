@@ -13,8 +13,8 @@ export const experienceData: ExperienceItem[] = [
     period: "Feb 2026 – Present",
     type: "Work",
     highlights: [
-      "Mengelola pipeline data penjualan otomatis untuk 7 brand produk utama.",
-      "Mengoptimalkan query SQL PostgreSQL dan visualisasi dashboard Power BI.",
+      "Mengelola pipeline data penjualan otomatis untuk 7 brand produk utama (Rucika, Granito, Djabesmen, dll).",
+      "Mengoptimalkan query SQL PostgreSQL dan visualisasi dashboard Tableau.",
     ],
   },
   {
@@ -33,7 +33,7 @@ export const experienceData: ExperienceItem[] = [
     period: "Feb 2023 – Jun 2023",
     type: "Teaching",
     highlights: [
-      "Membimbing 50+ mahasiswa dalam praktikum Pemrograman Python, Structur Data, dan Statistika.",
+      "Membimbing 50+ mahasiswa dalam praktikum Pemrograman Python, Struktur Data, dan Statistika.",
     ],
   },
   {
@@ -43,7 +43,7 @@ export const experienceData: ExperienceItem[] = [
     type: "Education",
     highlights: [
       "IPK: 3.09 / 4.00",
-      "Skripsi: Sistem Rekomendasi Program Studi ITERA Menggunakan Binary PSO & KNN (Presisi 91.8%).",
+      "Skripsi: Klasifikasi Seleksi SKB STMKG & Sistem Rekomendasi Program Studi ITERA (Presisi 91.8%).",
     ],
   },
 ];

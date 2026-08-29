@@ -30,7 +30,7 @@ export const skillsData: SkillCategoryGroup[] = [
   {
     category: "Data Visualization & Dashboards",
     skills: [
-      { name: "Power BI (DAX Measures & Star Schema)", level: "Advanced" },
+      { name: "Tableau (Calculated Fields & Visual Analytics)", level: "Advanced" },
       { name: "Matplotlib & Seaborn Analytics", level: "Advanced" },
       { name: "Excel Power Query Automation", level: "Advanced" },
     ],
