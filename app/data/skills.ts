@@ -1,37 +1,47 @@
-export interface SkillCategory {
-  title: string;
-  skills: string[];
+export interface SkillItem {
+  name: string;
+  level: "Advanced" | "Proficient";
 }
 
-export const skillsData: SkillCategory[] = [
+export interface SkillCategoryGroup {
+  category: string;
+  skills: SkillItem[];
+}
+
+export const skillsData: SkillCategoryGroup[] = [
   {
-    title: "Data Science & Machine Learning",
+    category: "Data Analytics & SQL",
     skills: [
-      "Python (Pandas, NumPy, Scikit-learn)",
-      "TensorFlow / Keras (Deep Learning & MLP)",
-      "Time-Series Forecasting (LSTM & Prophet)",
-      "Particle Swarm Optimization (PSO & KNN)",
-      "NLP & Stemming (TF-IDF & Sastrawi)",
+      { name: "SQL (PostgreSQL, MySQL)", level: "Advanced" },
+      { name: "Exploratory Data Analysis (EDA)", level: "Advanced" },
+      { name: "Data Validation & Pipeline Checks", level: "Proficient" },
+      { name: "Business Intelligence Reporting", level: "Advanced" },
     ],
   },
   {
-    title: "Data Analytics & SQL Databases",
+    category: "Machine Learning & AI",
     skills: [
-      "SQL (PostgreSQL, MySQL, Query Optimization)",
-      "Power BI (DAX Measures & Star Schema)",
-      "Excel Power Query & Openpyxl Automation",
-      "Exploratory Data Analysis (EDA & Seaborn)",
-      "Data Validation & Pipeline Anomaly Checks",
+      { name: "Python (Scikit-learn, Pandas, NumPy)", level: "Advanced" },
+      { name: "TensorFlow / Keras (Deep MLP)", level: "Proficient" },
+      { name: "Particle Swarm Optimization (PSO)", level: "Proficient" },
+      { name: "NLP & Indonesian Stemming (Sastrawi)", level: "Proficient" },
     ],
   },
   {
-    title: "Automation & Development Tools",
+    category: "Data Visualization & Dashboards",
     skills: [
-      "Git & GitHub Version Control",
-      "Cron Schedulers & Batch Automation",
-      "MongoDB & Document Databases",
-      "FTP / API Automated Ingestion Pipelines",
-      "Jupyter & Modular Python Scripting",
+      { name: "Power BI (DAX Measures & Star Schema)", level: "Advanced" },
+      { name: "Matplotlib & Seaborn Analytics", level: "Advanced" },
+      { name: "Excel Power Query Automation", level: "Advanced" },
+    ],
+  },
+  {
+    category: "Data Engineering & Tools",
+    skills: [
+      { name: "Git & GitHub Version Control", level: "Advanced" },
+      { name: "Cron Schedulers & Batch Automation", level: "Proficient" },
+      { name: "Jupyter Notebook & Scripting", level: "Advanced" },
+      { name: "MongoDB & Document Databases", level: "Proficient" },
     ],
   },
 ];

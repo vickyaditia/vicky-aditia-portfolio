@@ -6,19 +6,27 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        slate: {
+          950: "#020617",
+          900: "#0F172A",
+          800: "#1E293B",
+          700: "#334155",
+          400: "#94A3B8",
+          50: "#F8FAFC",
+        },
+        emerald: {
+          500: "#10B981",
+          400: "#34D399",
+        },
+      },
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],
         heading: ["var(--font-space-grotesk)", "sans-serif"],
         mono: ["var(--font-space-grotesk)", "monospace"],
       },
-      colors: {
-        brand: {
-          50: "#ecfdf5",
-          100: "#d1fae5",
-          400: "#34d399",
-          500: "#10b981",
-          600: "#059669",
-        },
+      maxWidth: {
+        container: "1200px",
       },
     },
   },
