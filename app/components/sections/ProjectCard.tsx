@@ -49,21 +49,21 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
         <div className="pt-4 border-t border-slate-700/60 flex items-center justify-between">
           <a
-            href={project.githubUrl}
+            href={project.projectUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center text-xs font-sans font-semibold text-emerald-400 hover:text-emerald-300 transition-colors"
           >
-            <span>Lihat Detail Repo</span>
+            <span>{project.urlLabel}</span>
             <ArrowUpRight className="w-3.5 h-3.5 ml-1" />
           </a>
 
           <a
-            href={project.githubUrl}
+            href={project.projectUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 text-slate-400 hover:text-slate-100 hover:bg-slate-700 rounded transition-colors"
-            title="Lihat Repository GitHub"
+            title={project.urlLabel}
           >
             <Github className="w-4 h-4" />
           </a>
