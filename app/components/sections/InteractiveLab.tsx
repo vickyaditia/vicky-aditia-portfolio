@@ -2,18 +2,45 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Play, RotateCcw, CheckCircle2, AlertTriangle, Cpu, Flame, Activity } from "lucide-react";
-import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid } from "recharts";
+import {
+  Play,
+  RotateCcw,
+  CheckCircle2,
+  AlertTriangle,
+  Cpu,
+  Flame,
+  Activity,
+  Zap,
+  TrendingUp,
+  BarChart3,
+  ArrowRight,
+  Database,
+  DollarSign,
+  PieChart,
+  Lightbulb,
+} from "lucide-react";
+import {
+  ResponsiveContainer,
+  BarChart,
+  Bar,
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  Tooltip,
+  CartesianGrid,
+  Legend,
+} from "recharts";
 import { Container } from "../ui/Container";
 import { SectionHeading } from "../ui/SectionHeading";
 import { Card } from "../ui/Card";
 import { Badge } from "../ui/Badge";
-import { Button } from "../ui/Button";
 
 export const InteractiveLab: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<"skb" | "energy" | "cement">("skb");
+  const [activeTab, setActiveTab] = useState<"skb" | "energy" | "cement">("energy");
+  const [proj2SubTab, setProj2SubTab] = useState<"trend" | "flow" | "insight">("trend");
 
-  // Model 1 State: SKB STMKG Classification
+  // MODEL 1 STATE: SKB STMKG CLASSIFICATION
   const [skdScore, setSkdScore] = useState<number>(385);
   const [tpaScore, setTpaScore] = useState<number>(82);
   const [physicalScore, setPhysicalScore] = useState<number>(88);
@@ -27,26 +54,84 @@ export const InteractiveLab: React.FC = () => {
   };
   const skbResult = calculateSkbPrediction();
 
-  // Model 2 State: Kiln Energy Cost Optimization
-  const [kilnTemp, setKilnTemp] = useState<number>(1350);
-  const [coalFeed, setCoalFeed] = useState<number>(28);
-  const [airflow, setAirflow] = useState<number>(1200);
+  // MODEL 2 STATE: INDUSTRIAL KILN & FINISH MILL SIMULATION
+  const [kilnOutput, setKilnOutput] = useState<number>(240); // Ton/jam terak kiln
+  const [fm1Feed, setFm1Feed] = useState<number>(110); // Ton/jam terak FM1
+  const [fm2Feed, setFm2Feed] = useState<number>(120); // Ton/jam terak FM2
+  const [initialStock, setInitialStock] = useState<number>(8500); // Ton stok awal silo
 
-  const calculateEnergyCost = () => {
-    const powerKwh = Math.round(75 + (coalFeed * 1.8) + (kilnTemp / 100) - (airflow / 200));
-    const costMillionRp = (powerKwh * 1.45 * 0.85).toFixed(2);
-    const efficiency = Math.min(98, Math.max(60, Math.round(100 - (coalFeed * 0.6) + (airflow / 100))));
-    return { powerKwh, costMillionRp, efficiency };
+  // Unit Energy Prices
+  const [coalPrice, setCoalPrice] = useState<number>(1550); // Rp/kg batu bara
+  const [electricityPrice, setElectricityPrice] = useState<number>(1450); // Rp/kWh listrik
+  const [dieselPrice, setDieselPrice] = useState<number>(18200); // Rp/Liter solar
+
+  // Calculations for Project 2
+  const totalFmFeed = fm1Feed + fm2Feed;
+  const netTerakFlow = kilnOutput - totalFmFeed; // Balance per jam
+
+  // Generate 24-hour simulation trend for FM1, FM2, and Silo Stock Level
+  const generateTrendData = () => {
+    const data = [];
+    let currentStock = initialStock;
+
+    for (let hour = 1; hour <= 24; hour++) {
+      const fm1Prod = Math.round(fm1Feed * (0.95 + Math.sin(hour * 0.5) * 0.08));
+      const fm2Prod = Math.round(fm2Feed * (0.94 + Math.cos(hour * 0.5) * 0.07));
+      const hourlyNet = kilnOutput - (fm1Prod + fm2Prod);
+      currentStock = Math.max(0, currentStock + hourlyNet);
+
+      data.push({
+        jam: `Jam ${hour < 10 ? "0" + hour : hour}`,
+        FM1: fm1Prod,
+        FM2: fm2Prod,
+        StokTerak: currentStock,
+      });
+    }
+    return data;
   };
-  const energyResult = calculateEnergyCost();
+  const trendData = generateTrendData();
 
-  const energyChartData = [
-    { name: "Batu Bara", val: Math.round(coalFeed * 2.5) },
-    { name: "Solar", val: Math.round(coalFeed * 0.8) },
-    { name: "Listrik kWh", val: energyResult.powerKwh },
-  ];
+  // Energy Insights & Cost Calculations
+  const calcEnergyCosts = () => {
+    // Batu bara: ~125 kg/ton terak kiln
+    const coalConsumptionKgPerHour = kilnOutput * 125;
+    const coalCostPerHour = coalConsumptionKgPerHour * coalPrice;
 
-  // Model 3 State: Deep MLP Cement Strength
+    // Listrik: ~38 kWh/ton kiln + ~42 kWh/ton FM1 + ~44 kWh/ton FM2
+    const totalPowerKwhPerHour = kilnOutput * 38 + fm1Feed * 42 + fm2Feed * 44;
+    const electricityCostPerHour = totalPowerKwhPerHour * electricityPrice;
+
+    // Solar: ~1.8 Liter/ton terak burner & heavy equipment
+    const dieselLitersPerHour = kilnOutput * 1.8;
+    const dieselCostPerHour = dieselLitersPerHour * dieselPrice;
+
+    const totalCostPerHour = coalCostPerHour + electricityCostPerHour + dieselCostPerHour;
+    const totalCostPerDay = (totalCostPerHour * 24) / 1000000; // Juta Rupiah per Hari
+    const totalProductionDailyTon = (fm1Feed + fm2Feed) * 24;
+    const costPerTonCement = totalProductionDailyTon > 0 ? (totalCostPerHour * 24) / totalProductionDailyTon : 0;
+
+    const coalPercent = Math.round((coalCostPerHour / totalCostPerHour) * 100);
+    const electricityPercent = Math.round((electricityCostPerHour / totalCostPerHour) * 100);
+    const dieselPercent = Math.round((dieselCostPerHour / totalCostPerHour) * 100);
+
+    return {
+      coalCostPerHour,
+      electricityCostPerHour,
+      dieselCostPerHour,
+      totalCostPerHour,
+      totalCostPerDay: totalCostPerDay.toFixed(2),
+      costPerTonCement: Math.round(costPerTonCement),
+      coalPercent,
+      electricityPercent,
+      dieselPercent,
+      totalPowerKwhPerHour,
+      coalConsumptionKgPerHour,
+      dieselLitersPerHour,
+    };
+  };
+  const energyInsight = calcEnergyCosts();
+
+  // MODEL 3 STATE: DEEP MLP CEMENT STRENGTH
   const [clinker, setClinker] = useState<number>(75);
   const [gypsum, setGypsum] = useState<number>(5);
   const [silica, setSilica] = useState<number>(15);
@@ -71,11 +156,11 @@ export const InteractiveLab: React.FC = () => {
       <SectionHeading
         badgeText="INTERACTIVE DATA LAB (DEPLOYS)"
         title="Simulasi Interaktif Hasil Deploy 3 Proyek Real"
-        description="Cobalah langsung simulator prediksi interaktif dari model Machine Learning & Deep Learning yang telah dideploy untuk 3 proyek utama."
+        description="Eksplorasi langsung simulator interaktif Machine Learning, analisis alur terak pabrik semen, dan kalkulator biaya energi operasional."
       />
 
       <Card className="space-y-8 p-6 md:p-8">
-        {/* Selector Tabs for 3 Projects */}
+        {/* Main Tab Selector (Project 1, Project 2, Project 3) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3 border-b border-slate-700/60 pb-6">
           <button
             onClick={() => setActiveTab("skb")}
@@ -107,7 +192,7 @@ export const InteractiveLab: React.FC = () => {
               <span>PROYEK 2 DEPLOY</span>
             </div>
             <div className="font-bold font-heading text-sm text-slate-100">
-              Optimasi Biaya Energi Kiln
+              Optimasi Klinker & Biaya Energi PT Semen Gresik
             </div>
           </button>
 
@@ -129,7 +214,392 @@ export const InteractiveLab: React.FC = () => {
           </button>
         </div>
 
-        {/* TAB 1: SKB STMKG CLASSIFICATION INTERACTIVE SIMULATOR */}
+        {/* ========================================================================= */}
+        {/* PROYEK 2: DASHBOARD INDUSTRI KLINKER & ENERGI PT SEMEN GRESIK */}
+        {/* ========================================================================= */}
+        {activeTab === "energy" && (
+          <div className="space-y-6 animate-in fade-in duration-300">
+            {/* Sub-Dashboard Header Navigation */}
+            <div className="flex flex-wrap items-center justify-between gap-4 p-4 rounded-xl bg-slate-950 border border-slate-800">
+              <div>
+                <Badge variant="emerald">Industrial Operations & Multi-Fuel Telemetry</Badge>
+                <h3 className="text-lg font-bold font-heading text-slate-50 mt-1">
+                  Dashboard Optimasi Pabrik Semen & Biaya Energi
+                </h3>
+              </div>
+
+              {/* Sub-Tab Navigation Switcher */}
+              <div className="flex items-center space-x-2 bg-slate-900 p-1 rounded-lg border border-slate-700/80">
+                <button
+                  onClick={() => setProj2SubTab("trend")}
+                  className={`px-3 py-1.5 rounded-md text-xs font-sans font-medium transition-all ${
+                    proj2SubTab === "trend"
+                      ? "bg-emerald-500 text-slate-950 font-bold shadow-md"
+                      : "text-slate-300 hover:text-slate-100"
+                  }`}
+                >
+                  1. Tren FM1, FM2 & Stok
+                </button>
+                <button
+                  onClick={() => setProj2SubTab("flow")}
+                  className={`px-3 py-1.5 rounded-md text-xs font-sans font-medium transition-all ${
+                    proj2SubTab === "flow"
+                      ? "bg-emerald-500 text-slate-950 font-bold shadow-md"
+                      : "text-slate-300 hover:text-slate-100"
+                  }`}
+                >
+                  2. Flow Diagram Terak
+                </button>
+                <button
+                  onClick={() => setProj2SubTab("insight")}
+                  className={`px-3 py-1.5 rounded-md text-xs font-sans font-medium transition-all ${
+                    proj2SubTab === "insight"
+                      ? "bg-emerald-500 text-slate-950 font-bold shadow-md"
+                      : "text-slate-300 hover:text-slate-100"
+                  }`}
+                >
+                  3. Insight Biaya Energi
+                </button>
+              </div>
+            </div>
+
+            {/* --------------------------------------------------------------------- */}
+            {/* SUB-TAB 1: GRAFIK TREN SIMULASI FINISH MILL 1, 2 & STOK TERAK */}
+            {/* --------------------------------------------------------------------- */}
+            {proj2SubTab === "trend" && (
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                {/* Sliders Input Control */}
+                <div className="space-y-5 bg-slate-900 p-5 rounded-2xl border border-slate-700/80">
+                  <div className="font-bold font-heading text-sm text-slate-100 flex items-center">
+                    <BarChart3 className="w-4 h-4 mr-2 text-emerald-400" />
+                    <span>Input Parameter Operasional</span>
+                  </div>
+
+                  <div className="space-y-4 font-sans text-xs">
+                    <div>
+                      <div className="flex justify-between text-slate-300 mb-1 font-medium">
+                        <span>Produksi Terak Kiln (Ton/Jam)</span>
+                        <span className="text-emerald-400 font-bold">{kilnOutput} Ton/Jam</span>
+                      </div>
+                      <input
+                        type="range"
+                        min="100"
+                        max="400"
+                        value={kilnOutput}
+                        onChange={(e) => setKilnOutput(Number(e.target.value))}
+                        className="w-full accent-emerald-500 bg-slate-950 rounded-lg cursor-pointer"
+                      />
+                    </div>
+
+                    <div>
+                      <div className="flex justify-between text-slate-300 mb-1 font-medium">
+                        <span>Feed Rate Terak Finish Mill 1 (FM1)</span>
+                        <span className="text-emerald-400 font-bold">{fm1Feed} Ton/Jam</span>
+                      </div>
+                      <input
+                        type="range"
+                        min="40"
+                        max="200"
+                        value={fm1Feed}
+                        onChange={(e) => setFm1Feed(Number(e.target.value))}
+                        className="w-full accent-emerald-500 bg-slate-950 rounded-lg cursor-pointer"
+                      />
+                    </div>
+
+                    <div>
+                      <div className="flex justify-between text-slate-300 mb-1 font-medium">
+                        <span>Feed Rate Terak Finish Mill 2 (FM2)</span>
+                        <span className="text-emerald-400 font-bold">{fm2Feed} Ton/Jam</span>
+                      </div>
+                      <input
+                        type="range"
+                        min="40"
+                        max="200"
+                        value={fm2Feed}
+                        onChange={(e) => setFm2Feed(Number(e.target.value))}
+                        className="w-full accent-emerald-500 bg-slate-950 rounded-lg cursor-pointer"
+                      />
+                    </div>
+
+                    <div>
+                      <div className="flex justify-between text-slate-300 mb-1 font-medium">
+                        <span>Stok Awal Terak Silo (Ton)</span>
+                        <span className="text-emerald-400 font-bold">{initialStock} Ton</span>
+                      </div>
+                      <input
+                        type="range"
+                        min="1000"
+                        max="20000"
+                        step="500"
+                        value={initialStock}
+                        onChange={(e) => setInitialStock(Number(e.target.value))}
+                        className="w-full accent-emerald-500 bg-slate-950 rounded-lg cursor-pointer"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800 text-xs space-y-1.5 font-sans">
+                    <div className="text-slate-400">Status Neraca Terak:</div>
+                    <div className="flex items-center justify-between font-bold">
+                      <span className="text-slate-200">Net Flow Balance:</span>
+                      <span className={netTerakFlow >= 0 ? "text-emerald-400" : "text-amber-400"}>
+                        {netTerakFlow >= 0 ? `+${netTerakFlow}` : netTerakFlow} Ton/Jam
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 24-Hour Trend Charts */}
+                <div className="lg:col-span-2 space-y-6">
+                  {/* Production Rate Chart */}
+                  <div className="p-5 rounded-2xl bg-slate-900 border border-slate-700/80 space-y-3">
+                    <div className="flex items-center justify-between text-xs font-mono">
+                      <span className="text-slate-300 font-bold">GRAFIK TREN OPERASIONAL MESIN FM1 & FM2 (24 JAM)</span>
+                      <span className="text-emerald-400">Total Feed: {totalFmFeed} Ton/Jam</span>
+                    </div>
+                    <div className="h-[200px]">
+                      <ResponsiveContainer width="100%" height="100%">
+                        <LineChart data={trendData}>
+                          <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
+                          <XAxis dataKey="jam" stroke="#94a3b8" fontSize={10} />
+                          <YAxis stroke="#94a3b8" fontSize={10} />
+                          <Tooltip contentStyle={{ backgroundColor: "#0f172a", borderColor: "#334155", color: "#f8fafc" }} />
+                          <Legend wrapperStyle={{ fontSize: "11px" }} />
+                          <Line type="monotone" dataKey="FM1" stroke="#10b981" strokeWidth={2} name="Finish Mill 1" />
+                          <Line type="monotone" dataKey="FM2" stroke="#38bdf8" strokeWidth={2} name="Finish Mill 2" />
+                        </LineChart>
+                      </ResponsiveContainer>
+                    </div>
+                  </div>
+
+                  {/* Silo Stock Projection Chart */}
+                  <div className="p-5 rounded-2xl bg-slate-900 border border-slate-700/80 space-y-3">
+                    <div className="flex items-center justify-between text-xs font-mono">
+                      <span className="text-slate-300 font-bold">PROYEKSI AKUMULASI STOK TERAK SILO (TON)</span>
+                      <span className="text-emerald-400">Silo Capacity: 25,000 Ton</span>
+                    </div>
+                    <div className="h-[160px]">
+                      <ResponsiveContainer width="100%" height="100%">
+                        <BarChart data={trendData}>
+                          <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
+                          <XAxis dataKey="jam" stroke="#94a3b8" fontSize={10} />
+                          <YAxis stroke="#94a3b8" fontSize={10} />
+                          <Tooltip contentStyle={{ backgroundColor: "#0f172a", borderColor: "#334155", color: "#f8fafc" }} />
+                          <Bar dataKey="StokTerak" fill="#10b981" radius={[4, 4, 0, 0]} name="Stok Silo Terak" />
+                        </BarChart>
+                      </ResponsiveContainer>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* --------------------------------------------------------------------- */}
+            {/* SUB-TAB 2: DASHBOARD FLOW DIAGRAM TERAK (MASS BALANCE FLOW) */}
+            {/* --------------------------------------------------------------------- */}
+            {proj2SubTab === "flow" && (
+              <div className="space-y-8 py-4">
+                <div className="text-center max-w-xl mx-auto space-y-1">
+                  <h4 className="text-base font-bold font-heading text-slate-50">
+                    Diagram Alir Neraca Massa Terak (Clinker Mass Balance Flow)
+                  </h4>
+                  <p className="text-xs text-slate-400 font-sans">
+                    Visualisasi aliran distribusi terak dari Kiln pembakaran menuju Silo penampungan dan mesin Finish Mill 1 & 2.
+                  </p>
+                </div>
+
+                {/* Industrial Flow Diagram */}
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 items-center font-sans text-xs">
+                  {/* Step 1: Kiln Plant */}
+                  <div className="p-5 rounded-2xl bg-slate-900 border-2 border-emerald-500/60 space-y-3 text-center relative shadow-lg shadow-emerald-500/10">
+                    <div className="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 mx-auto flex items-center justify-center font-bold">
+                      <Flame className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <div className="font-bold text-sm text-slate-100 font-heading">KILN PLANT</div>
+                      <div className="text-slate-400 text-[11px]">Pembakaran Klinker</div>
+                    </div>
+                    <div className="p-2 rounded-lg bg-slate-950 border border-slate-800 text-emerald-400 font-bold text-sm">
+                      +{kilnOutput} Ton/Jam
+                    </div>
+                  </div>
+
+                  {/* Flow Arrow 1 */}
+                  <div className="hidden md:flex flex-col items-center justify-center text-slate-400">
+                    <span className="text-[10px] font-mono text-emerald-400 mb-1">Transfer Terak</span>
+                    <ArrowRight className="w-6 h-6 text-emerald-400 animate-pulse" />
+                  </div>
+
+                  {/* Step 2: Silo Terak Storage */}
+                  <div className="p-5 rounded-2xl bg-slate-900 border border-slate-700 space-y-3 text-center">
+                    <div className="w-10 h-10 rounded-full bg-slate-800 text-slate-300 mx-auto flex items-center justify-center font-bold">
+                      <Database className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <div className="font-bold text-sm text-slate-100 font-heading">SILO TERAK</div>
+                      <div className="text-slate-400 text-[11px]">Penampungan Utama</div>
+                    </div>
+                    <div className="p-2 rounded-lg bg-slate-950 border border-slate-800 text-slate-200 font-bold text-sm">
+                      Stok: {initialStock} Ton
+                    </div>
+                  </div>
+
+                  {/* Flow Arrow 2 */}
+                  <div className="hidden md:flex flex-col items-center justify-center text-slate-400">
+                    <span className="text-[10px] font-mono text-emerald-400 mb-1">Distribusi Grinding</span>
+                    <ArrowRight className="w-6 h-6 text-emerald-400 animate-pulse" />
+                  </div>
+
+                  {/* Step 3: Finish Mill 1 & 2 Output */}
+                  <div className="md:col-span-4 grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-slate-800">
+                    <div className="p-4 rounded-xl bg-slate-900 border border-slate-700/80 space-y-2 flex items-center justify-between">
+                      <div>
+                        <div className="font-bold text-slate-100 font-heading text-sm">FINISH MILL 1 (FM1)</div>
+                        <div className="text-slate-400 text-[11px]">Penggilingan Semen PPC</div>
+                      </div>
+                      <div className="p-2 rounded-lg bg-slate-950 border border-slate-800 text-emerald-400 font-bold text-sm">
+                        -{fm1Feed} Ton/Jam
+                      </div>
+                    </div>
+
+                    <div className="p-4 rounded-xl bg-slate-900 border border-slate-700/80 space-y-2 flex items-center justify-between">
+                      <div>
+                        <div className="font-bold text-slate-100 font-heading text-sm">FINISH MILL 2 (FM2)</div>
+                        <div className="text-slate-400 text-[11px]">Penggilingan Semen OPC</div>
+                      </div>
+                      <div className="p-2 rounded-lg bg-slate-950 border border-slate-800 text-sky-400 font-bold text-sm">
+                        -{fm2Feed} Ton/Jam
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* --------------------------------------------------------------------- */}
+            {/* SUB-TAB 3: DASHBOARD INSIGHT AKHIR BIAYA ENERGI (LISTRIK, BATU BARA, SOLAR) */}
+            {/* --------------------------------------------------------------------- */}
+            {proj2SubTab === "insight" && (
+              <div className="space-y-6">
+                {/* Unit Price Controls */}
+                <div className="p-4 rounded-xl bg-slate-900 border border-slate-700/80 space-y-3 font-sans text-xs">
+                  <div className="font-bold text-slate-200 font-heading text-sm">
+                    Asumsi Harga Satuan Energi (Tarif Industri):
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div>
+                      <span className="text-slate-400 block mb-1">Batu Bara (Rp/Kg):</span>
+                      <input
+                        type="number"
+                        value={coalPrice}
+                        onChange={(e) => setCoalPrice(Number(e.target.value))}
+                        className="w-full px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-700 text-emerald-400 font-bold focus:outline-none"
+                      />
+                    </div>
+                    <div>
+                      <span className="text-slate-400 block mb-1">Listrik (Rp/kWh):</span>
+                      <input
+                        type="number"
+                        value={electricityPrice}
+                        onChange={(e) => setElectricityPrice(Number(e.target.value))}
+                        className="w-full px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-700 text-sky-400 font-bold focus:outline-none"
+                      />
+                    </div>
+                    <div>
+                      <span className="text-slate-400 block mb-1">Solar Industri (Rp/Liter):</span>
+                      <input
+                        type="number"
+                        value={dieselPrice}
+                        onChange={(e) => setDieselPrice(Number(e.target.value))}
+                        className="w-full px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-700 text-amber-400 font-bold focus:outline-none"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Energy Breakdown Key Metrics Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  {/* Batu Bara Card */}
+                  <div className="p-5 rounded-2xl bg-slate-900 border border-slate-700/80 space-y-3">
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="text-slate-400 font-mono">BATU BARA (KILN)</span>
+                      <Badge variant="emerald">{energyInsight.coalPercent}% Budget</Badge>
+                    </div>
+                    <div className="text-2xl font-extrabold font-heading text-slate-50">
+                      Rp {(energyInsight.coalCostPerHour / 1000000).toFixed(2)}{" "}
+                      <span className="text-xs text-slate-400 font-normal">Juta / Jam</span>
+                    </div>
+                    <div className="text-xs text-slate-400 font-sans border-t border-slate-800 pt-2">
+                      Konsumsi: <span className="text-emerald-400 font-bold">{energyInsight.coalConsumptionKgPerHour.toLocaleString()} Kg/Jam</span>
+                    </div>
+                  </div>
+
+                  {/* Listrik Card */}
+                  <div className="p-5 rounded-2xl bg-slate-900 border border-slate-700/80 space-y-3">
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="text-slate-400 font-mono">LISTRIK (MILLING)</span>
+                      <Badge variant="slate">{energyInsight.electricityPercent}% Budget</Badge>
+                    </div>
+                    <div className="text-2xl font-extrabold font-heading text-slate-50">
+                      Rp {(energyInsight.electricityCostPerHour / 1000000).toFixed(2)}{" "}
+                      <span className="text-xs text-slate-400 font-normal">Juta / Jam</span>
+                    </div>
+                    <div className="text-xs text-slate-400 font-sans border-t border-slate-800 pt-2">
+                      Daya Daya: <span className="text-sky-400 font-bold">{energyInsight.totalPowerKwhPerHour.toLocaleString()} kWh/Jam</span>
+                    </div>
+                  </div>
+
+                  {/* Solar Card */}
+                  <div className="p-5 rounded-2xl bg-slate-900 border border-slate-700/80 space-y-3">
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="text-slate-400 font-mono">SOLAR INDUSTRI</span>
+                      <Badge variant="slate">{energyInsight.dieselPercent}% Budget</Badge>
+                    </div>
+                    <div className="text-2xl font-extrabold font-heading text-slate-50">
+                      Rp {(energyInsight.dieselCostPerHour / 1000000).toFixed(2)}{" "}
+                      <span className="text-xs text-slate-400 font-normal">Juta / Jam</span>
+                    </div>
+                    <div className="text-xs text-slate-400 font-sans border-t border-slate-800 pt-2">
+                      Volume: <span className="text-amber-400 font-bold">{energyInsight.dieselLitersPerHour.toFixed(1)} Liter/Jam</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Final Cost Recommendation & Daily Summary */}
+                <div className="p-6 rounded-2xl bg-slate-950 border border-emerald-500/40 space-y-4">
+                  <div className="flex items-center space-x-2 text-emerald-400 font-bold font-heading text-base">
+                    <Lightbulb className="w-5 h-5" />
+                    <span>Rekomendasi AI Optimization & Insights Efisiensi Biaya</span>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-sans">
+                    <div className="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2">
+                      <div className="text-slate-400 font-medium">ESTIMASI TOTAL BIAYA ENERGI HARIAN:</div>
+                      <div className="text-3xl font-extrabold text-emerald-400 font-heading">
+                        Rp {energyInsight.totalCostPerDay} <span className="text-base font-normal text-slate-300">Miliar / Hari</span>
+                      </div>
+                      <div className="text-slate-400">
+                        Biaya Energi per Ton Semen: <span className="text-slate-100 font-bold">Rp {energyInsight.costPerTonCement.toLocaleString()} / Ton</span>
+                      </div>
+                    </div>
+
+                    <div className="p-4 rounded-xl bg-slate-900 border border-slate-800 space-y-2 leading-relaxed text-slate-300">
+                      <div className="font-bold text-slate-100">Rekomendasi Strategi Operasional:</div>
+                      <ul className="space-y-1 list-disc pl-4 text-slate-400">
+                        <li>Jadwalkan penggilingan FM1 & FM2 pada waktu <span className="text-emerald-400 font-semibold">Luar Waktu Beban Puncak (LWBP)</span> untuk hemat tarif listrik 15%.</li>
+                        <li>Pertahankan pembakaran steady-state batu bara pada kisaran feed rate <span className="text-emerald-400 font-semibold">25 - 30 Ton/Jam</span> untuk efisiensi termal optimum.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* ========================================================================= */}
+        {/* PROYEK 1: SKB STMKG CLASSIFICATION INTERACTIVE SIMULATOR */}
+        {/* ========================================================================= */}
         {activeTab === "skb" && (
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center animate-in fade-in duration-300">
             <div className="space-y-5">
@@ -247,104 +717,9 @@ export const InteractiveLab: React.FC = () => {
           </div>
         )}
 
-        {/* TAB 2: KILN ENERGY COST OPTIMIZATION INTERACTIVE SIMULATOR */}
-        {activeTab === "energy" && (
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center animate-in fade-in duration-300">
-            <div className="space-y-5">
-              <div>
-                <Badge variant="emerald">Gradient Boosting Industrial Regressor</Badge>
-                <h3 className="text-xl font-bold font-heading text-slate-50 mt-2">
-                  Simulator Optimasi Konsumsi & Biaya Energi Kiln
-                </h3>
-                <p className="text-xs text-slate-400 mt-1">
-                  Geser parameter operasional telemetri kiln pabrik semen untuk mensimulasikan estimasi biaya bahan bakar.
-                </p>
-              </div>
-
-              <div className="space-y-4 font-sans text-xs">
-                <div>
-                  <div className="flex justify-between text-slate-300 mb-1 font-medium">
-                    <span>Suhu Kiln (°C)</span>
-                    <span className="text-emerald-400 font-bold">{kilnTemp} °C</span>
-                  </div>
-                  <input
-                    type="range"
-                    min="900"
-                    max="1500"
-                    value={kilnTemp}
-                    onChange={(e) => setKilnTemp(Number(e.target.value))}
-                    className="w-full accent-emerald-500 bg-slate-900 rounded-lg cursor-pointer"
-                  />
-                </div>
-
-                <div>
-                  <div className="flex justify-between text-slate-300 mb-1 font-medium">
-                    <span>Feed Rate Batu Bara (Ton/Jam)</span>
-                    <span className="text-emerald-400 font-bold">{coalFeed} Ton/Jam</span>
-                  </div>
-                  <input
-                    type="range"
-                    min="10"
-                    max="50"
-                    value={coalFeed}
-                    onChange={(e) => setCoalFeed(Number(e.target.value))}
-                    className="w-full accent-emerald-500 bg-slate-900 rounded-lg cursor-pointer"
-                  />
-                </div>
-
-                <div>
-                  <div className="flex justify-between text-slate-300 mb-1 font-medium">
-                    <span>Airflow Rate Pembakaran (m³/min)</span>
-                    <span className="text-emerald-400 font-bold">{airflow} m³/min</span>
-                  </div>
-                  <input
-                    type="range"
-                    min="500"
-                    max="2000"
-                    value={airflow}
-                    onChange={(e) => setAirflow(Number(e.target.value))}
-                    className="w-full accent-emerald-500 bg-slate-900 rounded-lg cursor-pointer"
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Industrial Energy Chart & Output */}
-            <div className="p-6 rounded-2xl bg-slate-900 border border-slate-700/80 space-y-6">
-              <div className="flex items-center justify-between">
-                <span className="text-xs text-slate-400 font-mono">ESTIMASI KONSUMSI ENERGI</span>
-                <span className="text-xs font-bold text-emerald-400 font-mono">
-                  Efisiensi: {energyResult.efficiency}%
-                </span>
-              </div>
-
-              <div className="h-[180px] bg-slate-950 p-3 rounded-xl border border-slate-800">
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={energyChartData}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
-                    <XAxis dataKey="name" stroke="#94a3b8" fontSize={11} tickLine={false} />
-                    <YAxis stroke="#94a3b8" fontSize={11} tickLine={false} />
-                    <Tooltip contentStyle={{ backgroundColor: "#0f172a", borderColor: "#334155", color: "#f8fafc" }} />
-                    <Bar dataKey="val" fill="#10b981" radius={[4, 4, 0, 0]} />
-                  </BarChart>
-                </ResponsiveContainer>
-              </div>
-
-              <div className="grid grid-cols-2 gap-4 text-xs font-sans">
-                <div className="p-3 rounded-lg bg-slate-950 border border-slate-800 space-y-1">
-                  <div className="text-slate-400">Total Listrik:</div>
-                  <div className="text-base font-bold text-slate-100">{energyResult.powerKwh} kWh/Ton</div>
-                </div>
-                <div className="p-3 rounded-lg bg-slate-950 border border-slate-800 space-y-1">
-                  <div className="text-slate-400">Estimasi Biaya Energi:</div>
-                  <div className="text-base font-bold text-emerald-400">Rp {energyResult.costMillionRp} Juta/Ton</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {/* TAB 3: DEEP MLP CEMENT STRENGTH INTERACTIVE SIMULATOR */}
+        {/* ========================================================================= */}
+        {/* PROYEK 3: DEEP MLP CEMENT STRENGTH INTERACTIVE SIMULATOR */}
+        {/* ========================================================================= */}
         {activeTab === "cement" && (
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center animate-in fade-in duration-300">
             <div className="space-y-5">
